@@ -2,3 +2,5 @@ Release Engineer is a Free Application Release Automation solution based on resu
 
 The Release Engineer Jenkins Plugin will enable Jenkins to interact with Release Engineer.  This interaction extends Jenkins to perform deployments via Release Engineer.
 
+See https://github.com/jenkinsci/release-engineer-plugin
+

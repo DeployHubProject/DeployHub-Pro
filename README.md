@@ -7,3 +7,5 @@ Online Help to Release Engineer can be found at http://www.openmakesoftware.com/
 
 Installation instructions: 
 http://www.openmakesoftware.com/docs/ReleaseEngineerInstallationGuide.pdf
+
+The Release Engineer Jenkins Plugin is located in https://github.com/OpenMake-Software/ReleaseEngineer.git under jeknins/release-engineer directory.
