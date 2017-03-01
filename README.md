@@ -1,11 +1,31 @@
-# ReleaseEngineer
-Release Engineer is a Free Application Release Automation solution based on resusable modules or "playbooks" that can be shared across the general software development community.  Its features include the ability to package your software deployment, perform the deployments without the need for end target agents, setup calendars, manage your server configurations and integrate with your CI server such as Jenkins.
+# Notice:  ReleaseEngineer has been split into DeployHub OSS and DeployHub Pro
+DeployHub Pro is the renamed and currently maintained version of Release Engineer
+DeployHub OSS is the Open Source version of Release Engineer
 
-This repository is intended to allow the Releae Engineer greater community to share the Release Engineer models or 'playbooks' that are called by the Release Engineer deployment engine.  Example models that are shareable include deploying to Tomcat, WebSphere and Microsoft IIS environments. 
+## DeployHub achieves Continuous Deploy.  
+DeployHub is the first open source Application Release Automation (ARA) solution designed to break down the 'wall' between development and data centers so your cool new features get to production at the speed of agile.  DeployHub unblocks the flow of code changes to production by eliminating the overhead of end target agents and the additional burden imposed on developers by traditional deployment approaches.  
 
-Online Help to Release Engineer can be found at http://help.openmake.com/helpRE75/
+## DeployHub and DeployHub Pro Features
+* Easy Installation - No End Point Agents 		
+* Easy to configure - graphical application packaging 		
+* Integrates with Infrastructure Configuration Management		
+* Push or Pull deployments with version 'jumping'		
+* Database Management Support		
+* Pre-Built Reusable Deployment Actions and Workflows		
+* Jenkins and Continuous Delivery Plugins		
+* Multi-Platform (Linux, UNIX, Windows, z/OS, iSeries, Cisco Routers)		
+* Rollback and Roll Forward Recovery		
+* Environment Modeling and Management		
+* Continuous Feedback Loop from Build to End Point	
 
-Installation instructions: 
-http://help.openmake.com/helpRE75/#!releaseengineerinstallationguideforlinux.htm
+## DeployHub Pro Only Features
+* Release Train Management (manage multiple applications)		
+* Calendar with integrated pre-approvals and blocking		
+* Role Based Security		
+* Change Request Tracking		
+* Continuous Feedback Loop from issue tracking to endpoint 		
+* Change Request Burn Down Charts		
+* Component Sharing and Workflow Templates
 
-The Release Engineer Jenkins Plugin is located in https://github.com/OpenMake-Software/ReleaseEngineer.git under jeknins/release-engineer directory.
+DeployHub Info: http://www.deployhub.org
+DeployHub Pro Info: https://www.openmakesoftware.com/application-release-automation-for-continuous-delivery/
