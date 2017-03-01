@@ -28,4 +28,5 @@ DeployHub is the first open source Application Release Automation (ARA) solution
 * Component Sharing and Workflow Templates
 
 DeployHub Info: http://www.deployhub.org
+
 DeployHub Pro Info: https://www.openmakesoftware.com/application-release-automation-for-continuous-delivery/
