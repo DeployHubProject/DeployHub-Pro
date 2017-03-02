@@ -1,4 +1,4 @@
-package org.jenkinsci.plugins.release_engineer;
+package org.jenkinsci.plugins.deployhub;
 import hudson.Launcher;
 import hudson.Extension;
 import hudson.util.FormValidation;
@@ -32,7 +32,7 @@ import hudson.EnvVars;
  * <p>
  * When the user configures the project and enables this builder,
  * {@link DescriptorImpl#newInstance(StaplerRequest)} is invoked
- * and a new {@link ReleaseEngineer} is created. The created
+ * and a new {@link DeployHubPlugin} is created. The created
  * instance is persisted to the project configuration XML by using
  * XStream, so this allows you to use instance fields (like {@link #name})
  * to remember the configuration.
@@ -46,7 +46,7 @@ import hudson.EnvVars;
 
 
 
-public class ReleaseEngineer extends Recorder {
+public class DeployHubPlugin extends Recorder {
 
     private final String username;
     private final String password;
@@ -83,7 +83,7 @@ public BuildStepMonitor getRequiredMonitorService()
 
     // Fields in config.jelly must match the parameter names in the "DataBoundConstructor"
     @DataBoundConstructor
-    public ReleaseEngineer(	String username,
+    public DeployHubPlugin(	String username,
 				String password,
 				List<JSONObject> deployApplication,
 				List<JSONObject> useComponent) {
@@ -820,11 +820,11 @@ public BuildStepMonitor getRequiredMonitorService()
     }
 
     /**
-     * Descriptor for {@link ReleaseEngineer}. Used as a singleton.
+     * Descriptor for {@link DeployHubPlugin}. Used as a singleton.
      * The class is marked as public so that it can be accessed from views.
      *
      * <p>
-     * See <tt>src/main/resources/hudson/plugins/release_engineer/ReleaseEngineer/*.jelly</tt>
+     * See <tt>src/main/resources/hudson/plugins/release_engineer/DeployHubPlugin/*.jelly</tt>
      * for the actual HTML fragment for the configuration screen.
      */
     @Extension // This indicates to Jenkins that this is an implementation of an extension point.

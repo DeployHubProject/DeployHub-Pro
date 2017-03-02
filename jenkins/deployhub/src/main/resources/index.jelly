@@ -3,5 +3,5 @@
   This view is used to render the installed plugins page.
 -->
 <div>
-  Allows Release Engineer to Deploy an Application
+  Allows DeployHub to Deploy an Application
 </div>
