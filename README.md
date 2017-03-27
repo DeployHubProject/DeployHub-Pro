@@ -6,6 +6,22 @@ DeployHub OSS is the Open Source version of Release Engineer and is an active Op
 ## DeployHub achieves Continuous Deploy.  
 DeployHub is the first open source Application Release Automation (ARA) solution designed to break down the 'wall' between development and data centers so your cool new features get to production at the speed of agile.  DeployHub unblocks the flow of code changes to production by eliminating the overhead of end target agents and the additional burden imposed on developers by traditional deployment approaches.  
 
+## DeployHub Pro Installation
+### Stable 8.0
+```
+ curl -sL http://www.openmakesoftware.com/re | sh
+```
+
+### Latest
+```
+curl -sL http://www.openmakesoftware.com/re/pro-latest.html | sh
+```
+## Slack Channel
+deployhub.slack.com
+
+## Google Groups Email List
+https://groups.google.com/forum/#!forum/deployhub-project
+
 ## DeployHub and DeployHub Pro Features
 * Easy Installation - No End Point Agents 		
 * Easy to configure - graphical application packaging 		
