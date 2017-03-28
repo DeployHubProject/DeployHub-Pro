@@ -14,13 +14,25 @@ DeployHub is the first open source Application Release Automation (ARA) solution
 
 ### Latest
 ```
-curl -sL http://www.openmakesoftware.com/re/pro-latest.html | sh
+curl -sL http://www.openmakesoftware.com/re/latest.html | sh
 ```
 ## Slack Channel
 deployhub.slack.com
 
 ## Google Groups Email List
 https://groups.google.com/forum/#!forum/deployhub-project
+
+## Online Help
+
+https://www.openmakesoftware.com/helpRE75/NetHelp
+
+## Detailed Install
+
+https://www.openmakesoftware.com/helpRE75/NetHelp/index.html#!Documents/deployhubinstallationguideforlinux.htm
+
+## Support
+
+https://github.com/OpenMake-Software/DeployHub/issues
 
 ## DeployHub and DeployHub Pro Features
 * Easy Installation - No End Point Agents 		
