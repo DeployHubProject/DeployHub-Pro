@@ -17,23 +17,16 @@ ________________
 
 ### Response times:  
 OpenMake shall use reasonable efforts to respond to Customer requests for service within the following response times and to provide corrections or workarounds to all errors reported by Customer within the stated time periods:
-
-Severity 1 – Respond within 2 business hours.  Provide work around or temporary fix restoring functionality of system (must be restored to Severity 2 or better level of functionality) within one business day and fix for error within 5 business days.
-
-Severity 2 – Respond within 4 business hours.  Provide work-around or avoidance within 5 business days and fix within 10 business days.
-
-Severity 3 – Respond within 1 business day.  Provide fix in next major release of the Product.
-
-Severity 4 – Respond within 2 business days.  Reply to the advice and guidance call within a reasonable period of time.
+* Severity 1 – Respond within 2 business hours.  Provide work around or temporary fix restoring functionality of system (must be restored to Severity 2 or better level of functionality) within one business day and fix for error within 5 business days.
+* Severity 2 – Respond within 4 business hours.  Provide work-around or avoidance within 5 business days and fix within 10 business days.
+* Severity 3 – Respond within 1 business day.  Provide fix in next major release of the Product.
+* Severity 4 – Respond within 2 business days.  Reply to the advice and guidance call within a reasonable period of time.
 
 ### Severity levels:
-"Severity 1" means a suspected Product error that: (1) renders the Product inoperative; or (2) causes the Product to fail catastrophically (system down condition).
-
-"Severity 2" means a suspected high impact Product error that materially restricts the use or performance of the Product.
-
-"Severity 3" means a Product error that causes a minor impact on the use of the Products or a Documentation error.
-
-"Severity 4" means a question about Product use or implementation.
+* "Severity 1" means a suspected Product error that: (1) renders the Product inoperative; or (2) causes the Product to fail catastrophically (system down condition).
+* "Severity 2" means a suspected high impact Product error that materially restricts the use or performance of the Product.
+* "Severity 3" means a Product error that causes a minor impact on the use of the Products or a Documentation error.
+* "Severity 4" means a question about Product use or implementation.
 
 ### Updates  
 Provided that you have paid to OpenMake any applicable annual maintenance fees and charges, you will be entitled to receive from OpenMake all new releases, new versions, Corrections, enhancements and improvements to the Maintained Software to the extent that the same are made generally available to other OpenMake Support customers.
@@ -43,17 +36,16 @@ OpenMake reserves the right, after prior notice, to charge for services which ar
 OpenMake may offer under separate agreements additional maintenance-related services, such as training and consulting. Such services can be performed at a site and time mutually agreeable. These services are normally charged on a time and materials basis plus expenses and are subject to availability.
 
 ## ITEMS NOT COVERED BY THIS AGREEMENT: 
-The following are excluded from the: 
+The following are excluded from the Support Services: 
 
-### Support Services: 
-Altered or modified Maintained Software unless altered or modified pursuant to this Agreement or another Services Agreement with OpenMake; 
-Any combination of Maintained Software and other software not covered by this Agreement or not authorized by OpenMake; 
-A release or version of Maintained Software for which maintenance services have been discontinued by OpenMake; 
-A product release or version that has been withdrawn by OpenMake from the market or is otherwise not generally available; 
-Defects caused by your negligence or fault; 
-Defects resulting from hardware malfunction or malfunction of software not covered by this Agreement;
-Defects that do not impair or affect the operation of the Maintained Software; and
-Maintained Software used on an unsupported computer or operating system.
+* Altered or modified Maintained Software unless altered or modified pursuant to this Agreement or another Services Agreement with OpenMake; 
+* Any combination of Maintained Software and other software not covered by this Agreement or not authorized by OpenMake; 
+* A release or version of Maintained Software for which maintenance services have been discontinued by OpenMake; 
+* A product release or version that has been withdrawn by OpenMake from the market or is otherwise not generally available; 
+* Defects caused by your negligence or fault; 
+* Defects resulting from hardware malfunction or malfunction of software not covered by this Agreement;
+* Defects that do not impair or affect the operation of the Maintained Software; and
+* Maintained Software used on an unsupported computer or operating system.
 
 ## MAINTENANCE RENEWAL: 
 The first annual maintenance fee shall be paid in accordance with Item 1 above. Annual maintenance fees for new annual maintenance periods must be paid in advance on or prior to each anniversary of the commencement of Support Services. Approximately forty-five (45) days prior to the termination of the then current annual maintenance period, OpenMake will invoice you for the next year's renewal of the Support Services. The annual maintenance fee due for the next maintenance period shall be the then current applicable OpenMake list price for the renewal of annual Support Services as of the date of invoice. 
