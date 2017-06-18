@@ -11,13 +11,13 @@
     <relativePath/>
   </parent>
   <groupId>org.jenkins-ci.plugins</groupId>
-  <artifactId>deployhub_pro</artifactId>
-  <version>1.0-SNAPSHOT</version>
+  <artifactId>deploy-hub</artifactId>
+  <version>8.0</version>
   <packaging>hpi</packaging>
 
-  <name>DeployHub Pro Plugin</name>
-  <description>DeployHub Pro</description>
-  <url>http://www.openmakesoftware.com</url>
+  <name>DeployHub Plugin</name>
+  <description>Notify DeployHub of builds and perform automated deployments.</description>
+  <url>http://www.deployhub.org</url>
   <licenses>
     <license>
       <name>GNU Affero General Public License</name>
@@ -28,7 +28,7 @@
   <developers>
     <developer>
       <id>pgibbs</id>
-      <name>Phil Gibbsr</name>
+      <name>Phil Gibbs</name>
       <email>phil.gibbs@openmakesoftware.com</email>
     </developer>
   </developers>
