@@ -12,12 +12,12 @@
   </parent>
   <groupId>org.jenkins-ci.plugins</groupId>
   <artifactId>deploy-hub</artifactId>
-  <version>8.0</version>
+  <version>8.0-SNAPSHOT</version>
   <packaging>hpi</packaging>
 
   <name>DeployHub Plugin</name>
   <description>Notify DeployHub of builds and perform automated deployments.</description>
-  <url>http://www.deployhub.org</url>
+  <url>https://wiki.jenkins.io/display/JENKINS/DeployHub+Plugin</url>
   <licenses>
     <license>
       <name>GNU Affero General Public License</name>
