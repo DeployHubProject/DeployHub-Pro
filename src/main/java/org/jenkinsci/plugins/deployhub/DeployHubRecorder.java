@@ -29,7 +29,7 @@ import java.util.List;
 import java.util.ArrayList;
 import hudson.EnvVars;
 
-public class DeployHub extends Recorder {
+public class DeployHubRecorder extends Recorder {
 
 	public static class Attribute extends AbstractDescribableImpl<Attribute> {
 		public String name;
@@ -83,7 +83,7 @@ public class DeployHub extends Recorder {
 
 	// Fields in config.jelly must match the parameter names in the "DataBoundConstructor"
 	@DataBoundConstructor
-	public DeployHub(	String username,
+	public DeployHubRecorder(	String username,
 			String password,
 			boolean deployApplication,	// optionalBlock
 			boolean useAdvanced,		// optionalBlock
@@ -570,8 +570,8 @@ public class DeployHub extends Recorder {
 						try {
 							String name = aa.getName();
 							String value = aa.getValue();
-							String expname = (name != null)?e.expand(name):null;
-							String expvalue = (value != null)?e.expand(value):null;
+							String expname = (name != null)?e.expand(name):"";
+							String expvalue = (value != null)?e.expand(value):"";
 							listener.getLogger().println("Setting \""
 							+expname
 							+"\" to \""
@@ -688,7 +688,7 @@ public class DeployHub extends Recorder {
 	}
 
     /**
-     * Descriptor for {@link DeployHub}. Used as a singleton.
+     * Descriptor for {@link DeployHubRecorder}. Used as a singleton.
      * The class is marked as public so that it can be accessed from views.
      *
      * <p>

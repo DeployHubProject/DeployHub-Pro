@@ -23,7 +23,6 @@ public class Components extends Common {
 	ArrayList<String> resps = new ArrayList<String>();
 	HashMap<String,String> userAccounts = getUserAccounts();
 	for(String url : userAccounts.keySet()) {
-		userAccounts.get(url);
 		url = url.replace("XXX","components?all=Y&");
 		System.out.println(url);
 		try {

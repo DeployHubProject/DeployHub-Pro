@@ -336,7 +336,7 @@ public BuildStepMonitor getRequiredMonitorService()
     }
 
     public boolean getCreateNewVersion() {
-        return (getCNV() != null);
+        return (!getCNV().isNullObject());
     }
 
     public String getTaskname() {
@@ -691,8 +691,8 @@ public BuildStepMonitor getRequiredMonitorService()
 					try {
 						String name = aa.getString("name");
 						String value = aa.getString("value");
-						String expname = (name != null)?e.expand(name):null;
-						String expvalue = (value != null)?e.expand(value):null;
+						String expname = (name != null)?e.expand(name):"";
+						String expvalue = (value != null)?e.expand(value):"";
 						listener.getLogger().println("Setting \""
 						+expname
 						+"\" to \""
