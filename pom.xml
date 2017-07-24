@@ -6,13 +6,12 @@
   <parent>
     <groupId>org.jenkins-ci.plugins</groupId>
     <artifactId>plugin</artifactId>
-    <!-- Baseline Jenkins version you use to build and test the plugin. Users must have this version or newer to run. -->
-    <version>2.11</version>
+      <version>2.29</version>
     <relativePath/>
   </parent>
   <groupId>org.jenkins-ci.plugins</groupId>
   <artifactId>deploy-hub</artifactId>
-  <version>8.0</version>
+  <version>8.0.0-SNAPSHOT</version>
   <packaging>hpi</packaging>
 
   <name>DeployHub Plugin</name>
@@ -33,13 +32,12 @@
     </developer>
   </developers>
   -->
-  <!-- Assuming you want to host on @jenkinsci:
   <scm>
-    <connection>scm:git:git://github.com/jenkinsci/${project.artifactId}-plugin.git</connection>
-    <developerConnection>scm:git:git@github.com:jenkinsci/${project.artifactId}-plugin.git</developerConnection>
-    <url>http://github.com/jenkinsci/${project.artifactId}-plugin</url>
+    <connection>scm:git:git://github.com/jenkinsci/deploy-hub-plugin.git</connection>
+    <developerConnection>scm:git:git@github.com:jenkinsci/deploy-hub-plugin.git</developerConnection>
+    <url>http://github.com/jenkinsci/deploy-hub-plugin</url>
   </scm>
-   -->
+
   <repositories>
     <repository>
       <id>repo.jenkins-ci.org</id>
