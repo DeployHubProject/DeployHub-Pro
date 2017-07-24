@@ -1,12 +1,9 @@
 package org.jenkinsci.plugins.deployhub;
 
 import hudson.Extension;
-import java.util.List;
 import java.util.HashMap;
 import java.util.ArrayList;
 import org.kohsuke.stapler.bind.JavaScriptMethod;
-
-import hudson.model.Action;
 
 @Extension
 public class Application extends Common {

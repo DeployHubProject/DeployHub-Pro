@@ -1,12 +1,9 @@
 package org.jenkinsci.plugins.deployhub;
 
 import hudson.Extension;
-import java.util.List;
 import java.util.HashMap;
 import java.util.ArrayList;
 import org.kohsuke.stapler.bind.JavaScriptMethod;
-
-import java.util.List;
 
 @Extension
 public class Servers extends Common {

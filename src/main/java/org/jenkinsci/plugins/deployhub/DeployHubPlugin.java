@@ -3,8 +3,8 @@ import hudson.Launcher;
 import hudson.Extension;
 import hudson.util.FormValidation;
 import hudson.model.AbstractBuild;
-import hudson.model.BuildListener;
 import hudson.model.AbstractProject;
+import hudson.model.BuildListener;
 import hudson.tasks.Publisher;
 import hudson.tasks.Recorder;
 import hudson.tasks.BuildStepDescriptor;
@@ -23,7 +23,6 @@ import java.io.*;
 import java.net.*;
 import java.util.List;
 import java.util.ArrayList;
-import java.util.Iterator;
 import hudson.EnvVars;
 
 public class DeployHubPlugin extends Recorder {
@@ -365,7 +364,7 @@ public BuildStepMonitor getRequiredMonitorService()
 			return err.element("error",conn.getResponseCode());
 		}
 		CookieStore cookieJar =  cm.getCookieStore();
-		List <HttpCookie> cookies = cookieJar.getCookies();
+		cookieJar.getCookies();
 		String reply="";
 		BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
 		String l = null;
@@ -387,7 +386,7 @@ public BuildStepMonitor getRequiredMonitorService()
     }
 
     @Override
-    public boolean perform(AbstractBuild build, Launcher launcher, BuildListener listener) {
+    public boolean perform(AbstractBuild<?, ?> build, Launcher launcher, BuildListener listener) {
 
 	String server = getDescriptor().getServerURL();
 
@@ -873,10 +872,6 @@ public BuildStepMonitor getRequiredMonitorService()
             return true;
         }
 */
-        public boolean isApplicable(Class aClass) {
-            // Indicates that this builder can be used with all kinds of project types 
-            return true;
-        }
 
         /**
          * This human readable name is used in the configuration screen.
@@ -897,6 +892,11 @@ public BuildStepMonitor getRequiredMonitorService()
         public String getServerURL() {
             return serverURL;
         }
+
+		@Override
+		public boolean isApplicable(Class<? extends AbstractProject> arg0) {
+			return true;
+		}
     }
 }
 

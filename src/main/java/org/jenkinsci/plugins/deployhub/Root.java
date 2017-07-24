@@ -1,16 +1,11 @@
 package org.jenkinsci.plugins.deployhub;
 
-import hudson.model.Hudson;
-import hudson.XmlFile;
 import hudson.Extension;
 import hudson.model.RootAction;
 import hudson.model.Action;
 import jenkins.model.ModelObjectWithContextMenu;
 import org.kohsuke.stapler.StaplerRequest;
 import org.kohsuke.stapler.StaplerResponse;
-import jenkins.model.Jenkins.DescriptorImpl;
-import java.io.*;
-
 import java.util.List;
 
 /**

@@ -4,10 +4,10 @@ import hudson.Extension;
 import hudson.XmlFile;
 import hudson.model.Hudson;
 import hudson.model.AbstractDescribableImpl;
+import hudson.model.AbstractProject;
 import hudson.util.FormValidation;
 import hudson.model.AbstractBuild;
 import hudson.model.BuildListener;
-import hudson.model.AbstractProject;
 import hudson.model.Descriptor;
 import hudson.tasks.Publisher;
 import hudson.tasks.Recorder;
@@ -27,7 +27,6 @@ import java.io.*;
 import java.net.*;
 import java.util.List;
 import java.util.ArrayList;
-import java.util.Iterator;
 import hudson.EnvVars;
 
 public class DeployHub extends Recorder {
@@ -255,7 +254,7 @@ public class DeployHub extends Recorder {
 				return err.element("error",conn.getResponseCode());
 			}
 			CookieStore cookieJar =  cm.getCookieStore();
-			List <HttpCookie> cookies = cookieJar.getCookies();
+			cookieJar.getCookies();
 			String reply="";
 			BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
 			String l = null;
@@ -277,7 +276,7 @@ public class DeployHub extends Recorder {
 	}
 
 	@Override
-	public boolean perform(AbstractBuild build, Launcher launcher, BuildListener listener) {
+	public boolean perform(AbstractBuild<?, ?> build, Launcher launcher, BuildListener listener) {
 		String server = getDescriptor().getServerURL();
 		debug=false;
 		try {
@@ -757,11 +756,6 @@ public class DeployHub extends Recorder {
             return FormValidation.ok();
         }
 
-        public boolean isApplicable(Class aClass) {
-            // Indicates that this builder can be used with all kinds of project types 
-            return true;
-        }
-
         /**
          * This human readable name is used in the configuration screen.
          */
@@ -781,6 +775,11 @@ public class DeployHub extends Recorder {
         public String getServerURL() {
             return serverURL;
         }
+
+		@Override
+		public boolean isApplicable(Class<? extends AbstractProject> arg0) {
+			return true;
+		}
     }
 }
 

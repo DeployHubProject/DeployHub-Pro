@@ -1,21 +1,11 @@
 package org.jenkinsci.plugins.deployhub;
 
-import static org.apache.commons.io.IOUtils.copy;
 import hudson.ExtensionList;
 import hudson.ExtensionPoint;
 import hudson.model.Action;
 import hudson.model.Describable;
 
-import java.io.IOException;
-import java.net.URL;
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
-
 import jenkins.model.Jenkins;
-
-import org.kohsuke.stapler.StaplerRequest;
-import org.kohsuke.stapler.StaplerResponse;
 
 public abstract class DeployHubMenu implements ExtensionPoint, Action, Describable<DeployHubMenu> {
     public String getIconFileName() {
