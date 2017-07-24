@@ -258,10 +258,12 @@ public class DeployHubRecorder extends Recorder {
 			String reply="";
 			BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
 			String l = null;
+			StringBuffer buf = new StringBuffer();
 			while ((l=br.readLine())!=null) {
 				if (debug) listener.getLogger().println("DEBUG: "+l);
-				reply=reply+l;
+				buf.append(l);
 			}
+			reply = buf.toString();
 			br.close();
 			JSONObject res=JSONObject.fromObject(reply);
 			conn.disconnect();
