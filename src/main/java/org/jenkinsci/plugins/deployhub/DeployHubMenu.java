@@ -23,10 +23,18 @@ public abstract class DeployHubMenu implements ExtensionPoint, Action, Describab
     public abstract String getDescription();
 
     public DeployHubMenuDescriptor getDescriptor() {
-        return (DeployHubMenuDescriptor) Jenkins.getInstance().getDescriptorOrDie(getClass());
+        Jenkins jenkins = Jenkins.getInstance();
+        if (jenkins == null)
+         return null;
+        
+        return (DeployHubMenuDescriptor) jenkins.getDescriptorOrDie(getClass());
     }
 
     public static ExtensionList<DeployHubMenu> all() {
-        return Jenkins.getInstance().getExtensionList(DeployHubMenu.class);
+        Jenkins jenkins = Jenkins.getInstance();
+        if (jenkins == null)
+         return null;
+        
+        return jenkins.getExtensionList(DeployHubMenu.class);
     }
 }

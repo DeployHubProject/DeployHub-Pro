@@ -1,29 +1,40 @@
 package org.jenkinsci.plugins.deployhub;
-import hudson.Launcher;
-import hudson.Extension;
-import hudson.util.FormValidation;
-import hudson.model.AbstractBuild;
-import hudson.model.AbstractProject;
-import hudson.model.BuildListener;
-import hudson.tasks.Publisher;
-import hudson.tasks.Recorder;
-import hudson.tasks.BuildStepDescriptor;
-import hudson.tasks.BuildStepMonitor;
-import net.sf.json.JSONArray;
-import net.sf.json.JSONObject;
-import net.sf.json.JSONException;
-import org.kohsuke.stapler.DataBoundConstructor;
-import org.kohsuke.stapler.StaplerRequest;
-import org.kohsuke.stapler.QueryParameter;
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.net.CookieHandler;
+import java.net.CookieManager;
+import java.net.CookiePolicy;
+import java.net.CookieStore;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLEncoder;
+import java.nio.charset.StandardCharsets;
+import java.util.ArrayList;
+import java.util.List;
 
 import javax.servlet.ServletException;
 // import java.io.IOException;
 
-import java.io.*;
-import java.net.*;
-import java.util.List;
-import java.util.ArrayList;
+import org.kohsuke.stapler.DataBoundConstructor;
+import org.kohsuke.stapler.QueryParameter;
+import org.kohsuke.stapler.StaplerRequest;
+
 import hudson.EnvVars;
+import hudson.Extension;
+import hudson.Launcher;
+import hudson.model.AbstractBuild;
+import hudson.model.AbstractProject;
+import hudson.model.BuildListener;
+import hudson.tasks.BuildStepDescriptor;
+import hudson.tasks.BuildStepMonitor;
+import hudson.tasks.Publisher;
+import hudson.tasks.Recorder;
+import hudson.util.FormValidation;
+import net.sf.json.JSONArray;
+import net.sf.json.JSONException;
+import net.sf.json.JSONObject;
 
 public class DeployHubPlugin extends Recorder {
 
@@ -366,7 +377,7 @@ public BuildStepMonitor getRequiredMonitorService()
 		CookieStore cookieJar =  cm.getCookieStore();
 		cookieJar.getCookies();
 		String reply="";
-		BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream()));
+		BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream(),StandardCharsets.UTF_8));
 		String l = null;
 		StringBuffer buf = new StringBuffer();
 		while ((l=br.readLine())!=null) {
