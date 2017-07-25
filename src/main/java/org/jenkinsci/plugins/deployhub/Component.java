@@ -1,9 +1,13 @@
 package org.jenkinsci.plugins.deployhub;
 
-import hudson.Extension;
-import java.util.HashMap;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
 import org.kohsuke.stapler.bind.JavaScriptMethod;
+
+import hudson.Extension;
 
 @Extension
 public class Component extends Common {
@@ -31,8 +35,10 @@ public class Component extends Common {
     public String[] loadComponent() {
 	ArrayList<String> resps = new ArrayList<String>();
 	HashMap<String,String> userAccounts = getUserAccounts();
-	for(String url : userAccounts.keySet()) {
-		String project = userAccounts.get(url);
+	for (Iterator<Map.Entry<String, String>> entries = userAccounts.entrySet().iterator(); entries.hasNext(); ) {
+		Map.Entry<String, String> entry = entries.next();
+	    String url = entry.getKey();
+		String project = entry.getValue();
 		url = url.replace("XXX","component/"+compname+"?").replace(" ","%20");
 		System.out.println(url);
 		try {

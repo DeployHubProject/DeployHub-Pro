@@ -1,9 +1,13 @@
 package org.jenkinsci.plugins.deployhub;
 
-import hudson.Extension;
-import java.util.HashMap;
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.Map;
+
 import org.kohsuke.stapler.bind.JavaScriptMethod;
+
+import hudson.Extension;
 
 @Extension
 public class Environments extends Common {
@@ -15,8 +19,10 @@ public class Environments extends Common {
     public String[] loadEnvironments() {
 	ArrayList<String> resps = new ArrayList<String>();
 	HashMap<String,String> userAccounts = getUserAccounts();
-	for(String url : userAccounts.keySet()) {
-		String project = userAccounts.get(url);
+	for (Iterator<Map.Entry<String, String>> entries = userAccounts.entrySet().iterator(); entries.hasNext(); ) {
+		Map.Entry<String, String> entry = entries.next();
+	    String url = entry.getKey();
+		String project = entry.getValue();
 		url = url.replace("XXX","environments?all=Y&");
 		System.out.println(url);
 		try {

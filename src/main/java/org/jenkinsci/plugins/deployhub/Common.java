@@ -51,7 +51,11 @@ public abstract class Common implements Action, ModelObjectWithContextMenu {
 
     public static String getServerURL()
     {
-	String rootDir = Jenkins.getInstance().getRootDir().getAbsolutePath();
+    Jenkins jenkins = Jenkins.getInstance();
+    if (jenkins == null)
+     return "";
+    
+	String rootDir = jenkins.getRootDir().getAbsolutePath();
         XmlFile t = new XmlFile(Hudson.XSTREAM, new File(rootDir, "org.jenkinsci.plugins.deployhub.DeployHub.xml"));
         if (t != null && t.exists()) {
                 try {   
