@@ -36,9 +36,9 @@
   </developers>
 		
   <scm>
-    <connection>scm:git:https://github.com/jenkinsci/deploy-hub-plugin.git</connection>
-    <developerConnection>scm:git:https://github.com/jenkinsci/deploy-hub-plugin.git</developerConnection>
-    <url>https://github.com/jenkinsci/deploy-hub-plugin</url>
+    <connection>scm:git:https://github.com/jenkinsci/deployhub-plugin.git</connection>
+    <developerConnection>scm:git:https://github.com/jenkinsci/deployhub-plugin.git</developerConnection>
+    <url>https://github.com/jenkinsci/deployhub-plugin</url>
     <tag>HEAD</tag>
   </scm>
 
