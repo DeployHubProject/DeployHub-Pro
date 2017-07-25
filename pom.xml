@@ -9,7 +9,7 @@
 		</parent>
   <groupId>com.openmake</groupId>
   <artifactId>deployhub</artifactId>
-  <version>8.0.3</version>
+  <version>8.0.4-SNAPSHOT</version>
   <packaging>hpi</packaging>
 
   <name>DeployHub Plugin</name>
@@ -39,7 +39,7 @@
     <connection>scm:git:https://github.com/jenkinsci/deploy-hub-plugin.git</connection>
     <developerConnection>scm:git:https://github.com/jenkinsci/deploy-hub-plugin.git</developerConnection>
     <url>https://github.com/jenkinsci/deploy-hub-plugin</url>
-    <tag>deployhub-8.0.3</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <repositories>
