@@ -82,12 +82,19 @@ public abstract class Common implements Action, ModelObjectWithContextMenu {
 	String jobsDir = rootDir + "/jobs";
 	// Get list of job folders
 	File file = new File(jobsDir);
-	String[] directories = file.list(new FilenameFilter() {
+	
+	String[] directories = new String[0];
+	
+	if (file != null)
+	{
+	 directories = file.list(new FilenameFilter() {
 		@Override
 		public boolean accept(File current, String name) {
 			return new File(current, name).isDirectory();
 		}
-	});
+	 });
+	}
+	
 	for (int i=0;i<directories.length;i++) {
 		try {
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
