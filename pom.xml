@@ -8,8 +8,8 @@
       <version>2.29</version>
     <relativePath />
   </parent>
-  <groupId>org.jenkinsci.plugins.deployhub</groupId>
-  <artifactId>deploy-hub</artifactId>
+  <groupId>com.openmake</groupId>
+  <artifactId>deployhub</artifactId>
   <version>8.0.1-SNAPSHOT</version>
   <packaging>hpi</packaging>
 
