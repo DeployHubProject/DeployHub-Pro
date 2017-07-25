@@ -265,7 +265,6 @@ public class DeployHub extends Recorder {
 			if (conn.getResponseCode() != 200) {
 				return err.element("error",conn.getResponseCode());
 			}
-			CookieStore cookieJar =  cm.getCookieStore();
 
 			String reply="";
 			BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream(),StandardCharsets.UTF_8));
@@ -290,7 +289,7 @@ public class DeployHub extends Recorder {
 	}
 
 	@Override
-	public boolean perform(AbstractBuild build, Launcher launcher, BuildListener listener) {
+	public boolean perform(AbstractBuild<?, ?> build, Launcher launcher, BuildListener listener) {
 		String server = getDescriptor().getServerURL();
 		debug=false;
 		try {
@@ -584,8 +583,8 @@ public class DeployHub extends Recorder {
 						try {
 							String name = aa.getName();
 							String value = aa.getValue();
-							String expname = (name != null)?e.expand(name):null;
-							String expvalue = (value != null)?e.expand(value):null;
+							String expname = (name != null)?e.expand(name):"";
+							String expvalue = (value != null)?e.expand(value):"";
 							listener.getLogger().println("Setting \""
 							+expname
 							+"\" to \""
