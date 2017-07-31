@@ -2,5 +2,6 @@ DeployHub is an open source Agile Application Release Automation solution based 
 
 The DeployHub Jenkins Plugin will enable Jenkins to interact with DeployHub.  This interaction extends Jenkins to perform deployments via DeployHub. It also allows DeployHub to track Jenkins builds against components.
 
-See https://github.com/jenkinsci/deploy-hub-plugin
+See https://github.com/jenkinsci/deployhub-plugin
+
 

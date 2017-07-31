@@ -1,5 +1,4 @@
 package org.jenkinsci.plugins.deployhub;
-
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
@@ -8,7 +7,6 @@ import java.net.CookieHandler;
 import java.net.CookieManager;
 import java.net.CookiePolicy;
 import java.net.CookieStore;
-import java.net.HttpCookie;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -30,6 +28,7 @@ import hudson.Launcher;
 import hudson.XmlFile;
 import hudson.model.AbstractBuild;
 import hudson.model.AbstractDescribableImpl;
+import hudson.model.AbstractProject;
 import hudson.model.BuildListener;
 import hudson.model.Descriptor;
 import hudson.model.Hudson;
@@ -42,7 +41,7 @@ import net.sf.json.JSONArray;
 import net.sf.json.JSONException;
 import net.sf.json.JSONObject;
 
-public class DeployHub extends Recorder {
+public class DeployHubRecorder extends Recorder {
 
 	public static class Attribute extends AbstractDescribableImpl<Attribute> {
 		public String name;
@@ -96,7 +95,7 @@ public class DeployHub extends Recorder {
 
 	// Fields in config.jelly must match the parameter names in the "DataBoundConstructor"
 	@DataBoundConstructor
-	public DeployHub(	String username,
+	public DeployHubRecorder(	String username,
 			String password,
 			boolean deployApplication,	// optionalBlock
 			boolean useAdvanced,		// optionalBlock
@@ -266,8 +265,9 @@ public class DeployHub extends Recorder {
 			if (conn.getResponseCode() != 200) {
 				return err.element("error",conn.getResponseCode());
 			}
-
-      String reply="";
+			CookieStore cookieJar =  cm.getCookieStore();
+			cookieJar.getCookies();
+			String reply="";
 			BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream(),StandardCharsets.UTF_8));
 			String l = null;
 			StringBuffer buf = new StringBuffer();
@@ -275,7 +275,7 @@ public class DeployHub extends Recorder {
 				if (debug) listener.getLogger().println("DEBUG: "+l);
 				buf.append(l);
 			}
-			reply = buf.toString(); 
+			reply = buf.toString();
 			br.close();
 			JSONObject res=JSONObject.fromObject(reply);
 			conn.disconnect();
@@ -290,7 +290,6 @@ public class DeployHub extends Recorder {
 	}
 
 	@Override
-
 	public boolean perform(AbstractBuild<?, ?> build, Launcher launcher, BuildListener listener) {
 		String server = getDescriptor().getServerURL();
 		debug=false;
@@ -544,10 +543,9 @@ public class DeployHub extends Recorder {
 						for (Attribute xa: compatts) {
 							String name = xa.getName();
 							String value = xa.getValue();
-							String expname = (name != null)?e.expand(name):"";
-							String expvalue = (value != null)?e.expand(value):"";
-
-              if (expname != null && expvalue != null && expname.length() > 0 && expvalue.length() > 0) {
+							String expname = (name != null)?e.expand(name):null;
+							String expvalue = (value != null)?e.expand(value):null;
+							if (expname != null && expvalue != null && expname.length() > 0 && expvalue.length() > 0) {
 								if (!titlePrinted) {
 									listener.getLogger().println("Setting Attributes on Component \""+compname+"\"");
 									titlePrinted=true;
@@ -586,9 +584,8 @@ public class DeployHub extends Recorder {
 						try {
 							String name = aa.getName();
 							String value = aa.getValue();
- 						  String expname = (name != null)?e.expand(name):"";
+							String expname = (name != null)?e.expand(name):"";
 							String expvalue = (value != null)?e.expand(value):"";
-
 							listener.getLogger().println("Setting \""
 							+expname
 							+"\" to \""
@@ -705,7 +702,7 @@ public class DeployHub extends Recorder {
 	}
 
     /**
-     * Descriptor for {@link DeployHub}. Used as a singleton.
+     * Descriptor for {@link DeployHubRecorder}. Used as a singleton.
      * The class is marked as public so that it can be accessed from views.
      *
      * <p>
@@ -773,11 +770,6 @@ public class DeployHub extends Recorder {
             return FormValidation.ok();
         }
 
-        public boolean isApplicable(Class aClass) {
-            // Indicates that this builder can be used with all kinds of project types 
-            return true;
-        }
-
         /**
          * This human readable name is used in the configuration screen.
          */
@@ -797,6 +789,11 @@ public class DeployHub extends Recorder {
         public String getServerURL() {
             return serverURL;
         }
+
+		@Override
+		public boolean isApplicable(Class<? extends AbstractProject> arg0) {
+			return true;
+		}
     }
 }
 

@@ -1,34 +1,32 @@
 package org.jenkinsci.plugins.deployhub;
 
-import hudson.model.Hudson;
-import hudson.model.TopLevelItem;
-import hudson.model.TopLevelItemDescriptor;
-import hudson.XmlFile;
-import hudson.Extension;
-import hudson.model.Action;
-import jenkins.model.ModelObjectWithContextMenu;
-import org.kohsuke.stapler.StaplerRequest;
-import org.kohsuke.stapler.StaplerResponse;
-import jenkins.model.Jenkins.DescriptorImpl;
-import java.io.*;
-import java.util.List;
-import org.kohsuke.stapler.bind.JavaScriptMethod;
-
-// for XML parsing
-import javax.xml.parsers.DocumentBuilderFactory;
-import javax.xml.parsers.DocumentBuilder;
-import org.w3c.dom.Document;
-import org.w3c.dom.NodeList;
-import org.w3c.dom.Node;
-import org.w3c.dom.Element;
-import java.util.HashMap;
-
 // For calls to the API
 import java.io.BufferedReader;
-import java.io.DataOutputStream;
+import java.io.File;
+import java.io.FilenameFilter;
+import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
+import java.util.HashMap;
+import java.util.List;
+
+import javax.xml.parsers.DocumentBuilder;
+// for XML parsing
+import javax.xml.parsers.DocumentBuilderFactory;
+
+import org.kohsuke.stapler.StaplerRequest;
+import org.kohsuke.stapler.StaplerResponse;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
+import org.w3c.dom.NodeList;
+
+import hudson.XmlFile;
+import hudson.model.Action;
+import hudson.model.Hudson;
+import jenkins.model.Jenkins;
+import jenkins.model.ModelObjectWithContextMenu;
 
 public abstract class Common implements Action, ModelObjectWithContextMenu {
 
@@ -54,11 +52,17 @@ public abstract class Common implements Action, ModelObjectWithContextMenu {
 
     public static String getServerURL()
     {
-	String rootDir = Hudson.getInstance().getRootDir().getAbsolutePath();
+
+    Jenkins jenkins = Jenkins.getInstance();
+    if (jenkins == null)
+     return "";
+    
+	String rootDir = jenkins.getRootDir().getAbsolutePath();
         XmlFile t = new XmlFile(Hudson.XSTREAM, new File(rootDir, "org.jenkinsci.plugins.deployhub.DeployHub.xml"));
         if (t != null && t.exists()) {
                 try {   
-                        DeployHub.DescriptorImpl desc = (DeployHub.DescriptorImpl)t.read();
+                        DeployHubRecorder.DescriptorImpl desc = (DeployHubRecorder.DescriptorImpl)t.read();
+                  
                         if (desc != null) return desc.getServerURL();
                         return "";
                 } catch(IOException ex) {
@@ -70,20 +74,28 @@ public abstract class Common implements Action, ModelObjectWithContextMenu {
     public HashMap<String,String> getUserAccounts()
     {
 	HashMap<String,String> res = new HashMap<String,String>();
-
+    Jenkins jenkins = Jenkins.getInstance();
+    if (jenkins == null)
+      return res;
+    
 	String baseurl = getServerURL();
 
-	String rootDir = Hudson.getInstance().getRootDir().getAbsolutePath();
+	String rootDir = jenkins.getRootDir().getAbsolutePath();
 	String jobsDir = rootDir + "/jobs";
 	// Get list of job folders
 	File file = new File(jobsDir);
+	
 	String[] directories = file.list(new FilenameFilter() {
 		@Override
 		public boolean accept(File current, String name) {
 			return new File(current, name).isDirectory();
 		}
-	});
-	for (int i=0;i<directories.length;i++) {
+	 });
+	
+	if (directories != null)
+	{	
+	 for (int i=0;i<directories.length;i++) {
+
 		try {
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
@@ -112,6 +124,7 @@ public abstract class Common implements Action, ModelObjectWithContextMenu {
 		} catch(Exception ex) {
 			System.out.println("Exception ex = "+ex.getMessage());
 		}
+	  }
 	}
 	return res;
     }
@@ -122,8 +135,9 @@ public abstract class Common implements Action, ModelObjectWithContextMenu {
 
 	con.setRequestMethod("GET");
 	con.setRequestProperty("User-Agent","Mozilla/5.0");
-	int responseCode = con.getResponseCode();
-	BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
+	con.getResponseCode();
+	BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream(),StandardCharsets.UTF_8));
+
 	String inputLine;
 	StringBuffer response = new StringBuffer();
 

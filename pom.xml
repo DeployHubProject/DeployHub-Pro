@@ -2,39 +2,43 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <parent>
-    <groupId>org.jenkins-ci.plugins</groupId>
-    <artifactId>plugin</artifactId>
-    <!-- Baseline Jenkins version you use to build and test the plugin. Users must have this version or newer to run. -->
-    <version>1.580.1</version>
-    <relativePath />
-  </parent>
-  <groupId>org.jenkins-ci.plugins</groupId>
-  <artifactId>deploy-hub</artifactId>
-  <version>8.0</version>
+		<parent>
+			<groupId>org.jenkins-ci.plugins</groupId>
+			<artifactId>plugin</artifactId>
+			<version>2.9</version>
+		</parent>
+  <groupId>com.openmake</groupId>
+  <artifactId>deployhub</artifactId>
+  <version>8.0.4-SNAPSHOT</version>
   <packaging>hpi</packaging>
-
   <name>DeployHub Plugin</name>
   <description>Notify DeployHub of builds and perform automated deployments.</description>
-  <url>https://wiki.jenkins.io/display/JENKINS/DeployHub+Plugin</url>
+  <url>https://www.deployhub.org</url>
   <licenses>
     <license>
       <name>GNU Affero General Public License</name>
       <url>https://www.gnu.org/licenses/agpl-3.0.en.html</url>
     </license>
   </licenses>
+
   <developers>
     <developer>
-      <id>pgibbs</id>
+      <id>philgibbs</id>
       <name>Phil Gibbs</name>
       <email>phil.gibbs@openmakesoftware.com</email>
     </developer>
+    <developer>
+      <id>sbtaylor15</id>
+      <name>Steve Taylor</name>
+      <email>steve.taylor@openmakesoftware.com</email>
+    </developer>
   </developers>
+		
   <scm>
-    <connection>scm:git:git://github.com/jenkinsci/${project.artifactId}-plugin.git</connection>
-    <developerConnection>scm:git:git@github.com:jenkinsci/${project.artifactId}-plugin.git</developerConnection>
-    <url>http://github.com/jenkinsci/${project.artifactId}-plugin</url>
-    <tag>deploy-hub-8.0</tag>
+    <connection>scm:git:https://github.com/jenkinsci/deployhub-plugin.git</connection>
+    <developerConnection>scm:git:https://github.com/jenkinsci/deployhub-plugin.git</developerConnection>
+    <url>https://github.com/jenkinsci/deployhub-plugin</url>
+    <tag>HEAD</tag>
   </scm>
   <repositories>
     <repository>
@@ -62,10 +66,4 @@
     </dependency>
   </dependencies>
   -->
-
-<!--
-  <scm>
-    <tag>deploy-hub-8.0</tag>
-  </scm>
--->
 </project>

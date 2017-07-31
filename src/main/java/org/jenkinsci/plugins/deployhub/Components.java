@@ -1,7 +1,6 @@
 package org.jenkinsci.plugins.deployhub;
 
 import hudson.Extension;
-import java.util.List;
 import java.util.HashMap;
 import java.util.ArrayList;
 import org.kohsuke.stapler.bind.JavaScriptMethod;
@@ -24,7 +23,6 @@ public class Components extends Common {
 	ArrayList<String> resps = new ArrayList<String>();
 	HashMap<String,String> userAccounts = getUserAccounts();
 	for(String url : userAccounts.keySet()) {
-		String project = userAccounts.get(url);
 		url = url.replace("XXX","components?all=Y&");
 		System.out.println(url);
 		try {
