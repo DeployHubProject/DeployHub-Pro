@@ -52,6 +52,7 @@ public abstract class Common implements Action, ModelObjectWithContextMenu {
 
     public static String getServerURL()
     {
+
     Jenkins jenkins = Jenkins.getInstance();
     if (jenkins == null)
      return "";
@@ -61,6 +62,7 @@ public abstract class Common implements Action, ModelObjectWithContextMenu {
         if (t != null && t.exists()) {
                 try {   
                         DeployHubRecorder.DescriptorImpl desc = (DeployHubRecorder.DescriptorImpl)t.read();
+                  
                         if (desc != null) return desc.getServerURL();
                         return "";
                 } catch(IOException ex) {
@@ -93,6 +95,7 @@ public abstract class Common implements Action, ModelObjectWithContextMenu {
 	if (directories != null)
 	{	
 	 for (int i=0;i<directories.length;i++) {
+
 		try {
 			DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
 			DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
@@ -134,6 +137,7 @@ public abstract class Common implements Action, ModelObjectWithContextMenu {
 	con.setRequestProperty("User-Agent","Mozilla/5.0");
 	con.getResponseCode();
 	BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream(),StandardCharsets.UTF_8));
+
 	String inputLine;
 	StringBuffer response = new StringBuffer();
 

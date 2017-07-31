@@ -5,6 +5,7 @@ import hudson.ExtensionPoint;
 import hudson.model.Action;
 import hudson.model.Describable;
 
+
 import jenkins.model.Jenkins;
 
 public abstract class DeployHubMenu implements ExtensionPoint, Action, Describable<DeployHubMenu> {

@@ -19,10 +19,12 @@ public class Servers extends Common {
     public String[] loadServers() {
 	ArrayList<String> resps = new ArrayList<String>();
 	HashMap<String,String> userAccounts = getUserAccounts();
+
 	for (Iterator<Map.Entry<String, String>> entries = userAccounts.entrySet().iterator(); entries.hasNext(); ) {
 		Map.Entry<String, String> entry = entries.next();
 	    String url = entry.getKey();
 		String project = entry.getValue();
+
 		url = url.replace("XXX","servers?all=Y&");
 		System.out.println(url);
 		try {

@@ -11,7 +11,6 @@
   <artifactId>deployhub</artifactId>
   <version>8.0.4-SNAPSHOT</version>
   <packaging>hpi</packaging>
-
   <name>DeployHub Plugin</name>
   <description>Notify DeployHub of builds and perform automated deployments.</description>
   <url>https://www.deployhub.org</url>
@@ -41,7 +40,6 @@
     <url>https://github.com/jenkinsci/deployhub-plugin</url>
     <tag>HEAD</tag>
   </scm>
-
   <repositories>
     <repository>
       <id>repo.jenkins-ci.org</id>
@@ -68,5 +66,4 @@
     </dependency>
   </dependencies>
   -->
-
 </project>
