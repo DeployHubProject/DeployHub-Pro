@@ -14,7 +14,7 @@ curl -sL http://www.deployhub.org/downloads | sh;
 
 ### Latest
 ```
-curl -sL http://www.openmakesoftware.com/downloads/latest.html | sh
+curl -sL http://www.deployhub.org/downloads/latest.html | sh
 ```
 ## Slack Channel
 deployhub.slack.com
