@@ -14,7 +14,7 @@
 
   <name>DeployHub Plugin</name>
   <description>Notify DeployHub of builds and perform automated deployments.</description>
-  <url>http://www.deployhub.org</url>
+  <url>https://www.deployhub.org</url>
   <licenses>
     <license>
       <name>GNU Affero General Public License</name>
