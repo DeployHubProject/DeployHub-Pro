@@ -10,6 +10,7 @@ DeployHub is the first open source Application Release Automation (ARA) solution
 ### Stable 8.0
 ```
 curl -sL http://www.deployhub.org/downloads | sh;
+
 ```
 
 ### Latest

@@ -1,4 +1,5 @@
 package org.jenkinsci.plugins.deployhub;
+
 import java.io.BufferedReader;
 import java.io.File;
 import java.io.IOException;
@@ -266,7 +267,7 @@ public class DeployHub extends Recorder {
 				return err.element("error",conn.getResponseCode());
 			}
 
-			String reply="";
+      String reply="";
 			BufferedReader br = new BufferedReader(new InputStreamReader(conn.getInputStream(),StandardCharsets.UTF_8));
 			String l = null;
 			StringBuffer buf = new StringBuffer();
@@ -289,6 +290,7 @@ public class DeployHub extends Recorder {
 	}
 
 	@Override
+
 	public boolean perform(AbstractBuild<?, ?> build, Launcher launcher, BuildListener listener) {
 		String server = getDescriptor().getServerURL();
 		debug=false;
@@ -544,7 +546,8 @@ public class DeployHub extends Recorder {
 							String value = xa.getValue();
 							String expname = (name != null)?e.expand(name):"";
 							String expvalue = (value != null)?e.expand(value):"";
-							if (expname != null && expvalue != null && expname.length() > 0 && expvalue.length() > 0) {
+
+              if (expname != null && expvalue != null && expname.length() > 0 && expvalue.length() > 0) {
 								if (!titlePrinted) {
 									listener.getLogger().println("Setting Attributes on Component \""+compname+"\"");
 									titlePrinted=true;
@@ -583,8 +586,9 @@ public class DeployHub extends Recorder {
 						try {
 							String name = aa.getName();
 							String value = aa.getValue();
-							String expname = (name != null)?e.expand(name):"";
+ 						  String expname = (name != null)?e.expand(name):"";
 							String expvalue = (value != null)?e.expand(value):"";
+
 							listener.getLogger().println("Setting \""
 							+expname
 							+"\" to \""

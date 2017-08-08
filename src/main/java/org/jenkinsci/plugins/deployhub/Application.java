@@ -36,10 +36,12 @@ public class Application extends Common {
     public String[] loadApplication() {
 	ArrayList<String> resps = new ArrayList<String>();
 	HashMap<String,String> userAccounts = getUserAccounts();
+
 	for (Iterator<Map.Entry<String, String>> entries = userAccounts.entrySet().iterator(); entries.hasNext(); ) {
 		Map.Entry<String, String> entry = entries.next();
 	    String url = entry.getKey();
 		String project = entry.getValue();
+
 		url = url.replace("XXX","application/"+appname+"?").replace(" ","%20");
 		System.out.println(url);
 		try {
