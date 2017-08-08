@@ -9,7 +9,7 @@
 		</parent>
   <groupId>com.openmake</groupId>
   <artifactId>deployhub</artifactId>
-  <version>8.0.4-SNAPSHOT</version>
+  <version>8.0.4</version>
   <packaging>hpi</packaging>
   <name>DeployHub Plugin</name>
   <description>Notify DeployHub of builds and perform automated deployments.</description>
@@ -38,7 +38,7 @@
     <connection>scm:git:https://github.com/jenkinsci/deployhub-plugin.git</connection>
     <developerConnection>scm:git:https://github.com/jenkinsci/deployhub-plugin.git</developerConnection>
     <url>https://github.com/jenkinsci/deployhub-plugin</url>
-    <tag>HEAD</tag>
+    <tag>deployhub-8.0.4</tag>
   </scm>
   <repositories>
     <repository>
