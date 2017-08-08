@@ -9,7 +9,7 @@
 		</parent>
   <groupId>com.openmake</groupId>
   <artifactId>deployhub</artifactId>
-  <version>8.0.4</version>
+  <version>8.0.4-SNAPSHOT</version>
   <packaging>hpi</packaging>
   <name>DeployHub Plugin</name>
   <description>Notify DeployHub of builds and perform automated deployments.</description>
