@@ -9,13 +9,13 @@ DeployHub is the first open source Application Release Automation (ARA) solution
 ## DeployHub Installation
 ### Stable 8.0
 ```
-curl -sL http://www.deployhub.org/downloads | sh;
+curl -sL https://www.openmakesoftware.com/re/ | sh;
 
 ```
 
 ### Latest
 ```
-curl -sL http://www.deployhub.org/downloads/latest.html | sh
+curl -sL https://www.openmakesoftware.com/re/latest.html | sh
 ```
 
 ### Jenkins Plugin
