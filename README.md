@@ -17,6 +17,10 @@ curl -sL http://www.deployhub.org/downloads | sh;
 ```
 curl -sL http://www.deployhub.org/downloads/latest.html | sh
 ```
+
+### Jenkins Plugin
+Visit [Jenkins Plugin](https://plugins.jenkins.io/deployhub)
+
 ## Slack Channel
 deployhub.slack.com
 
