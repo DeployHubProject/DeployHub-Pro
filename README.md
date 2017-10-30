@@ -9,29 +9,29 @@ DeployHub is the first open source Application Release Automation (ARA) solution
 ## DeployHub Installation
 ### Stable 8.0
 ```
-curl -sL https://www.openmakesoftware.com/re/ | sh;
+curl -sL http://www.openmakesoftware.com/re/ | sh;
 
 ```
 
 ### Latest
 ```
-curl -sL https://www.openmakesoftware.com/re/latest.html | sh
+curl -sL http://www.openmakesoftware.com/re/latest.html | sh
 ```
 
 ### Jenkins Plugin
 Visit [Jenkins Plugin](https://plugins.jenkins.io/deployhub)
 
 ### RPM Dependencies
-*   unixODBC > 2.1
-*   postgresql-server > 9.2
-*   postgresql-odbc > 9.2
-*   samba-client > 4.0
-*   perl > 5.10
-*   sshpass > 1.0
-*   libiodbc > 3.50
+*  unixODBC > 2.1
+*  postgresql-server > 9.2
+*  postgresql-odbc > 9.2
+*  samba-client > 4.0
+*  perl > 5.10
+*  sshpass > 1.0
+*  libiodbc > 3.50
 *  openvas-smb
 *  gnutls
-*  ansible
+*  ansible (optional)
 *  java-1.8.0-openjdk > 1.8.0.0
 
 ## Slack Channel
