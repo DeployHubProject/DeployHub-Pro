@@ -1,38 +1,11 @@
-# Notice:  ReleaseEngineer has been split into DeployHub OSS and DeployHub Pro
-DeployHub Pro is the renamed version of Release Engineer and is currently being maintained.
-
-DeployHub OSS is the Open Source version of Release Engineer and is an active Open Source Project.
-
 ## DeployHub achieves Continuous Deploy.  
 DeployHub is the first open source Application Release Automation (ARA) solution designed to break down the 'wall' between development and data centers so your cool new features get to production at the speed of agile.  DeployHub unblocks the flow of code changes to production by eliminating the overhead of end target agents and the additional burden imposed on developers by traditional deployment approaches.  
 
-## DeployHub Installation
-### Stable 8.0
-```
-curl -sL http://www.openmakesoftware.com/re/ | sh;
+## DeployHub Downloads and install instructions can be found at
+[OpenMake Software Downloads](https://www.openmakesoftware.com/deployhub-continuous-deployment-downloads/)
 
-```
-
-### Latest
-```
-curl -sL http://www.openmakesoftware.com/re/latest.html | sh
-```
-
-### Jenkins Plugin
+## DeployHub Jenkins Plugin for both Pro and OSS
 Visit [Jenkins Plugin](https://plugins.jenkins.io/deployhub)
-
-### RPM Dependencies
-*  unixODBC > 2.1
-*  postgresql-server > 9.2
-*  postgresql-odbc > 9.2
-*  samba-client > 4.0
-*  perl > 5.10
-*  sshpass > 1.0
-*  libiodbc > 3.50
-*  openvas-smb
-*  gnutls
-*  ansible (optional)
-*  java-1.8.0-openjdk > 1.8.0.0
 
 ## Slack Channel
 deployhub.slack.com
@@ -44,13 +17,13 @@ https://groups.google.com/forum/#!forum/deployhub-project
 
 https://www.deployhub.org/help/NetHelp/
 
-## Detailed Install
+## Detailed Install Instructions
 
 https://www.deployhub.org/help/NetHelp/#!Documents/deployhubinstallationguideforlinux.htm
 
 ## Support
 
-https://github.com/OpenMake-Software/DeployHub/issues
+https://github.com/OpenMake-Software/DeployHub-Pro/issues
 
 ## DeployHub and DeployHub Pro Features
 * Easy Installation - No End Point Agents 		
