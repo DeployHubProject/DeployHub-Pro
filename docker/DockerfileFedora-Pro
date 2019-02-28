@@ -3,34 +3,34 @@ MAINTAINER DeployHub
 ARG BUILDNUM
 
 EXPOSE 8080
-
+ƒ
 RUN useradd -ms /bin/bash omreleng
-RUN rpm -Uvh https://download.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm && \
-    yum -y update && \
-    yum -y install git sudo unzip which iputils compat-openssl10 openssh-clients libnsl.i686 python-winrm python3-PyYAML python3-winrm python-requests-kerberos krb5-devel krb5-libs krb5-workstation ansible && \
-    pip install pywinrm[credssp] && \
+RUN rpm -Uvh https://download.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm; \
+    yum -y update; \
+    yum -y install git sudo unzip which iputils compat-openssl10 openssh-clients libnsl.i686 python-winrm python3-PyYAML python3-winrm python-requests-kerberos krb5-devel krb5-libs krb5-workstation ansible; \
+    pip install pywinrm[credssp]; \
     pip3 install pywinrm[credssp] qtoml 
 
-RUN curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip" && \
-    unzip awscli-bundle.zip && \
+RUN curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"; \
+    unzip awscli-bundle.zip; \
     ./awscli-bundle/install -i /usr/local/aws -b /usr/local/bin/aws
 
-RUN curl -sL -o /tmp/gcloud_install.sh https://sdk.cloud.google.com && \
-    chmod 777 /tmp/gcloud_install.sh && \
-    /tmp/gcloud_install.sh --disable-prompts --install-dir=/usr/local && \
+RUN curl -sL -o /tmp/gcloud_install.sh https://sdk.cloud.google.com; \
+    chmod 777 /tmp/gcloud_install.sh; \
+    /tmp/gcloud_install.sh --disable-prompts --install-dir=/usr/local; \
     /usr/local/google-cloud-sdk/bin/gcloud components install kubectl docker-credential-gcr
 
-RUN curl -sL -o /tmp/helm_install.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get && \
-    chmod 777 /tmp/helm_install.sh && \
+RUN curl -sL -o /tmp/helm_install.sh https://raw.githubusercontent.com/helm/helm/master/scripts/get; \
+    chmod 777 /tmp/helm_install.sh; \
     /tmp/helm_install.sh;
 
-RUN curl -sL -o /tmp/deployhub-pro-engine.rpm https://github.com/DeployHubProject/DeployHub-Pro/blob/master/rpms/deployhub-pro-engine.rpm?raw=true && \
-    curl -sL -o /tmp/deployhub-pro-webadmin.rpm https://github.com/DeployHubProject/DeployHub-Pro/blob/master/rpms/deployhub-pro-webadmin.rpm?raw=true && \
-    yum install /tmp/deployhub-pro-engine.rpm /tmp/deployhub-pro-webadmin.rpm && \
-    yum -y clean all && \
-    rm -rf /var/cache/yum && \
-    mkdir /home/omreleng/.ssh && \
-    chown -R omreleng:omreleng /home/omreleng && \
+RUN curl -sL -o /tmp/deployhub-pro-engine.rpm https://github.com/DeployHubProject/DeployHub-Pro/blob/master/rpms/deployhub-pro-engine.rpm?raw=true; \
+    curl -sL -o /tmp/deployhub-pro-webadmin.rpm https://github.com/DeployHubProject/DeployHub-Pro/blob/master/rpms/deployhub-pro-webadmin.rpm?raw=true; \
+    yum install /tmp/deployhub-pro-engine.rpm /tmp/deployhub-pro-webadmin.rpm; \
+    yum -y clean all; \
+    rm -rf /var/cache/yum; \
+    mkdir /home/omreleng/.ssh; \
+    chown -R omreleng:omreleng /home/omreleng; \
     echo 'omreleng       ALL=(ALL)       NOPASSWD: ALL' >> /etc/sudoers
 
 USER omreleng
