@@ -3,7 +3,7 @@ MAINTAINER DeployHub
 ARG BUILDNUM
 
 EXPOSE 8080
-ƒ
+
 RUN useradd -ms /bin/bash omreleng
 RUN rpm -Uvh https://download.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm; \
     yum -y update; \
