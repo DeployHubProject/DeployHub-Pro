@@ -28,13 +28,14 @@ export LD_LIBRARY_PATH=$PWD/lib:$PWD/bin
 export PATH=$PWD/lib:$PWD/bin:$PATH
 export HOME=$(getent passwd `whoami` | cut -d: -f6)
 
-cp -r /keys/* $HOME/.ssh
-cp -r /keys/* /root/.ssh
 
+sudo cp -r /keys/* /root/.ssh
+sudo chown -R root /root/.ssh
 sudo chmod 700 /root/.ssh
 sudo chmod 700 /root/.ssh/*
 sudo chmod 600 /root/.ssh/authorized_keys
 
+cp -r /keys/* $HOME/.ssh
 chown -R omreleng $HOME/.ssh 
 chmod 700 $HOME/.ssh
 chmod 700 $HOME/.ssh/*
