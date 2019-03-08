@@ -7,6 +7,6 @@ ENV DBDriverName org.postgresql.Driver
 RUN mkdir /opt/deployhub; \
     apt-get update ; \
     apt-get -y install net-tools; \
-    curl -o /opt/deployhub/webapp-runner.jar https://github.com/DeployHubProject/DeployHub-Pro/blob/master/webadmin/webapp-runner.jar?raw=true; \
-    curl -o /opt/deployhub/dh-ms-ui.war https://github.com/DeployHubProject/DeployHub-Pro/blob/master/webadmin/dh-ms-ui.war?raw=true; 
+    curl -sL -o /opt/deployhub/webapp-runner.jar https://github.com/DeployHubProject/DeployHub-Pro/raw/master/microservices/webapp-runner.jar; \
+    curl -sL -o /opt/deployhub/dh-ms-ui.war https://github.com/DeployHubProject/DeployHub-Pro/raw/master/microservices/dh-ms-ui.war
 CMD java -jar /opt/deployhub/webapp-runner.jar --path /dmadminweb /opt/deployhub/dh-ms-ui.war 2>&1
