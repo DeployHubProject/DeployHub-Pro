@@ -1,0 +1,12 @@
+FROM openjdk:8
+EXPOSE 8080
+ENV DBHome /opt/deployhub
+ENV DBConnectionString jdbc:postgresql://db.deployhub.com:80/postgres
+ENV DBDriverName org.postgresql.Driver
+ 
+RUN mkdir /opt/deployhub; \
+    apt-get update ; \
+    apt-get -y install net-tools; \
+    curl -o /opt/deployhub/webapp-runner.jar https://github.com/DeployHubProject/DeployHub-Pro/blob/master/webadmin/webapp-runner.jar?raw=true; \
+    curl -o /opt/deployhub/dh-ms-ui.war https://github.com/DeployHubProject/DeployHub-Pro/blob/master/webadmin/dh-ms-ui.war?raw=true; 
+CMD java -jar /opt/deployhub/webapp-runner.jar --path /dmadminweb /opt/deployhub/dh-ms-ui.war 2>&1
