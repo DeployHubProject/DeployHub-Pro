@@ -1,51 +1,32 @@
-apiVersion: apps/v1
+apiVersion: apps/v1beta1
 kind: Deployment
 metadata:
-  name: {{ include "dh-ms-ui.fullname" . }}
-  labels:
-    app.kubernetes.io/name: {{ include "dh-ms-ui.name" . }}
-    helm.sh/chart: {{ include "dh-ms-ui.chart" . }}
-    app.kubernetes.io/instance: {{ .Release.Name }}
-    app.kubernetes.io/managed-by: {{ .Release.Service }}
+  name: {{ include "dh-ms-ui.name" . }}
 spec:
   replicas: {{ .Values.replicaCount }}
-  selector:
-    matchLabels:
-      app.kubernetes.io/name: {{ include "dh-ms-ui.name" . }}
-      app.kubernetes.io/instance: {{ .Release.Name }}
   template:
     metadata:
       labels:
-        app.kubernetes.io/name: {{ include "dh-ms-ui.name" . }}
-        app.kubernetes.io/instance: {{ .Release.Name }}
+        app: dh-ms-ui
+        tier: backend
+        track: stable
     spec:
       containers:
-        - name: {{ .Chart.Name }}
+        - name: {{ include "dh-ms-ui.name" . }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+          env:
+            - name: DBUserName
+              valueFrom:
+                secretKeyRef:
+                  name: pgcred
+                  key: DBUserName
+            - name: DBPassword
+              valueFrom:
+                secretKeyRef:
+                  name: pgcred
+                  key: DBPassword
           ports:
             - name: http
-              containerPort: 80
-              protocol: TCP
-          livenessProbe:
-            httpGet:
-              path: /
-              port: http
-          readinessProbe:
-            httpGet:
-              path: /
-              port: http
-          resources:
-            {{- toYaml .Values.resources | nindent 12 }}
-      {{- with .Values.nodeSelector }}
-      nodeSelector:
-        {{- toYaml . | nindent 8 }}
-      {{- end }}
-    {{- with .Values.affinity }}
-      affinity:
-        {{- toYaml . | nindent 8 }}
-    {{- end }}
-    {{- with .Values.tolerations }}
-      tolerations:
-        {{- toYaml . | nindent 8 }}
-    {{- end }}
+              containerPort: 8080
+---
