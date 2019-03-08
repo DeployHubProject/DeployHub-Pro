@@ -8,5 +8,5 @@ RUN mkdir /opt/deployhub; \
     apt-get update ; \
     apt-get -y install net-tools; \
     curl -sL -o /opt/deployhub/webapp-runner.jar https://github.com/DeployHubProject/DeployHub-Pro/raw/master/microservices/webapp-runner.jar; \
-    curl -sL -o /opt/deployhub/dh-ms-general.war https://github.com/DeployHubProject/DeployHub-Pro/raw/master/microservices/dh-ms-general.war; \
+    curl -sL -o /opt/deployhub/dh-ms-general.war https://github.com/DeployHubProject/DeployHub-Pro/raw/master/microservices/dh-ms-general.war
 CMD java -jar /opt/deployhub/webapp-runner.jar --path /dmadminweb /opt/deployhub/dh-ms-general.war 2>&1
