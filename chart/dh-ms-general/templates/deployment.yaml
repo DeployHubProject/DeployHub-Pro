@@ -26,6 +26,16 @@ spec:
                 secretKeyRef:
                   name: pgcred
                   key: DBPassword
+            - name: dmasc
+              valueFrom:
+                secretKeyRef:
+                  name: dhcred
+                  key: dmasc
+            - name: dmodbc
+              valueFrom:
+                secretKeyRef:
+                  name: dhcred
+                  key: dmodbc                
           ports:
             - name: http
               containerPort: 8080

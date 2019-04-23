@@ -1,19 +1,18 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "dh-ms-nginx.fullname" . }}
-  labels:
-    app.kubernetes.io/name: {{ include "dh-ms-nginx.name" . }}
-    helm.sh/chart: {{ include "dh-ms-nginx.chart" . }}
-    app.kubernetes.io/instance: {{ .Release.Name }}
-    app.kubernetes.io/managed-by: {{ .Release.Service }}
+  name: {{ include "dh-ms-nginx.name" . }}
 spec:
-  type: {{ .Values.service.type }}
+  selector:
+    app: {{ include "dh-ms-nginx.name" . }}
+    tier: frontend
   ports:
-    - port: {{ .Values.service.port }}
-      targetPort: http
+    - port: 80
+      targetPort: 80
       protocol: TCP
       name: http
-  selector:
-    app.kubernetes.io/name: {{ include "dh-ms-nginx.name" . }}
-    app.kubernetes.io/instance: {{ .Release.Name }}
+    - port: 443
+      targetPort: 443
+      protocol: TCP
+      name: https
+  type: LoadBalancer
