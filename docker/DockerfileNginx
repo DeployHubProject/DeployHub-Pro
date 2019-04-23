@@ -2,7 +2,7 @@ FROM nginx
 EXPOSE 80
 EXPOSE 443
 
-RUN mkdir /etc/nginx/location;mkdir /etc/nginx/ssl;mkdir /var/www;
+RUN mkdir /etc/nginx/location;mkdir /var/www;
 ADD microservices/nginx.tar /etc/nginx
 ADD microservices/index.html /var/www
 ADD microservices/favicon.ico /var/www
