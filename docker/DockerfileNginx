@@ -1,0 +1,9 @@
+FROM nginx
+EXPOSE 80
+EXPOSE 443
+
+RUN mkdir /etc/nginx/location;mkdir /etc/nginx/ssl;mkdir /var/www;
+ADD nginx.tar /etc/nginx
+ADD index.html /var/www
+ADD favicon.ico /var/www
+CMD nginx -g 'daemon off;'
