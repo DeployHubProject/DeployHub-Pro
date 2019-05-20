@@ -1,0 +1,4 @@
+steps:
+ - name: 'gcr.io/cloud-builders/docker'
+   args: ['build', '-f', 'DockerfileFedora-Pro', '--tag=gcr.io/$PROJECT_ID/deployhub-pro:$COMMIT_SHA', '--build-arg', 'GIT_COMMIT=$COMMIT_SHA', '--build-arg', 'GIT_TAG=$(git describe --tags --exact-match || git symbolic-ref -q --short HEAD)', '.']
+   dir: docker

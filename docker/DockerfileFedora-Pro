@@ -1,5 +1,7 @@
 FROM registry.fedoraproject.org/fedora:28
 MAINTAINER DeployHub
+ARG GIT_COMMIT
+ARG GIT_TAG
 
 EXPOSE 8080
 
@@ -24,24 +26,25 @@ RUN curl -sL -o /tmp/helm_install.sh https://raw.githubusercontent.com/helm/helm
     chmod 777 /tmp/helm_install.sh; \
     /tmp/helm_install.sh; 
 
-RUN BLD=$(date|md5);curl -sL -o /tmp/deployhub-pro-engine${BLD}.rpm https://github.com/DeployHubProject/DeployHub-Pro/blob/master/rpms/deployhub-pro-engine.rpm?raw=true; \
-    curl -sL -o /tmp/deployhub-pro-webadmin${BLD}.rpm https://github.com/DeployHubProject/DeployHub-Pro/blob/master/rpms/deployhub-pro-webadmin.rpm?raw=true; \
-    yum -y install /tmp/deployhub-pro-engine${BLD}.rpm /tmp/deployhub-pro-webadmin${BLD}.rpm; \
+RUN curl -sL -o /tmp/deployhub-pro-engine.rpm https://github.com/DeployHubProject/DeployHub-Pro/blob/master/rpms/deployhub-pro-engine.rpm?raw=true; \
+    curl -sL -o /tmp/deployhub-pro-webadmin.rpm https://github.com/DeployHubProject/DeployHub-Pro/blob/master/rpms/deployhub-pro-webadmin.rpm?raw=true; \
+    yum -y install /tmp/deployhub-pro-engine.rpm /tmp/deployhub-pro-webadmin.rpm; \
     yum -y clean all; \
     rm -rf /var/cache/yum; \
     mkdir -p /home/omreleng/.ssh; \
     mkdir -p /root/.ssh; \
     chown -R omreleng:omreleng /home/omreleng; \
-    echo 'omreleng       ALL=(ALL)       NOPASSWD: ALL' >> /etc/sudoers
+    echo 'omreleng       ALL=(ALL)       NOPASSWD: ALL' >> /etc/sudoers; \
+    env
 
 USER omreleng
 COPY entrypoint-pro.sh /tmp
 ENTRYPOINT /tmp/entrypoint-pro.sh
 
-LABEL name="deployhub/deployhub_pro" \
+LABEL name="deployhub_pro" \
       vendor="DeployHub" \
-      version="8.0" \
-      release="1" \
+      vsriant="$GIT_TAG" \
+      version="$GIT_COMMIT" \
       summary="DeployHub Pro" \
       description="DeployHub will perform agentless application releases" \
       url="https://wwww.deployhub.com/" \
