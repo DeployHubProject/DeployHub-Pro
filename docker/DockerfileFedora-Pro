@@ -43,8 +43,7 @@ ENTRYPOINT /tmp/entrypoint-pro.sh
 
 LABEL name="deployhub_pro" \
       vendor="DeployHub" \
-      vsriant="$GIT_TAG" \
-      version="$GIT_COMMIT" \
+      variant="$GIT_TAG" \
       summary="DeployHub Pro" \
       description="DeployHub will perform agentless application releases" \
       url="https://wwww.deployhub.com/" \
