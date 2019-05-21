@@ -1,5 +1,6 @@
 steps:
  - name: 'gcr.io/cloud-builders/docker'
-   args: ['build', '-f', 'DockerfileFedora-Pro', '--tag=gcr.io/$PROJECT_ID/deployhub-pro:$COMMIT_SHA', '--build-arg', 'GIT_COMMIT=$COMMIT_SHA', '--build-arg', 'GIT_TAG=$(git describe --tags --exact-match || git symbolic-ref -q --short HEAD)', '.']
+   args: ['build', '-f', 'DockerfileFedora-Pro', '--tag=gcr.io/$PROJECT_ID/deployhub-pro:$COMMIT_SHA', '--build-arg', 'GIT_COMMIT=$COMMIT_SHA', '--build-arg', 'GIT_TAG=$GIT_TAG', '.']
    dir: docker
+   env: ['GIT_TAG==$(git describe --tags --exact-match || git symbolic-ref -q --short HEAD)']
 images: ['gcr.io/$PROJECT_ID/deployhub-pro:$COMMIT_SHA']
