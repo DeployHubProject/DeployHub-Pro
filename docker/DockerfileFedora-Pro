@@ -2,6 +2,8 @@ FROM registry.fedoraproject.org/fedora:28
 MAINTAINER DeployHub
 ARG GIT_COMMIT
 ARG GIT_TAG
+ARG GIT_REPO
+ARG BLDDATE
 
 EXPOSE 8080
 
@@ -44,6 +46,9 @@ ENTRYPOINT /tmp/entrypoint-pro.sh
 LABEL name="deployhub_pro" \
       vendor="DeployHub" \
       variant="$GIT_TAG" \
+      version="$GIT_COMMIT" \
+      gitrepo="$GIT_REPO" \
+      blddate="$BLDDATE" \
       summary="DeployHub Pro" \
       description="DeployHub will perform agentless application releases" \
       url="https://wwww.deployhub.com/" \
