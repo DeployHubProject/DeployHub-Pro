@@ -3,6 +3,11 @@ EXPOSE 8080
 ENV DBHome /opt/deployhub
 ENV DBConnectionString jdbc:postgresql://db.deployhub.com:80/postgres
 ENV DBDriverName org.postgresql.Driver
+
+ARG GIT_TAG
+ARG COMMIT_SHA
+ARG REPO_NAME
+ARG BLDDATE
  
 RUN mkdir /opt/deployhub; \
     apt-get update ; \
@@ -10,3 +15,14 @@ RUN mkdir /opt/deployhub; \
     curl -sL -o /opt/deployhub/webapp-runner.jar https://github.com/DeployHubProject/DeployHub-Pro/raw/master/microservices/webapp-runner.jar; \
     curl -sL -o /opt/deployhub/dh-ms-general.war https://github.com/DeployHubProject/DeployHub-Pro/raw/master/microservices/dh-ms-general.war
 CMD java -jar /opt/deployhub/webapp-runner.jar --path /dmadminweb /opt/deployhub/dh-ms-general.war 2>&1
+
+LABEL name="deployhub-ms-general" \
+      vendor="DeployHub" \
+      variant="$GIT_TAG" \
+      version="$COMMIT_SHA" \
+      gitrepo="$REPO_NAME" \
+      blddate="$BLDDATE" \
+      summary="DeployHub SaaS Backend" \
+      description="Microservice mapping and configuration management" \
+      url="https://wwww.deployhub.com/" 
+

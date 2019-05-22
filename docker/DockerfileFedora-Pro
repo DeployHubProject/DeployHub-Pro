@@ -1,8 +1,8 @@
 FROM registry.fedoraproject.org/fedora:28
 MAINTAINER DeployHub
-ARG GIT_COMMIT
 ARG GIT_TAG
-ARG GIT_REPO
+ARG COMMIT_SHA
+ARG REPO_NAME
 ARG BLDDATE
 
 EXPOSE 8080
@@ -36,8 +36,7 @@ RUN curl -sL -o /tmp/deployhub-pro-engine.rpm https://github.com/DeployHubProjec
     mkdir -p /home/omreleng/.ssh; \
     mkdir -p /root/.ssh; \
     chown -R omreleng:omreleng /home/omreleng; \
-    echo 'omreleng       ALL=(ALL)       NOPASSWD: ALL' >> /etc/sudoers; \
-    env
+    echo 'omreleng       ALL=(ALL)       NOPASSWD: ALL' >> /etc/sudoers; 
 
 USER omreleng
 COPY entrypoint-pro.sh /tmp
@@ -46,11 +45,11 @@ ENTRYPOINT /tmp/entrypoint-pro.sh
 LABEL name="deployhub_pro" \
       vendor="DeployHub" \
       variant="$GIT_TAG" \
-      version="$GIT_COMMIT" \
-      gitrepo="$GIT_REPO" \
+      version="$COMMIT_SHA" \
+      gitrepo="$REPO_NAME" \
       blddate="$BLDDATE" \
       summary="DeployHub Pro" \
-      description="DeployHub will perform agentless application releases" \
+      description="Microservice mapping and configuration management" \
       url="https://wwww.deployhub.com/" \
       run='docker run -v $PWD/data:/var/lib/pgsql/data:Z -v $PWD/logs:/opt/deployhub/logs:Z -p 7171:8080 -d --hostname docker_dh' \
       stop='docker stop'
