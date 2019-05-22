@@ -28,9 +28,10 @@ RUN curl -sL -o /tmp/helm_install.sh https://raw.githubusercontent.com/helm/helm
     chmod 777 /tmp/helm_install.sh; \
     /tmp/helm_install.sh; 
 
-RUN curl -sL -o /tmp/deployhub-pro-engine.rpm https://github.com/DeployHubProject/DeployHub-Pro/blob/master/rpms/deployhub-pro-engine.rpm?raw=true; \
-    curl -sL -o /tmp/deployhub-pro-webadmin.rpm https://github.com/DeployHubProject/DeployHub-Pro/blob/master/rpms/deployhub-pro-webadmin.rpm?raw=true; \
-    yum -y install /tmp/deployhub-pro-engine.rpm /tmp/deployhub-pro-webadmin.rpm; \
+COPY rpms/deployhub-pro-engine.rpm /tmp/
+COPY rpms/deployhub-pro-webadmin.rpm /tmp/
+
+RUN yum -y install /tmp/deployhub-pro-engine.rpm /tmp/deployhub-pro-webadmin.rpm; \
     yum -y clean all; \
     rm -rf /var/cache/yum; \
     mkdir -p /home/omreleng/.ssh; \
@@ -39,7 +40,7 @@ RUN curl -sL -o /tmp/deployhub-pro-engine.rpm https://github.com/DeployHubProjec
     echo 'omreleng       ALL=(ALL)       NOPASSWD: ALL' >> /etc/sudoers; 
 
 USER omreleng
-COPY entrypoint-pro.sh /tmp
+COPY docker/entrypoint-pro.sh /tmp/
 ENTRYPOINT /tmp/entrypoint-pro.sh
 
 LABEL name="deployhub_pro" \
