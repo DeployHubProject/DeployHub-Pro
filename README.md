@@ -1,29 +1,19 @@
-## DeployHub achieves Continuous Deploy.  
-DeployHub is the first open source Application Release Automation (ARA) solution designed to break down the 'wall' between development and data centers so your cool new features get to production at the speed of agile.  DeployHub unblocks the flow of code changes to production by eliminating the overhead of end target agents and the additional burden imposed on developers by traditional deployment approaches.  
-
-## DeployHub Downloads and install instructions can be found at
-[OpenMake Software Downloads](https://www.openmakesoftware.com/deployhub-continuous-deployment-downloads/)
-
-## DeployHub Jenkins Plugin for both Pro and OSS
-Visit [Jenkins Plugin](https://plugins.jenkins.io/deployhub)
-
-## Slack Channel
-deployhub.slack.com
-
-## Google Groups Email List
-https://groups.google.com/forum/#!forum/deployhub-project
-
-## Online Help
-
-https://www.deployhub.org/help/NetHelp/
+## Microservice Configuration Management - Track, Version, Find, Share and Deploy Microservices 
+* Publish and Share your Kubernetes Microservices and other Artifacts using a [Domain Driven Design](https://www.deployhub.com/domain-driven-design-microservices/).
+* [Version your Microservices](https://www.deployhub.com/versioning-container-content-the-single-source-of-truth/) and create a single source of truth.  Associate microservice versions to applications.  
+* Add DeployHub to your existing CI/CD Process to automate continuous deployments or begin driving a [Kubernetes Pipeline](https://www.deployhub.com/kubernetes-pipeline-challenges/).
 
 ## Detailed Install Instructions
+* [Saas Reverse Proxy Install](https://www.deployhub.com/reverse-proxy-setup/)
+* [On-Prem Install](https://www.deployhub.com/deployhub-pro-on-prem-installation/)
 
-https://www.deployhub.org/help/NetHelp/#!Documents/deployhubinstallationguideforlinux.htm
+## DeployHub Jenkins Plugin for both Pro and OSS
+* [Jenkins Plugin](https://plugins.jenkins.io/deployhub)
 
 ## Support
-
-https://github.com/OpenMake-Software/DeployHub-Pro/issues
+* [Issues Tracking](https://github.com/DeployHubProject/DeployHub-Pro/issues)
+* [Online User Guide](https://www.deployhub.com/helpdh/NetHelp/)
+* [Slack Channel](deployhub.slack.com)
 
 ## DeployHub and DeployHub Pro Features
 * Easy Installation - No End Point Agents 		
@@ -47,6 +37,6 @@ https://github.com/OpenMake-Software/DeployHub-Pro/issues
 * Change Request Burn Down Charts		
 * Component Sharing and Workflow Templates
 
-DeployHub Info: http://www.deployhub.org
-
-DeployHub Pro Info: https://www.openmakesoftware.com/deployhub-continuous-deployment/
+## Additional Info
+* [DeployHub Pro Info](https://www.openmakesoftware.com/deployhub-continuous-deployment/)
+* [DeployHub Info](http://www.deployhub.org)
