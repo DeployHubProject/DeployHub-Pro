@@ -247,6 +247,7 @@ def new_component_version(compname, compvariant, compversion, kind, dhurl, cooki
     if (compid is None):
         compid = new_component(compname, compvariant, None, None, compid, dhurl, cookies)
 
+    short_compname = compname
     if ('.' in compname):
         parts = compname.split('.')
         short_compname = parts[-1]
