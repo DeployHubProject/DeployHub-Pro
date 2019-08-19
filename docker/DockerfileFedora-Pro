@@ -12,8 +12,8 @@ RUN useradd -ms /bin/bash omreleng;
 RUN rpm -Uvh https://download.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm; \
     yum -y update; \
     yum -y install git sudo unzip which iputils compat-openssl10 openssh-clients libnsl.i686 python-winrm python3-PyYAML python3-winrm python-requests-kerberos krb5-devel krb5-libs krb5-workstation ansible; \
-    pip install pywinrm[credssp]; \
-    pip3 install pywinrm[credssp] qtoml;  
+    pip install requests-credssp pywinrm[credssp]; \
+    pip3 install requests-credssp pywinrm[credssp] qtoml;  
 
 RUN curl "https://s3.amazonaws.com/aws-cli/awscli-bundle.zip" -o "awscli-bundle.zip"; \
     unzip awscli-bundle.zip; \
