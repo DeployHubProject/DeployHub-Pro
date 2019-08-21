@@ -36,6 +36,8 @@ COPY rpms/deployhub-pro-webadmin.rpm /tmp/
 RUN yum -y install /tmp/deployhub-pro-engine.rpm /tmp/deployhub-pro-webadmin.rpm; \
     yum -y clean all; \
     rm -rf /var/cache/yum; \
+    mkdir -p /winshares; \
+    chmod -R 775 /winshares; \
     mkdir -p /home/omreleng/.ssh; \
     mkdir -p /root/.ssh; \
     chown -R omreleng:omreleng /home/omreleng; \
