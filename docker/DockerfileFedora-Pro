@@ -38,6 +38,8 @@ RUN yum -y install /tmp/deployhub-pro-engine.rpm /tmp/deployhub-pro-webadmin.rpm
     rm -rf /var/cache/yum; \
     mkdir -p /winshares; \
     chmod -R 775 /winshares; \
+    chmod -R 777  /var/lib/samba/private; \
+    chmod -R 777  /var/lib/samba/lock; \   
     chown -R omreleng:omreleng /winshares; \
     mkdir -p /home/omreleng/.ssh; \
     mkdir -p /root/.ssh; \
