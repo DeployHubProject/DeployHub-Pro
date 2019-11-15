@@ -1,4 +1,4 @@
-FROM openjdk:8
+FROM openjdk:8u212-jdk
 EXPOSE 8080
 ENV DBHome /opt/deployhub
 ENV DBConnectionString jdbc:postgresql://db.deployhub.com:80/postgres
