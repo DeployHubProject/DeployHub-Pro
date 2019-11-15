@@ -1,4 +1,4 @@
-FROM openjdk:8
+FROM openjdk:8u212-jdk
 EXPOSE 8080
 ENV DBHome /opt/deployhub
 ENV DBConnectionString jdbc:postgresql://db.deployhub.com:80/postgres
@@ -11,10 +11,10 @@ ARG BLDDATE
 
 RUN mkdir /opt/deployhub; \
     apt-get update ; \
-    apt-get -y install net-tools; \
-    curl -sL -o /opt/deployhub/webapp-runner.jar https://github.com/DeployHubProject/DeployHub-Pro/raw/master/microservices/webapp-runner.jar; \
-    curl -sL -o /opt/deployhub/dh-ms-ui.war https://github.com/DeployHubProject/DeployHub-Pro/raw/master/microservices/dh-ms-ui.war
-CMD java -jar /opt/deployhub/webapp-runner.jar --path /dmadminweb /opt/deployhub/dh-ms-ui.war 2>&1
+    apt-get -y install net-tools; 
+COPY microservices/webapp-runner.jar /opt/deployhub/webapp-runner.jar 
+COPY microservices/deployhub-webadmin.war /opt/deployhub/deployhub-webadmin.war 
+CMD java -jar /opt/deployhub/webapp-runner.jar --path /dmadminweb /opt/deployhub/deployhub-webadmin.war 2>&1
 
 LABEL name="deployhub-ms-ui" \
       vendor="DeployHub" \
