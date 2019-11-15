@@ -13,8 +13,8 @@ RUN mkdir /opt/deployhub; \
     apt-get update ; \
     apt-get -y install net-tools; 
 COPY microservices/webapp-runner.jar /opt/deployhub/webapp-runner.jar 
-COPY microservices/deployhub-webadmin.war /opt/deployhub/deployhub-webadmin.war 
-CMD java -jar /opt/deployhub/webapp-runner.jar --path /dmadminweb /opt/deployhub/deployhub-webadmin.war 2>&1
+COPY microservices/dh-ms-ui.war  /opt/deployhub/dh-ms-ui.war 
+CMD java -jar /opt/deployhub/webapp-runner.jar --path /dmadminweb /opt/deployhub/dh-ms-ui.war 2>&1
 
 LABEL name="deployhub-ms-ui" \
       vendor="DeployHub" \
