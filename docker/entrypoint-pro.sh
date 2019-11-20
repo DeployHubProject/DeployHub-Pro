@@ -15,6 +15,8 @@ else
  sudo chown -R postgres:postgres /var/lib/pgsql
 fi
 
+sudo -u postgres grep -qxF 'host all all 0.0.0.0/0 md5' /var/lib/pgsql/data/pg_hba.conf || sudo -u postgres echo 'host all all 0.0.0.0/0 md5' >> /var/lib/pgsql/data/pg_hba.conf
+
 sudo -u postgres pg_ctl start --pgdata=/var/lib/pgsql/data
 sleep 10
 sudo -u postgres pg_ctl status --pgdata=/var/lib/pgsql/data
