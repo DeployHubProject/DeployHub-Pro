@@ -16,6 +16,9 @@ else
 fi
 
 sudo grep -qxF 'host all all 0.0.0.0/0 md5' /var/lib/pgsql/data/pg_hba.conf || sudo sed -i '$ a\'"host all all 0.0.0.0/0 md5" /var/lib/pgsql/data/pg_hba.conf
+sudo grep -qxF "^listen_addresses = '*'" /var/lib/pgsql/data/postgresql.conf || sudo sed -i '$ a\'"listen_addresses = '*'" /var/lib/pgsql/data/postgresql.conf
+
+postgresql.conf
 
 sudo -u postgres pg_ctl start --pgdata=/var/lib/pgsql/data
 sleep 10
