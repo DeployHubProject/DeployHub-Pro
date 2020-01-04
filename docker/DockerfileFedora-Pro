@@ -38,8 +38,9 @@ RUN curl -skL -X GET https://releases.hashicorp.com/terraform/0.12.17/terraform_
     
 RUN rpm --import https://packages.microsoft.com/keys/microsoft.asc
 COPY docker/azure-cli.rep /etc/yum.repos.d/azure-cli.rep
-RUN cat /etc/yum.repos.d/azure-cli.rep; \
-    yum -y install azure-cli
+RUN cat /etc/yum.repos.d/azure-cli.rep
+RUN yum repolist all
+RUN yum -y install azure-cli
 
 COPY rpms/deployhub-pro-engine.rpm /tmp/
 COPY rpms/deployhub-pro-webadmin.rpm /tmp/
