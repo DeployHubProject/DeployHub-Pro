@@ -30,6 +30,23 @@ RUN curl -sL -o /tmp/helm_install.sh https://raw.githubusercontent.com/helm/helm
     chmod 777 /tmp/helm_install.sh; \
     /tmp/helm_install.sh; 
 
+RUN curl -skL -X GET https://releases.hashicorp.com/terraform/0.12.17/terraform_0.12.17_linux_amd64.zip -o /tmp/terraform_0.12.17_linux_amd64.zip; \
+    cd /tmp; \
+    unzip -q terraform_0.12.17_linux_amd64.zip; \
+    chmod +x terraform; \
+    mv terraform /usr/local/bin/
+    
+RUN rpm --import https://packages.microsoft.com/keys/microsoft.asc;
+RUN echo -e "\
+[azure-cli] \n\
+name=Azure CLI \n\
+baseurl=https://packages.microsoft.com/yumrepos/azure-cli \n\
+enabled=1 \n\
+gpgcheck=1 \n\
+gpgkey=https://packages.microsoft.com/keys/microsoft.asc \
+" > /etc/yum.repos.d/azure-cli.repo
+RUN yum -y install azure-cli
+
 COPY rpms/deployhub-pro-engine.rpm /tmp/
 COPY rpms/deployhub-pro-webadmin.rpm /tmp/
 
