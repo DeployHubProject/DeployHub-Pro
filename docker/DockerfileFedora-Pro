@@ -37,8 +37,8 @@ RUN curl -skL -X GET https://releases.hashicorp.com/terraform/0.12.17/terraform_
     mv terraform /usr/local/bin/
     
 RUN rpm --import https://packages.microsoft.com/keys/microsoft.asc
-COPY docker/azure-cli.rep /etc/yum.repos.d/azure-cli.rep
-RUN cat /etc/yum.repos.d/azure-cli.rep
+COPY docker/azure-cli.repo /etc/yum.repos.d/azure-cli.repo
+RUN cat /etc/yum.repos.d/azure-cli.repo
 RUN yum repolist all
 RUN yum -y install azure-cli
 
