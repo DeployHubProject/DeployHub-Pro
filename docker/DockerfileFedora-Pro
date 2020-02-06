@@ -65,6 +65,7 @@ RUN yum -y install /tmp/deployhub-pro-engine.rpm /tmp/deployhub-pro-webadmin.rpm
 
 USER omreleng
 COPY docker/entrypoint-pro.sh /tmp/
+ENV PATH "${PATH}:/usr/local/google-cloud-sdk/bin"
 ENTRYPOINT /tmp/entrypoint-pro.sh
 
 LABEL name="deployhub_pro" \
