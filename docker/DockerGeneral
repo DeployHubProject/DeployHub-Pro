@@ -1,4 +1,4 @@
-FROM openjdk:8u212-jdk
+FROM fedora:28
 EXPOSE 8080
 ENV DBHome /opt/deployhub
 ENV DBConnectionString jdbc:postgresql://db.deployhub.com:80/postgres
@@ -8,10 +8,15 @@ ARG GIT_TAG
 ARG COMMIT_SHA
 ARG REPO_NAME
 ARG BLDDATE
- 
-RUN mkdir /opt/deployhub; \
-    apt-get update ; \
-    apt-get -y install net-tools; 
+
+RUN rpm -Uvh https://download.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm; \
+    yum -y update; \
+    yum -y install git sudo unzip which iputils compat-openssl10 openssh-clients libnsl.i686 java-1.8.0-openjdk java-1.8.0-openjdk-devel; 
+
+ADD http://worldclockapi.com/api/json/mst/now /tmp/buildtime
+RUN pip3 install --upgrade deployhub; \
+    mkdir /opt/deployhub; 
+
 COPY microservices/webapp-runner.jar /opt/deployhub/webapp-runner.jar 
 COPY microservices/dh-ms-general.war /opt/deployhub/dh-ms-general.war 
 CMD java -jar /opt/deployhub/webapp-runner.jar --path /dmadminweb /opt/deployhub/dh-ms-general.war 2>&1
