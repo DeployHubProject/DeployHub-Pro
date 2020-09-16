@@ -13,7 +13,7 @@ RUN rpm -Uvh https://download.fedoraproject.org/pub/epel/epel-release-latest-7.n
     yum -y update; \
     yum -y install git sudo unzip which iputils compat-openssl10 openssh-clients libnsl.i686 java-1.8.0-openjdk java-1.8.0-openjdk-devel; 
 
-ADD http://worldclockapi.com/api/json/mst/now /tmp/buildtime
+ADD http://worldtimeapi.org/api/timezone/MST /tmp/buildtime
 RUN pip3 install --upgrade deployhub; \
     mkdir /opt/deployhub; 
 
