@@ -1,0 +1,3967 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.3",
+  "serialNumber": "urn:uuid:9268d450-bc04-419a-b370-3f27f42252e4",
+  "version": 1,
+  "metadata": {
+    "timestamp": "2022-03-17T08:35:32-06:00",
+    "tools": [
+      {
+        "vendor": "anchore",
+        "name": "syft",
+        "version": "0.37.10"
+      }
+    ],
+    "component": {
+      "bom-ref": "a53e1ab742258b3",
+      "type": "container",
+      "name": "quay.io/ortelius/ms-validate-user:deploy-v10.0.0.43-gac2ab89",
+      "version": "sha256:d22a276c3b0fbfffe7ecb64253435377ceac43dfdad24b9adedbb5a81cd24d92"
+    }
+  },
+  "components": [
+    {
+      "type": "library",
+      "name": ".python-rundeps",
+      "version": "20210831.190244",
+      "description": "virtual meta package",
+      "cpe": "cpe:2.3:a:.python-rundeps:.python-rundeps:20210831.190244:*:*:*:*:*:*:*",
+      "purl": "pkg:alpine/.python-rundeps@20210831.190244?arch=noarch\u0026distro=alpine-3.14.2",
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "type",
+          "value": "apk"
+        },
+        {
+          "name": "metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:b1f9199ff13d5ff130c573e52c3791b85b04ec90e95d51b109369c3a0084d6b3"
+        },
+        {
+          "name": "pullDependencies",
+          "value": "so:libbz2.so.1 so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1 so:libexpat.so.1 so:libffi.so.7 so:libgdbm.so.6 so:libgdbm_compat.so.4 so:liblzma.so.5 so:libncursesw.so.6 so:libnsl.so.2 so:libpanelw.so.6 so:libreadline.so.8 so:libsqlite3.so.0 so:libssl.so.1.1 so:libtirpc.so.3 so:libuuid.so.1 so:libz.so.1"
+        },
+        {
+          "name": "pullChecksum",
+          "value": "Q1efzSNsANs2B/uamam7nAqOj96Ac="
+        },
+        {
+          "name": "gitCommitOfApkPort",
+          "value": "Q1efzSNsANs2B/uamam7nAqOj96Ac="
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "author": "Jose Padilla \u003chello@jpadilla.com\u003e",
+      "name": "PyJWT",
+      "version": "2.0.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:jose_padilla:python-PyJWT:2.0.1:*:*:*:*:*:*:*",
+      "purl": "pkg:pypi/PyJWT@2.0.1",
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "language",
+          "value": "python"
+        },
+        {
+          "name": "type",
+          "value": "python"
+        },
+        {
+          "name": "metadataType",
+          "value": "PythonPackageMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/PyJWT-2.0.1.dist-info/METADATA"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:47ccfe63aa3e044daf6aee0411d71ff306d577bec4c79e53763b72a2fa81a251"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/PyJWT-2.0.1.dist-info/RECORD"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:47ccfe63aa3e044daf6aee0411d71ff306d577bec4c79e53763b72a2fa81a251"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/PyJWT-2.0.1.dist-info/top_level.txt"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:47ccfe63aa3e044daf6aee0411d71ff306d577bec4c79e53763b72a2fa81a251"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "author": "Kirill Simonov \u003cxi@resolvent.net\u003e",
+      "name": "PyYAML",
+      "version": "5.4.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:kirill_simonov:python-PyYAML:5.4.1:*:*:*:*:*:*:*",
+      "purl": "pkg:pypi/PyYAML@5.4.1",
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "language",
+          "value": "python"
+        },
+        {
+          "name": "type",
+          "value": "python"
+        },
+        {
+          "name": "metadataType",
+          "value": "PythonPackageMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/PyYAML-5.4.1.dist-info/METADATA"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:35f78a8b7907b2b0bd03f35ff8a6bbd74328ce4d6fc86a56c464e5cf65817fd3"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/PyYAML-5.4.1.dist-info/RECORD"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:35f78a8b7907b2b0bd03f35ff8a6bbd74328ce4d6fc86a56c464e5cf65817fd3"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/PyYAML-5.4.1.dist-info/top_level.txt"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:35f78a8b7907b2b0bd03f35ff8a6bbd74328ce4d6fc86a56c464e5cf65817fd3"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "author": "Mike Bayer \u003cmike_mp@zzzcomputing.com\u003e",
+      "name": "SQLAlchemy",
+      "version": "1.4.22",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:python-SQLAlchemy:python-SQLAlchemy:1.4.22:*:*:*:*:*:*:*",
+      "purl": "pkg:pypi/SQLAlchemy@1.4.22",
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "language",
+          "value": "python"
+        },
+        {
+          "name": "type",
+          "value": "python"
+        },
+        {
+          "name": "metadataType",
+          "value": "PythonPackageMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/SQLAlchemy-1.4.22.dist-info/METADATA"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:47ccfe63aa3e044daf6aee0411d71ff306d577bec4c79e53763b72a2fa81a251"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/SQLAlchemy-1.4.22.dist-info/RECORD"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:47ccfe63aa3e044daf6aee0411d71ff306d577bec4c79e53763b72a2fa81a251"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/SQLAlchemy-1.4.22.dist-info/top_level.txt"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:47ccfe63aa3e044daf6aee0411d71ff306d577bec4c79e53763b72a2fa81a251"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "publisher": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+      "name": "alpine-baselayout",
+      "version": "3.2.0-r16",
+      "description": "Alpine base dir structure and init scripts",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:alpine-baselayout:alpine-baselayout:3.2.0-r16:*:*:*:*:*:*:*",
+      "purl": "pkg:alpine/alpine-baselayout@3.2.0-r16?arch=x86_64\u0026upstream=alpine-baselayout\u0026distro=alpine-3.14.2",
+      "externalReferences": [
+        {
+          "url": "https://git.alpinelinux.org/cgit/aports/tree/main/alpine-baselayout",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "type",
+          "value": "apk"
+        },
+        {
+          "name": "metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:b1f9199ff13d5ff130c573e52c3791b85b04ec90e95d51b109369c3a0084d6b3"
+        },
+        {
+          "name": "originPackage",
+          "value": "alpine-baselayout"
+        },
+        {
+          "name": "size",
+          "value": "20716"
+        },
+        {
+          "name": "installedSize",
+          "value": "413696"
+        },
+        {
+          "name": "pullDependencies",
+          "value": "/bin/sh so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "pullChecksum",
+          "value": "Q1UJtB9cNV4r+/VbxySkEei++qbho="
+        },
+        {
+          "name": "gitCommitOfApkPort",
+          "value": "8a8c96a0ea2fcd824c361aa4438763fa33ee8ca0"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "publisher": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+      "name": "alpine-keys",
+      "version": "2.4-r0",
+      "description": "Public keys for Alpine Linux packages",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:alpine-keys:alpine-keys:2.4-r0:*:*:*:*:*:*:*",
+      "purl": "pkg:alpine/alpine-keys@2.4-r0?arch=x86_64\u0026upstream=alpine-keys\u0026distro=alpine-3.14.2",
+      "externalReferences": [
+        {
+          "url": "https://alpinelinux.org",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "type",
+          "value": "apk"
+        },
+        {
+          "name": "metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:b1f9199ff13d5ff130c573e52c3791b85b04ec90e95d51b109369c3a0084d6b3"
+        },
+        {
+          "name": "originPackage",
+          "value": "alpine-keys"
+        },
+        {
+          "name": "size",
+          "value": "13096"
+        },
+        {
+          "name": "installedSize",
+          "value": "159744"
+        },
+        {
+          "name": "pullChecksum",
+          "value": "Q1WrbOrvWIwuQgSQypNNmmmF0srUw="
+        },
+        {
+          "name": "gitCommitOfApkPort",
+          "value": "29fef454d1503e98d1ba5c928d539a4d5c988d13"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "publisher": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+      "name": "apk-tools",
+      "version": "2.12.7-r0",
+      "description": "Alpine Package Keeper - package manager for alpine",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:apk-tools:apk-tools:2.12.7-r0:*:*:*:*:*:*:*",
+      "purl": "pkg:alpine/apk-tools@2.12.7-r0?arch=x86_64\u0026upstream=apk-tools\u0026distro=alpine-3.14.2",
+      "externalReferences": [
+        {
+          "url": "https://gitlab.alpinelinux.org/alpine/apk-tools",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "type",
+          "value": "apk"
+        },
+        {
+          "name": "metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:b1f9199ff13d5ff130c573e52c3791b85b04ec90e95d51b109369c3a0084d6b3"
+        },
+        {
+          "name": "originPackage",
+          "value": "apk-tools"
+        },
+        {
+          "name": "size",
+          "value": "119979"
+        },
+        {
+          "name": "installedSize",
+          "value": "311296"
+        },
+        {
+          "name": "pullDependencies",
+          "value": "musl\u003e=1.2 so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1 so:libz.so.1"
+        },
+        {
+          "name": "pullChecksum",
+          "value": "Q1VnSoy5XasRtvFODOZ9P0pZG4Hxs="
+        },
+        {
+          "name": "gitCommitOfApkPort",
+          "value": "03c6b1b0ec20f417cee0f3c1d56795b27871b1c5"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "author": "Django Software Foundation \u003cfoundation@djangoproject.com\u003e",
+      "name": "asgiref",
+      "version": "3.4.1",
+      "cpe": "cpe:2.3:a:django_software_foundation:python-asgiref:3.4.1:*:*:*:*:*:*:*",
+      "purl": "pkg:pypi/asgiref@3.4.1",
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "language",
+          "value": "python"
+        },
+        {
+          "name": "type",
+          "value": "python"
+        },
+        {
+          "name": "metadataType",
+          "value": "PythonPackageMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/asgiref-3.4.1.dist-info/METADATA"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:35f78a8b7907b2b0bd03f35ff8a6bbd74328ce4d6fc86a56c464e5cf65817fd3"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/asgiref-3.4.1.dist-info/RECORD"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:35f78a8b7907b2b0bd03f35ff8a6bbd74328ce4d6fc86a56c464e5cf65817fd3"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/asgiref-3.4.1.dist-info/top_level.txt"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:35f78a8b7907b2b0bd03f35ff8a6bbd74328ce4d6fc86a56c464e5cf65817fd3"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "publisher": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+      "name": "busybox",
+      "version": "1.33.1-r6",
+      "description": "Size optimized toolbox of many common UNIX utilities",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:busybox:busybox:1.33.1-r6:*:*:*:*:*:*:*",
+      "purl": "pkg:alpine/busybox@1.33.1-r6?arch=x86_64\u0026upstream=busybox\u0026distro=alpine-3.14.2",
+      "externalReferences": [
+        {
+          "url": "https://busybox.net/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "type",
+          "value": "apk"
+        },
+        {
+          "name": "metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:b1f9199ff13d5ff130c573e52c3791b85b04ec90e95d51b109369c3a0084d6b3"
+        },
+        {
+          "name": "originPackage",
+          "value": "busybox"
+        },
+        {
+          "name": "size",
+          "value": "499566"
+        },
+        {
+          "name": "installedSize",
+          "value": "950272"
+        },
+        {
+          "name": "pullDependencies",
+          "value": "so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "pullChecksum",
+          "value": "Q1dgtiXUOjvBmrjmjNI1P/d9kQxBw="
+        },
+        {
+          "name": "gitCommitOfApkPort",
+          "value": "b08c19fd29b302ab411d43e52855cec047fd3803"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "publisher": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+      "name": "ca-certificates",
+      "version": "20211220-r0",
+      "description": "Common CA certificates PEM files from Mozilla",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:ca-certificates:ca-certificates:20211220-r0:*:*:*:*:*:*:*",
+      "purl": "pkg:alpine/ca-certificates@20211220-r0?arch=x86_64\u0026upstream=ca-certificates\u0026distro=alpine-3.14.2",
+      "externalReferences": [
+        {
+          "url": "https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "type",
+          "value": "apk"
+        },
+        {
+          "name": "metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:b1f9199ff13d5ff130c573e52c3791b85b04ec90e95d51b109369c3a0084d6b3"
+        },
+        {
+          "name": "originPackage",
+          "value": "ca-certificates"
+        },
+        {
+          "name": "size",
+          "value": "149255"
+        },
+        {
+          "name": "installedSize",
+          "value": "667648"
+        },
+        {
+          "name": "pullDependencies",
+          "value": "/bin/sh so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1"
+        },
+        {
+          "name": "pullChecksum",
+          "value": "Q1pl15rNTfKuQJ7mdUudkqaZIXQY0="
+        },
+        {
+          "name": "gitCommitOfApkPort",
+          "value": "c610adf3717893a1a61f7819b762cc5e8bccc497"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "publisher": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+      "name": "ca-certificates-bundle",
+      "version": "20211220-r0",
+      "description": "Pre generated bundle of Mozilla certificates",
+      "licenses": [
+        {
+          "license": {
+            "id": "MPL-2.0"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:ca-certificates-bundle:ca-certificates-bundle:20211220-r0:*:*:*:*:*:*:*",
+      "purl": "pkg:alpine/ca-certificates-bundle@20211220-r0?arch=x86_64\u0026upstream=ca-certificates\u0026distro=alpine-3.14.2",
+      "externalReferences": [
+        {
+          "url": "https://www.mozilla.org/en-US/about/governance/policies/security-group/certs/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "type",
+          "value": "apk"
+        },
+        {
+          "name": "metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:b1f9199ff13d5ff130c573e52c3791b85b04ec90e95d51b109369c3a0084d6b3"
+        },
+        {
+          "name": "originPackage",
+          "value": "ca-certificates"
+        },
+        {
+          "name": "size",
+          "value": "119497"
+        },
+        {
+          "name": "installedSize",
+          "value": "221184"
+        },
+        {
+          "name": "pullChecksum",
+          "value": "Q1vdd0aBICBRhx70Dc6zK1fd6T50g="
+        },
+        {
+          "name": "gitCommitOfApkPort",
+          "value": "c610adf3717893a1a61f7819b762cc5e8bccc497"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "author": "Armin Rigo, Maciej Fijalkowski \u003cpython-cffi@googlegroups.com\u003e",
+      "name": "cffi",
+      "version": "1.15.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:armin_rigo\\,_maciej_fijalkowski:python-cffi:1.15.0:*:*:*:*:*:*:*",
+      "purl": "pkg:pypi/cffi@1.15.0",
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "language",
+          "value": "python"
+        },
+        {
+          "name": "type",
+          "value": "python"
+        },
+        {
+          "name": "metadataType",
+          "value": "PythonPackageMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/cffi-1.15.0.dist-info/METADATA"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:47ccfe63aa3e044daf6aee0411d71ff306d577bec4c79e53763b72a2fa81a251"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/cffi-1.15.0.dist-info/RECORD"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:47ccfe63aa3e044daf6aee0411d71ff306d577bec4c79e53763b72a2fa81a251"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/cffi-1.15.0.dist-info/top_level.txt"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:47ccfe63aa3e044daf6aee0411d71ff306d577bec4c79e53763b72a2fa81a251"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "author": "Armin Ronacher \u003carmin.ronacher@active-4.com\u003e",
+      "name": "click",
+      "version": "8.0.1",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:armin-ronacher:python-click:8.0.1:*:*:*:*:*:*:*",
+      "purl": "pkg:pypi/click@8.0.1",
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "language",
+          "value": "python"
+        },
+        {
+          "name": "type",
+          "value": "python"
+        },
+        {
+          "name": "metadataType",
+          "value": "PythonPackageMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/click-8.0.1.dist-info/METADATA"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:35f78a8b7907b2b0bd03f35ff8a6bbd74328ce4d6fc86a56c464e5cf65817fd3"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/click-8.0.1.dist-info/RECORD"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:35f78a8b7907b2b0bd03f35ff8a6bbd74328ce4d6fc86a56c464e5cf65817fd3"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/click-8.0.1.dist-info/top_level.txt"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:35f78a8b7907b2b0bd03f35ff8a6bbd74328ce4d6fc86a56c464e5cf65817fd3"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "author": "The Python Cryptographic Authority and individual contributors \u003ccryptography-dev@python.org\u003e",
+      "name": "cryptography",
+      "version": "3.4.8",
+      "cpe": "cpe:2.3:a:python_cryptographic_authority_and_individual_contributors:python-cryptography:3.4.8:*:*:*:*:*:*:*",
+      "purl": "pkg:pypi/cryptography@3.4.8",
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "language",
+          "value": "python"
+        },
+        {
+          "name": "type",
+          "value": "python"
+        },
+        {
+          "name": "metadataType",
+          "value": "PythonPackageMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/cryptography-3.4.8.dist-info/METADATA"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:47ccfe63aa3e044daf6aee0411d71ff306d577bec4c79e53763b72a2fa81a251"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/cryptography-3.4.8.dist-info/RECORD"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:47ccfe63aa3e044daf6aee0411d71ff306d577bec4c79e53763b72a2fa81a251"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/cryptography-3.4.8.dist-info/top_level.txt"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:47ccfe63aa3e044daf6aee0411d71ff306d577bec4c79e53763b72a2fa81a251"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "publisher": "Carlo Landmeter \u003cclandmeter@alpinelinux.org\u003e",
+      "name": "expat",
+      "version": "2.4.3-r0",
+      "description": "XML Parser library written in C",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:expat:expat:2.4.3-r0:*:*:*:*:*:*:*",
+      "purl": "pkg:alpine/expat@2.4.3-r0?arch=x86_64\u0026upstream=expat\u0026distro=alpine-3.14.2",
+      "externalReferences": [
+        {
+          "url": "http://www.libexpat.org/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "type",
+          "value": "apk"
+        },
+        {
+          "name": "metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:b1f9199ff13d5ff130c573e52c3791b85b04ec90e95d51b109369c3a0084d6b3"
+        },
+        {
+          "name": "originPackage",
+          "value": "expat"
+        },
+        {
+          "name": "size",
+          "value": "70912"
+        },
+        {
+          "name": "installedSize",
+          "value": "196608"
+        },
+        {
+          "name": "pullDependencies",
+          "value": "so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "pullChecksum",
+          "value": "Q1x+vd9S3Tdmfq8PLJtkGdrWbc+WA="
+        },
+        {
+          "name": "gitCommitOfApkPort",
+          "value": "aae985bf8c08a8e86ed05010cbb02ae6233d60e0"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "author": "Sebastián Ramírez \u003ctiangolo@gmail.com\u003e",
+      "name": "fastapi",
+      "version": "0.68.1",
+      "cpe": "cpe:2.3:a:python-fastapi:python-fastapi:0.68.1:*:*:*:*:*:*:*",
+      "purl": "pkg:pypi/fastapi@0.68.1",
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "language",
+          "value": "python"
+        },
+        {
+          "name": "type",
+          "value": "python"
+        },
+        {
+          "name": "metadataType",
+          "value": "PythonPackageMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/fastapi-0.68.1.dist-info/METADATA"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:7b107128242bd5e44b84702ea33582ff82ef071213f233e49ac2492f49f09bb0"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/fastapi-0.68.1.dist-info/RECORD"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:7b107128242bd5e44b84702ea33582ff82ef071213f233e49ac2492f49f09bb0"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "publisher": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+      "name": "gdbm",
+      "version": "1.19-r0",
+      "description": "GNU dbm is a set of database routines that use extensible hashing",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:gdbm:gdbm:1.19-r0:*:*:*:*:*:*:*",
+      "purl": "pkg:alpine/gdbm@1.19-r0?arch=x86_64\u0026upstream=gdbm\u0026distro=alpine-3.14.2",
+      "externalReferences": [
+        {
+          "url": "https://www.gnu.org/software/gdbm/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "type",
+          "value": "apk"
+        },
+        {
+          "name": "metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:b1f9199ff13d5ff130c573e52c3791b85b04ec90e95d51b109369c3a0084d6b3"
+        },
+        {
+          "name": "originPackage",
+          "value": "gdbm"
+        },
+        {
+          "name": "size",
+          "value": "78790"
+        },
+        {
+          "name": "installedSize",
+          "value": "229376"
+        },
+        {
+          "name": "pullDependencies",
+          "value": "so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "pullChecksum",
+          "value": "Q1cowayNCWT7JhsYMnB2ZNfd81kUU="
+        },
+        {
+          "name": "gitCommitOfApkPort",
+          "value": "1118fff73bb8f3a967c12d42de2d8c4a0a7ed162"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "author": "Alexey Borzenkov \u003csnaury@gmail.com\u003e",
+      "name": "greenlet",
+      "version": "1.1.2",
+      "cpe": "cpe:2.3:a:alexey_borzenkov:python-greenlet:1.1.2:*:*:*:*:*:*:*",
+      "purl": "pkg:pypi/greenlet@1.1.2",
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "language",
+          "value": "python"
+        },
+        {
+          "name": "type",
+          "value": "python"
+        },
+        {
+          "name": "metadataType",
+          "value": "PythonPackageMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/greenlet-1.1.2.dist-info/METADATA"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:47ccfe63aa3e044daf6aee0411d71ff306d577bec4c79e53763b72a2fa81a251"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/greenlet-1.1.2.dist-info/RECORD"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:47ccfe63aa3e044daf6aee0411d71ff306d577bec4c79e53763b72a2fa81a251"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/greenlet-1.1.2.dist-info/top_level.txt"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:47ccfe63aa3e044daf6aee0411d71ff306d577bec4c79e53763b72a2fa81a251"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "author": "Benoit Chesneau \u003cbenoitc@e-engura.com\u003e",
+      "name": "gunicorn",
+      "version": "20.1.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:benoit_chesneau:python-gunicorn:20.1.0:*:*:*:*:*:*:*",
+      "purl": "pkg:pypi/gunicorn@20.1.0",
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "language",
+          "value": "python"
+        },
+        {
+          "name": "type",
+          "value": "python"
+        },
+        {
+          "name": "metadataType",
+          "value": "PythonPackageMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/gunicorn-20.1.0.dist-info/METADATA"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:35f78a8b7907b2b0bd03f35ff8a6bbd74328ce4d6fc86a56c464e5cf65817fd3"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/gunicorn-20.1.0.dist-info/RECORD"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:35f78a8b7907b2b0bd03f35ff8a6bbd74328ce4d6fc86a56c464e5cf65817fd3"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/gunicorn-20.1.0.dist-info/top_level.txt"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:35f78a8b7907b2b0bd03f35ff8a6bbd74328ce4d6fc86a56c464e5cf65817fd3"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "author": "Nathaniel J. Smith \u003cnjs@pobox.com\u003e",
+      "name": "h11",
+      "version": "0.12.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:nathaniel_j__smith:python-h11:0.12.0:*:*:*:*:*:*:*",
+      "purl": "pkg:pypi/h11@0.12.0",
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "language",
+          "value": "python"
+        },
+        {
+          "name": "type",
+          "value": "python"
+        },
+        {
+          "name": "metadataType",
+          "value": "PythonPackageMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/h11-0.12.0.dist-info/METADATA"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:35f78a8b7907b2b0bd03f35ff8a6bbd74328ce4d6fc86a56c464e5cf65817fd3"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/h11-0.12.0.dist-info/RECORD"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:35f78a8b7907b2b0bd03f35ff8a6bbd74328ce4d6fc86a56c464e5cf65817fd3"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/h11-0.12.0.dist-info/top_level.txt"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:35f78a8b7907b2b0bd03f35ff8a6bbd74328ce4d6fc86a56c464e5cf65817fd3"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "author": "Yury Selivanov \u003cyury@magic.io\u003e",
+      "name": "httptools",
+      "version": "0.2.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:python-httptools:python-httptools:0.2.0:*:*:*:*:*:*:*",
+      "purl": "pkg:pypi/httptools@0.2.0",
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "language",
+          "value": "python"
+        },
+        {
+          "name": "type",
+          "value": "python"
+        },
+        {
+          "name": "metadataType",
+          "value": "PythonPackageMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/httptools-0.2.0.dist-info/METADATA"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:35f78a8b7907b2b0bd03f35ff8a6bbd74328ce4d6fc86a56c464e5cf65817fd3"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/httptools-0.2.0.dist-info/RECORD"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:35f78a8b7907b2b0bd03f35ff8a6bbd74328ce4d6fc86a56c464e5cf65817fd3"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/httptools-0.2.0.dist-info/top_level.txt"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:35f78a8b7907b2b0bd03f35ff8a6bbd74328ce4d6fc86a56c464e5cf65817fd3"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "publisher": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+      "name": "keyutils-libs",
+      "version": "1.6.3-r0",
+      "description": "Key utilities library",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.0-or-later"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:keyutils-libs:keyutils-libs:1.6.3-r0:*:*:*:*:*:*:*",
+      "purl": "pkg:alpine/keyutils-libs@1.6.3-r0?arch=x86_64\u0026upstream=keyutils\u0026distro=alpine-3.14.2",
+      "externalReferences": [
+        {
+          "url": "http://people.redhat.com/~dhowells/keyutils/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "type",
+          "value": "apk"
+        },
+        {
+          "name": "metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:b1f9199ff13d5ff130c573e52c3791b85b04ec90e95d51b109369c3a0084d6b3"
+        },
+        {
+          "name": "originPackage",
+          "value": "keyutils"
+        },
+        {
+          "name": "size",
+          "value": "7719"
+        },
+        {
+          "name": "installedSize",
+          "value": "36864"
+        },
+        {
+          "name": "pullDependencies",
+          "value": "so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "pullChecksum",
+          "value": "Q11uTvf2ChPtPp7mzJvB8EeYGaeyU="
+        },
+        {
+          "name": "gitCommitOfApkPort",
+          "value": "0468f0d9490b7dad5776310e4a64bd0d6c81e77f"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "publisher": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+      "name": "krb5-conf",
+      "version": "1.0-r2",
+      "description": "Shared krb5.conf for both MIT krb5 and heimdal",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:krb5-conf:krb5-conf:1.0-r2:*:*:*:*:*:*:*",
+      "purl": "pkg:alpine/krb5-conf@1.0-r2?arch=x86_64\u0026upstream=krb5-conf\u0026distro=alpine-3.14.2",
+      "externalReferences": [
+        {
+          "url": "https://web.mit.edu/kerberos/www/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "type",
+          "value": "apk"
+        },
+        {
+          "name": "metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:b1f9199ff13d5ff130c573e52c3791b85b04ec90e95d51b109369c3a0084d6b3"
+        },
+        {
+          "name": "originPackage",
+          "value": "krb5-conf"
+        },
+        {
+          "name": "size",
+          "value": "1512"
+        },
+        {
+          "name": "installedSize",
+          "value": "12288"
+        },
+        {
+          "name": "pullChecksum",
+          "value": "Q1DEY9Y+celrSlJ2o8DdAaBO0JaVg="
+        },
+        {
+          "name": "gitCommitOfApkPort",
+          "value": "4a46b2cb955e25fd6d6f913794d35bc6d876aea9"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "publisher": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+      "name": "krb5-libs",
+      "version": "1.18.4-r0",
+      "description": "The shared libraries used by Kerberos 5",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:krb5-libs:krb5-libs:1.18.4-r0:*:*:*:*:*:*:*",
+      "purl": "pkg:alpine/krb5-libs@1.18.4-r0?arch=x86_64\u0026upstream=krb5\u0026distro=alpine-3.14.2",
+      "externalReferences": [
+        {
+          "url": "https://web.mit.edu/kerberos/www/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "type",
+          "value": "apk"
+        },
+        {
+          "name": "metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:b1f9199ff13d5ff130c573e52c3791b85b04ec90e95d51b109369c3a0084d6b3"
+        },
+        {
+          "name": "originPackage",
+          "value": "krb5"
+        },
+        {
+          "name": "size",
+          "value": "808936"
+        },
+        {
+          "name": "installedSize",
+          "value": "2007040"
+        },
+        {
+          "name": "pullDependencies",
+          "value": "krb5-conf so:libc.musl-x86_64.so.1 so:libcom_err.so.2 so:libcrypto.so.1.1 so:libkeyutils.so.1 so:libssl.so.1.1 so:libverto.so.1"
+        },
+        {
+          "name": "pullChecksum",
+          "value": "Q1U4ncnFgRnsKDUFqtB3DSKVYESrA="
+        },
+        {
+          "name": "gitCommitOfApkPort",
+          "value": "b889e515b90fe310a08c450d503998e4b29bc726"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "publisher": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+      "name": "libbz2",
+      "version": "1.0.8-r1",
+      "description": "Shared library for bz2",
+      "licenses": [
+        {
+          "license": {
+            "id": "bzip2-1.0.6"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:libbz2:libbz2:1.0.8-r1:*:*:*:*:*:*:*",
+      "purl": "pkg:alpine/libbz2@1.0.8-r1?arch=x86_64\u0026upstream=bzip2\u0026distro=alpine-3.14.2",
+      "externalReferences": [
+        {
+          "url": "http://sources.redhat.com/bzip2",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "type",
+          "value": "apk"
+        },
+        {
+          "name": "metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:b1f9199ff13d5ff130c573e52c3791b85b04ec90e95d51b109369c3a0084d6b3"
+        },
+        {
+          "name": "originPackage",
+          "value": "bzip2"
+        },
+        {
+          "name": "size",
+          "value": "26571"
+        },
+        {
+          "name": "installedSize",
+          "value": "73728"
+        },
+        {
+          "name": "pullDependencies",
+          "value": "so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "pullChecksum",
+          "value": "Q1f/Kxbgr/bPXtbmZnJlMabp2XzaE="
+        },
+        {
+          "name": "gitCommitOfApkPort",
+          "value": "596cd15e692776222d49da2700c6041b39ffbea9"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "publisher": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+      "name": "libc-utils",
+      "version": "0.7.2-r3",
+      "description": "Meta package to pull in correct libc",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-2-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:libc-utils:libc-utils:0.7.2-r3:*:*:*:*:*:*:*",
+      "purl": "pkg:alpine/libc-utils@0.7.2-r3?arch=x86_64\u0026upstream=libc-dev\u0026distro=alpine-3.14.2",
+      "externalReferences": [
+        {
+          "url": "https://alpinelinux.org",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "type",
+          "value": "apk"
+        },
+        {
+          "name": "metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:b1f9199ff13d5ff130c573e52c3791b85b04ec90e95d51b109369c3a0084d6b3"
+        },
+        {
+          "name": "originPackage",
+          "value": "libc-dev"
+        },
+        {
+          "name": "size",
+          "value": "1228"
+        },
+        {
+          "name": "installedSize",
+          "value": "4096"
+        },
+        {
+          "name": "pullDependencies",
+          "value": "musl-utils"
+        },
+        {
+          "name": "pullChecksum",
+          "value": "Q1UsLZaz0/Go44hd4Vw49UCt40Vp8="
+        },
+        {
+          "name": "gitCommitOfApkPort",
+          "value": "60424133be2e79bbfeff3d58147a22886f817ce2"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "publisher": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+      "name": "libcom_err",
+      "version": "1.46.2-r0",
+      "description": "Common error description library",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        },
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:libcom-err:libcom-err:1.46.2-r0:*:*:*:*:*:*:*",
+      "purl": "pkg:alpine/libcom_err@1.46.2-r0?arch=x86_64\u0026upstream=e2fsprogs\u0026distro=alpine-3.14.2",
+      "externalReferences": [
+        {
+          "url": "http://e2fsprogs.sourceforge.net",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "type",
+          "value": "apk"
+        },
+        {
+          "name": "metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:b1f9199ff13d5ff130c573e52c3791b85b04ec90e95d51b109369c3a0084d6b3"
+        },
+        {
+          "name": "originPackage",
+          "value": "e2fsprogs"
+        },
+        {
+          "name": "size",
+          "value": "6113"
+        },
+        {
+          "name": "installedSize",
+          "value": "24576"
+        },
+        {
+          "name": "pullDependencies",
+          "value": "so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "pullChecksum",
+          "value": "Q1rTQWJ7crssO/5AiS10Q0wfVn6jw="
+        },
+        {
+          "name": "gitCommitOfApkPort",
+          "value": "561ef63847954e319f7d916b3c78661a6e22f510"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "publisher": "Timo Teras \u003ctimo.teras@iki.fi\u003e",
+      "name": "libcrypto1.1",
+      "version": "1.1.1l-r0",
+      "description": "Crypto library from openssl",
+      "licenses": [
+        {
+          "license": {
+            "id": "OpenSSL"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:libcrypto1.1:libcrypto1.1:1.1.1l-r0:*:*:*:*:*:*:*",
+      "purl": "pkg:alpine/libcrypto1.1@1.1.1l-r0?arch=x86_64\u0026upstream=openssl\u0026distro=alpine-3.14.2",
+      "externalReferences": [
+        {
+          "url": "https://www.openssl.org/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "type",
+          "value": "apk"
+        },
+        {
+          "name": "metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:b1f9199ff13d5ff130c573e52c3791b85b04ec90e95d51b109369c3a0084d6b3"
+        },
+        {
+          "name": "originPackage",
+          "value": "openssl"
+        },
+        {
+          "name": "size",
+          "value": "1211998"
+        },
+        {
+          "name": "installedSize",
+          "value": "2768896"
+        },
+        {
+          "name": "pullDependencies",
+          "value": "so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "pullChecksum",
+          "value": "Q1Sywj1TEYEdvX0+MuqC+ea+zXxR0="
+        },
+        {
+          "name": "gitCommitOfApkPort",
+          "value": "3ef1965150d5b1de4af88dc51cf407e11b20b848"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "publisher": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+      "name": "libffi",
+      "version": "3.3-r2",
+      "description": "A portable, high level programming interface to various calling conventions.",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:libffi:libffi:3.3-r2:*:*:*:*:*:*:*",
+      "purl": "pkg:alpine/libffi@3.3-r2?arch=x86_64\u0026upstream=libffi\u0026distro=alpine-3.14.2",
+      "externalReferences": [
+        {
+          "url": "https://sourceware.org/libffi",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "type",
+          "value": "apk"
+        },
+        {
+          "name": "metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:b1f9199ff13d5ff130c573e52c3791b85b04ec90e95d51b109369c3a0084d6b3"
+        },
+        {
+          "name": "originPackage",
+          "value": "libffi"
+        },
+        {
+          "name": "size",
+          "value": "17591"
+        },
+        {
+          "name": "installedSize",
+          "value": "53248"
+        },
+        {
+          "name": "pullDependencies",
+          "value": "so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "pullChecksum",
+          "value": "Q1n+GSH0i5lp/3EP0AyvrQdFjS9Rw="
+        },
+        {
+          "name": "gitCommitOfApkPort",
+          "value": "aac194968015e50383144a04b526574a5e0c315d"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "publisher": "Carlo Landmeter \u003cclandmeter@alpinelinux.org\u003e",
+      "name": "libintl",
+      "version": "0.21-r0",
+      "description": "GNU gettext runtime library",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:libintl:libintl:0.21-r0:*:*:*:*:*:*:*",
+      "purl": "pkg:alpine/libintl@0.21-r0?arch=x86_64\u0026upstream=gettext\u0026distro=alpine-3.14.2",
+      "externalReferences": [
+        {
+          "url": "https://www.gnu.org/software/gettext/gettext.html",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "type",
+          "value": "apk"
+        },
+        {
+          "name": "metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:b1f9199ff13d5ff130c573e52c3791b85b04ec90e95d51b109369c3a0084d6b3"
+        },
+        {
+          "name": "originPackage",
+          "value": "gettext"
+        },
+        {
+          "name": "size",
+          "value": "19714"
+        },
+        {
+          "name": "installedSize",
+          "value": "57344"
+        },
+        {
+          "name": "pullDependencies",
+          "value": "so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "pullChecksum",
+          "value": "Q1F3vBfhQnb6PRC1uqQ7me4tdvcfg="
+        },
+        {
+          "name": "gitCommitOfApkPort",
+          "value": "f8d500fddcd7432ba711fea82ba0e55cb626592c"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "publisher": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+      "name": "libldap",
+      "version": "2.4.58-r0",
+      "description": "OpenLDAP libraries",
+      "licenses": [
+        {
+          "license": {
+            "id": "OLDAP-2.8"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:libldap:libldap:2.4.58-r0:*:*:*:*:*:*:*",
+      "purl": "pkg:alpine/libldap@2.4.58-r0?arch=x86_64\u0026upstream=openldap\u0026distro=alpine-3.14.2",
+      "externalReferences": [
+        {
+          "url": "https://www.openldap.org/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "type",
+          "value": "apk"
+        },
+        {
+          "name": "metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:b1f9199ff13d5ff130c573e52c3791b85b04ec90e95d51b109369c3a0084d6b3"
+        },
+        {
+          "name": "originPackage",
+          "value": "openldap"
+        },
+        {
+          "name": "size",
+          "value": "266710"
+        },
+        {
+          "name": "installedSize",
+          "value": "630784"
+        },
+        {
+          "name": "pullDependencies",
+          "value": "so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1 so:libsasl2.so.3 so:libssl.so.1.1"
+        },
+        {
+          "name": "pullChecksum",
+          "value": "Q1syVFgddVqh630qpnnAxmTM65jbc="
+        },
+        {
+          "name": "gitCommitOfApkPort",
+          "value": "8748c7dc25cbcb3c103c0140a571d528ddc58ec9"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "publisher": "Valery Kartel \u003cvalery.kartel@gmail.com\u003e",
+      "name": "libnsl",
+      "version": "1.3.0-r0",
+      "description": "Public client interface for NIS(YP) and NIS+ in a IPv6 ready version",
+      "licenses": [
+        {
+          "license": {
+            "id": "LGPL-2.0-or-later"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:libnsl:libnsl:1.3.0-r0:*:*:*:*:*:*:*",
+      "purl": "pkg:alpine/libnsl@1.3.0-r0?arch=x86_64\u0026upstream=libnsl\u0026distro=alpine-3.14.2",
+      "externalReferences": [
+        {
+          "url": "https://github.com/thkukuk/libnsl",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "type",
+          "value": "apk"
+        },
+        {
+          "name": "metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:b1f9199ff13d5ff130c573e52c3791b85b04ec90e95d51b109369c3a0084d6b3"
+        },
+        {
+          "name": "originPackage",
+          "value": "libnsl"
+        },
+        {
+          "name": "size",
+          "value": "37422"
+        },
+        {
+          "name": "installedSize",
+          "value": "102400"
+        },
+        {
+          "name": "pullDependencies",
+          "value": "so:libc.musl-x86_64.so.1 so:libintl.so.8 so:libtirpc.so.3"
+        },
+        {
+          "name": "pullChecksum",
+          "value": "Q1p5aIDRZgNAUYLmRHBr8ZZcZmVbs="
+        },
+        {
+          "name": "gitCommitOfApkPort",
+          "value": "f246d19ab5a2fabe8a5778022c7f61803b6c6fc6"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "publisher": "Jakub Jirutka \u003cjakub@jirutka.cz\u003e",
+      "name": "libpq",
+      "version": "13.5-r0",
+      "description": "PostgreSQL libraries",
+      "licenses": [
+        {
+          "license": {
+            "id": "PostgreSQL"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:libpq:libpq:13.5-r0:*:*:*:*:*:*:*",
+      "purl": "pkg:alpine/libpq@13.5-r0?arch=x86_64\u0026upstream=postgresql\u0026distro=alpine-3.14.2",
+      "externalReferences": [
+        {
+          "url": "https://www.postgresql.org/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "type",
+          "value": "apk"
+        },
+        {
+          "name": "metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:b1f9199ff13d5ff130c573e52c3791b85b04ec90e95d51b109369c3a0084d6b3"
+        },
+        {
+          "name": "originPackage",
+          "value": "postgresql"
+        },
+        {
+          "name": "size",
+          "value": "138153"
+        },
+        {
+          "name": "installedSize",
+          "value": "335872"
+        },
+        {
+          "name": "pullDependencies",
+          "value": "so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1 so:libldap_r-2.4.so.2 so:libssl.so.1.1"
+        },
+        {
+          "name": "pullChecksum",
+          "value": "Q1xwvfbl/Tdpb0ShEErjGtDWCY7+s="
+        },
+        {
+          "name": "gitCommitOfApkPort",
+          "value": "dab723ccf8aab701b4ae9ce2b2e8b3fbcb37c761"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "publisher": "Ariadne Conill \u003cariadne@dereferenced.org\u003e",
+      "name": "libretls",
+      "version": "3.3.3p1-r2",
+      "description": "port of libtls from libressl to openssl",
+      "licenses": [
+        {
+          "license": {
+            "id": "ISC"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:libretls:libretls:3.3.3p1-r2:*:*:*:*:*:*:*",
+      "purl": "pkg:alpine/libretls@3.3.3p1-r2?arch=x86_64\u0026upstream=libretls\u0026distro=alpine-3.14.2",
+      "externalReferences": [
+        {
+          "url": "https://git.causal.agency/libretls/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "type",
+          "value": "apk"
+        },
+        {
+          "name": "metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:b1f9199ff13d5ff130c573e52c3791b85b04ec90e95d51b109369c3a0084d6b3"
+        },
+        {
+          "name": "originPackage",
+          "value": "libretls"
+        },
+        {
+          "name": "size",
+          "value": "28872"
+        },
+        {
+          "name": "installedSize",
+          "value": "86016"
+        },
+        {
+          "name": "pullDependencies",
+          "value": "ca-certificates-bundle so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1 so:libssl.so.1.1"
+        },
+        {
+          "name": "pullChecksum",
+          "value": "Q1mKL75PNQ3352oQUtXLS8GfI+37M="
+        },
+        {
+          "name": "gitCommitOfApkPort",
+          "value": "161d02ee8c48f3c3cae1d2b4b5d008fa318da0e1"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "publisher": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+      "name": "libsasl",
+      "version": "2.1.27-r12",
+      "description": "Cyrus Simple Authentication and Security Layer (SASL) library",
+      "cpe": "cpe:2.3:a:libsasl:libsasl:2.1.27-r12:*:*:*:*:*:*:*",
+      "purl": "pkg:alpine/libsasl@2.1.27-r12?arch=x86_64\u0026upstream=cyrus-sasl\u0026distro=alpine-3.14.2",
+      "externalReferences": [
+        {
+          "url": "https://www.cyrusimap.org/sasl/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "type",
+          "value": "apk"
+        },
+        {
+          "name": "metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:b1f9199ff13d5ff130c573e52c3791b85b04ec90e95d51b109369c3a0084d6b3"
+        },
+        {
+          "name": "originPackage",
+          "value": "cyrus-sasl"
+        },
+        {
+          "name": "size",
+          "value": "67890"
+        },
+        {
+          "name": "installedSize",
+          "value": "196608"
+        },
+        {
+          "name": "pullDependencies",
+          "value": "so:libc.musl-x86_64.so.1 so:libgdbm.so.6"
+        },
+        {
+          "name": "pullChecksum",
+          "value": "Q1NOQx5AenjjsSthpER8dCkUfPePI="
+        },
+        {
+          "name": "gitCommitOfApkPort",
+          "value": "d450e53ec2504f0160b59adcf578e51916295f8e"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "publisher": "Timo Teras \u003ctimo.teras@iki.fi\u003e",
+      "name": "libssl1.1",
+      "version": "1.1.1l-r0",
+      "description": "SSL shared libraries",
+      "licenses": [
+        {
+          "license": {
+            "id": "OpenSSL"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:libssl1.1:libssl1.1:1.1.1l-r0:*:*:*:*:*:*:*",
+      "purl": "pkg:alpine/libssl1.1@1.1.1l-r0?arch=x86_64\u0026upstream=openssl\u0026distro=alpine-3.14.2",
+      "externalReferences": [
+        {
+          "url": "https://www.openssl.org/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "type",
+          "value": "apk"
+        },
+        {
+          "name": "metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:b1f9199ff13d5ff130c573e52c3791b85b04ec90e95d51b109369c3a0084d6b3"
+        },
+        {
+          "name": "originPackage",
+          "value": "openssl"
+        },
+        {
+          "name": "size",
+          "value": "212918"
+        },
+        {
+          "name": "installedSize",
+          "value": "540672"
+        },
+        {
+          "name": "pullDependencies",
+          "value": "so:libc.musl-x86_64.so.1 so:libcrypto.so.1.1"
+        },
+        {
+          "name": "pullChecksum",
+          "value": "Q1Fgsc0DiapwjaJHbihB9ZrLQhr7Q="
+        },
+        {
+          "name": "gitCommitOfApkPort",
+          "value": "3ef1965150d5b1de4af88dc51cf407e11b20b848"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "publisher": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+      "name": "libtirpc",
+      "version": "1.3.2-r0",
+      "description": "Transport Independent RPC library (SunRPC replacement)",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:libtirpc:libtirpc:1.3.2-r0:*:*:*:*:*:*:*",
+      "purl": "pkg:alpine/libtirpc@1.3.2-r0?arch=x86_64\u0026upstream=libtirpc\u0026distro=alpine-3.14.2",
+      "externalReferences": [
+        {
+          "url": "https://sourceforge.net/projects/libtirpc",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "type",
+          "value": "apk"
+        },
+        {
+          "name": "metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:b1f9199ff13d5ff130c573e52c3791b85b04ec90e95d51b109369c3a0084d6b3"
+        },
+        {
+          "name": "originPackage",
+          "value": "libtirpc"
+        },
+        {
+          "name": "size",
+          "value": "78056"
+        },
+        {
+          "name": "installedSize",
+          "value": "184320"
+        },
+        {
+          "name": "pullDependencies",
+          "value": "libtirpc-conf so:libc.musl-x86_64.so.1 so:libgssapi_krb5.so.2"
+        },
+        {
+          "name": "pullChecksum",
+          "value": "Q1rV5PvE0MlIGJYftqwS+sNVh/1BA="
+        },
+        {
+          "name": "gitCommitOfApkPort",
+          "value": "132cc3ff00dd538ed4a5d68d92a8a0e0fd0c683b"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "publisher": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+      "name": "libtirpc-conf",
+      "version": "1.3.2-r0",
+      "description": "Configuration files for TI-RPC",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:libtirpc-conf:libtirpc-conf:1.3.2-r0:*:*:*:*:*:*:*",
+      "purl": "pkg:alpine/libtirpc-conf@1.3.2-r0?arch=x86_64\u0026upstream=libtirpc\u0026distro=alpine-3.14.2",
+      "externalReferences": [
+        {
+          "url": "https://sourceforge.net/projects/libtirpc",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "type",
+          "value": "apk"
+        },
+        {
+          "name": "metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:b1f9199ff13d5ff130c573e52c3791b85b04ec90e95d51b109369c3a0084d6b3"
+        },
+        {
+          "name": "originPackage",
+          "value": "libtirpc"
+        },
+        {
+          "name": "size",
+          "value": "1978"
+        },
+        {
+          "name": "installedSize",
+          "value": "16384"
+        },
+        {
+          "name": "pullChecksum",
+          "value": "Q1VLL6u1bTSKDVyjVJF7Q4igoOMXU="
+        },
+        {
+          "name": "gitCommitOfApkPort",
+          "value": "132cc3ff00dd538ed4a5d68d92a8a0e0fd0c683b"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "publisher": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+      "name": "libuuid",
+      "version": "2.37.2-r0",
+      "description": "DCE compatible Universally Unique Identifier library",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-3.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:libuuid:libuuid:2.37.2-r0:*:*:*:*:*:*:*",
+      "purl": "pkg:alpine/libuuid@2.37.2-r0?arch=x86_64\u0026upstream=util-linux\u0026distro=alpine-3.14.2",
+      "externalReferences": [
+        {
+          "url": "https://git.kernel.org/cgit/utils/util-linux/util-linux.git",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "type",
+          "value": "apk"
+        },
+        {
+          "name": "metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:b1f9199ff13d5ff130c573e52c3791b85b04ec90e95d51b109369c3a0084d6b3"
+        },
+        {
+          "name": "originPackage",
+          "value": "util-linux"
+        },
+        {
+          "name": "size",
+          "value": "13302"
+        },
+        {
+          "name": "installedSize",
+          "value": "40960"
+        },
+        {
+          "name": "pullDependencies",
+          "value": "so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "pullChecksum",
+          "value": "Q1ZruqwedYcCO3Y+2YKlLaLryUumE="
+        },
+        {
+          "name": "gitCommitOfApkPort",
+          "value": "010734651f25e9b4ccb6fa6b8d05de43501f7b3b"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "publisher": "Francesco Colista \u003cfcolista@alpinelinux.org\u003e",
+      "name": "libverto",
+      "version": "0.3.2-r0",
+      "description": "Main loop abstraction library",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:libverto:libverto:0.3.2-r0:*:*:*:*:*:*:*",
+      "purl": "pkg:alpine/libverto@0.3.2-r0?arch=x86_64\u0026upstream=libverto\u0026distro=alpine-3.14.2",
+      "externalReferences": [
+        {
+          "url": "https://github.com/npmccallum/libverto",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "type",
+          "value": "apk"
+        },
+        {
+          "name": "metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:b1f9199ff13d5ff130c573e52c3791b85b04ec90e95d51b109369c3a0084d6b3"
+        },
+        {
+          "name": "originPackage",
+          "value": "libverto"
+        },
+        {
+          "name": "size",
+          "value": "9430"
+        },
+        {
+          "name": "installedSize",
+          "value": "36864"
+        },
+        {
+          "name": "pullDependencies",
+          "value": "so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "pullChecksum",
+          "value": "Q1Q7quMyWouFbxeMEKrvpFobSZQaw="
+        },
+        {
+          "name": "gitCommitOfApkPort",
+          "value": "5e6e5d058668f74b1de5793d77c6dbf8bebfb548"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "publisher": "Timo Teräs \u003ctimo.teras@iki.fi\u003e",
+      "name": "musl",
+      "version": "1.2.2-r3",
+      "description": "the musl c library (libc) implementation",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:musl:musl:1.2.2-r3:*:*:*:*:*:*:*",
+      "purl": "pkg:alpine/musl@1.2.2-r3?arch=x86_64\u0026upstream=musl\u0026distro=alpine-3.14.2",
+      "externalReferences": [
+        {
+          "url": "https://musl.libc.org/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "type",
+          "value": "apk"
+        },
+        {
+          "name": "metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:b1f9199ff13d5ff130c573e52c3791b85b04ec90e95d51b109369c3a0084d6b3"
+        },
+        {
+          "name": "originPackage",
+          "value": "musl"
+        },
+        {
+          "name": "size",
+          "value": "382765"
+        },
+        {
+          "name": "installedSize",
+          "value": "622592"
+        },
+        {
+          "name": "pullChecksum",
+          "value": "Q1n4yypJ4tpU5g+jxI7oHT0Bm4Xjo="
+        },
+        {
+          "name": "gitCommitOfApkPort",
+          "value": "1e9cba35059e3bb4635f12ee7e10dfe687df31ad"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "publisher": "Timo Teräs \u003ctimo.teras@iki.fi\u003e",
+      "name": "musl-utils",
+      "version": "1.2.2-r3",
+      "description": "the musl c library (libc) implementation",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:musl-utils:musl-utils:1.2.2-r3:*:*:*:*:*:*:*",
+      "purl": "pkg:alpine/musl-utils@1.2.2-r3?arch=x86_64\u0026upstream=musl\u0026distro=alpine-3.14.2",
+      "externalReferences": [
+        {
+          "url": "https://musl.libc.org/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "type",
+          "value": "apk"
+        },
+        {
+          "name": "metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:b1f9199ff13d5ff130c573e52c3791b85b04ec90e95d51b109369c3a0084d6b3"
+        },
+        {
+          "name": "originPackage",
+          "value": "musl"
+        },
+        {
+          "name": "size",
+          "value": "36662"
+        },
+        {
+          "name": "installedSize",
+          "value": "147456"
+        },
+        {
+          "name": "pullDependencies",
+          "value": "scanelf so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "pullChecksum",
+          "value": "Q1WNvvoHVxRySUmjgvqQie71lLRd8="
+        },
+        {
+          "name": "gitCommitOfApkPort",
+          "value": "1e9cba35059e3bb4635f12ee7e10dfe687df31ad"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "publisher": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+      "name": "ncurses-libs",
+      "version": "6.2_p20210612-r0",
+      "description": "Ncurses libraries",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:ncurses-libs:ncurses-libs:6.2_p20210612-r0:*:*:*:*:*:*:*",
+      "purl": "pkg:alpine/ncurses-libs@6.2_p20210612-r0?arch=x86_64\u0026upstream=ncurses\u0026distro=alpine-3.14.2",
+      "externalReferences": [
+        {
+          "url": "https://invisible-island.net/ncurses/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "type",
+          "value": "apk"
+        },
+        {
+          "name": "metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:b1f9199ff13d5ff130c573e52c3791b85b04ec90e95d51b109369c3a0084d6b3"
+        },
+        {
+          "name": "originPackage",
+          "value": "ncurses"
+        },
+        {
+          "name": "size",
+          "value": "209438"
+        },
+        {
+          "name": "installedSize",
+          "value": "512000"
+        },
+        {
+          "name": "pullDependencies",
+          "value": "ncurses-terminfo-base=6.2_p20210612-r0 so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "pullChecksum",
+          "value": "Q1/7cgGgTb0DBvjOQ509eEyVk264Q="
+        },
+        {
+          "name": "gitCommitOfApkPort",
+          "value": "53504bd606f7d8bca692c5a0e46b1e01c13cecdc"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "publisher": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+      "name": "ncurses-terminfo-base",
+      "version": "6.2_p20210612-r0",
+      "description": "Descriptions of common terminals",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:ncurses-terminfo-base:ncurses-terminfo-base:6.2_p20210612-r0:*:*:*:*:*:*:*",
+      "purl": "pkg:alpine/ncurses-terminfo-base@6.2_p20210612-r0?arch=x86_64\u0026upstream=ncurses\u0026distro=alpine-3.14.2",
+      "externalReferences": [
+        {
+          "url": "https://invisible-island.net/ncurses/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "type",
+          "value": "apk"
+        },
+        {
+          "name": "metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:b1f9199ff13d5ff130c573e52c3791b85b04ec90e95d51b109369c3a0084d6b3"
+        },
+        {
+          "name": "originPackage",
+          "value": "ncurses"
+        },
+        {
+          "name": "size",
+          "value": "21997"
+        },
+        {
+          "name": "installedSize",
+          "value": "221184"
+        },
+        {
+          "name": "pullChecksum",
+          "value": "Q1ToYIr5lZqhzBDsD2QAgBKOREN3k="
+        },
+        {
+          "name": "gitCommitOfApkPort",
+          "value": "53504bd606f7d8bca692c5a0e46b1e01c13cecdc"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "author": "Federico Di Gregorio \u003cfog@initd.org\u003e",
+      "name": "psycopg2",
+      "version": "2.9.1",
+      "cpe": "cpe:2.3:a:federico_di_gregorio:python-psycopg2:2.9.1:*:*:*:*:*:*:*",
+      "purl": "pkg:pypi/psycopg2@2.9.1",
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "language",
+          "value": "python"
+        },
+        {
+          "name": "type",
+          "value": "python"
+        },
+        {
+          "name": "metadataType",
+          "value": "PythonPackageMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/psycopg2-2.9.1.dist-info/METADATA"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:47ccfe63aa3e044daf6aee0411d71ff306d577bec4c79e53763b72a2fa81a251"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/psycopg2-2.9.1.dist-info/RECORD"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:47ccfe63aa3e044daf6aee0411d71ff306d577bec4c79e53763b72a2fa81a251"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/psycopg2-2.9.1.dist-info/top_level.txt"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:47ccfe63aa3e044daf6aee0411d71ff306d577bec4c79e53763b72a2fa81a251"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "author": "Eli Bendersky \u003celiben@gmail.com\u003e",
+      "name": "pycparser",
+      "version": "2.21",
+      "cpe": "cpe:2.3:a:python-pycparser:python-pycparser:2.21:*:*:*:*:*:*:*",
+      "purl": "pkg:pypi/pycparser@2.21",
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "language",
+          "value": "python"
+        },
+        {
+          "name": "type",
+          "value": "python"
+        },
+        {
+          "name": "metadataType",
+          "value": "PythonPackageMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/pycparser-2.21.dist-info/METADATA"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:47ccfe63aa3e044daf6aee0411d71ff306d577bec4c79e53763b72a2fa81a251"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/pycparser-2.21.dist-info/RECORD"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:47ccfe63aa3e044daf6aee0411d71ff306d577bec4c79e53763b72a2fa81a251"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/pycparser-2.21.dist-info/top_level.txt"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:47ccfe63aa3e044daf6aee0411d71ff306d577bec4c79e53763b72a2fa81a251"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "author": "Samuel Colvin \u003cs@muelcolvin.com\u003e",
+      "name": "pydantic",
+      "version": "1.8.2",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:python-pydantic:python-pydantic:1.8.2:*:*:*:*:*:*:*",
+      "purl": "pkg:pypi/pydantic@1.8.2",
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "language",
+          "value": "python"
+        },
+        {
+          "name": "type",
+          "value": "python"
+        },
+        {
+          "name": "metadataType",
+          "value": "PythonPackageMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/pydantic-1.8.2.dist-info/METADATA"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:7b107128242bd5e44b84702ea33582ff82ef071213f233e49ac2492f49f09bb0"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/pydantic-1.8.2.dist-info/RECORD"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:7b107128242bd5e44b84702ea33582ff82ef071213f233e49ac2492f49f09bb0"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/pydantic-1.8.2.dist-info/top_level.txt"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:7b107128242bd5e44b84702ea33582ff82ef071213f233e49ac2492f49f09bb0"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "author": "Saurabh Kumar \u003cme+github@saurabh-kumar.com\u003e",
+      "name": "python-dotenv",
+      "version": "0.19.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "BSD-3-Clause"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:python-dotenv:python-dotenv:0.19.0:*:*:*:*:*:*:*",
+      "purl": "pkg:pypi/python-dotenv@0.19.0",
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "language",
+          "value": "python"
+        },
+        {
+          "name": "type",
+          "value": "python"
+        },
+        {
+          "name": "metadataType",
+          "value": "PythonPackageMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/python_dotenv-0.19.0.dist-info/METADATA"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:35f78a8b7907b2b0bd03f35ff8a6bbd74328ce4d6fc86a56c464e5cf65817fd3"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/python_dotenv-0.19.0.dist-info/RECORD"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:35f78a8b7907b2b0bd03f35ff8a6bbd74328ce4d6fc86a56c464e5cf65817fd3"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/python_dotenv-0.19.0.dist-info/top_level.txt"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:35f78a8b7907b2b0bd03f35ff8a6bbd74328ce4d6fc86a56c464e5cf65817fd3"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "publisher": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+      "name": "readline",
+      "version": "8.1.0-r0",
+      "description": "GNU readline library",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:readline:readline:8.1.0-r0:*:*:*:*:*:*:*",
+      "purl": "pkg:alpine/readline@8.1.0-r0?arch=x86_64\u0026upstream=readline\u0026distro=alpine-3.14.2",
+      "externalReferences": [
+        {
+          "url": "https://tiswww.cwru.edu/php/chet/readline/rltop.html",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "type",
+          "value": "apk"
+        },
+        {
+          "name": "metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:b1f9199ff13d5ff130c573e52c3791b85b04ec90e95d51b109369c3a0084d6b3"
+        },
+        {
+          "name": "originPackage",
+          "value": "readline"
+        },
+        {
+          "name": "size",
+          "value": "121772"
+        },
+        {
+          "name": "installedSize",
+          "value": "315392"
+        },
+        {
+          "name": "pullDependencies",
+          "value": "so:libc.musl-x86_64.so.1 so:libncursesw.so.6"
+        },
+        {
+          "name": "pullChecksum",
+          "value": "Q1ieu+CxKvf84JMhdBWny0Z5Kq35c="
+        },
+        {
+          "name": "gitCommitOfApkPort",
+          "value": "73433cb1ee948f99c0206a7cf35c454d628b30cc"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "publisher": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+      "name": "scanelf",
+      "version": "1.3.2-r0",
+      "description": "Scan ELF binaries for stuff",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:scanelf:scanelf:1.3.2-r0:*:*:*:*:*:*:*",
+      "purl": "pkg:alpine/scanelf@1.3.2-r0?arch=x86_64\u0026upstream=pax-utils\u0026distro=alpine-3.14.2",
+      "externalReferences": [
+        {
+          "url": "https://wiki.gentoo.org/wiki/Hardened/PaX_Utilities",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "type",
+          "value": "apk"
+        },
+        {
+          "name": "metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:b1f9199ff13d5ff130c573e52c3791b85b04ec90e95d51b109369c3a0084d6b3"
+        },
+        {
+          "name": "originPackage",
+          "value": "pax-utils"
+        },
+        {
+          "name": "size",
+          "value": "36511"
+        },
+        {
+          "name": "installedSize",
+          "value": "94208"
+        },
+        {
+          "name": "pullDependencies",
+          "value": "so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "pullChecksum",
+          "value": "Q1OWKo0fmUbClrhW0CPNjwA8AMLWo="
+        },
+        {
+          "name": "gitCommitOfApkPort",
+          "value": "4c7f72840f5052bc63af1796c3ad0021f97949f2"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "author": "Python Packaging Authority \u003cdistutils-sig@python.org\u003e",
+      "name": "setuptools",
+      "version": "57.5.0",
+      "cpe": "cpe:2.3:a:python_packaging_authority:python-setuptools:57.5.0:*:*:*:*:*:*:*",
+      "purl": "pkg:pypi/setuptools@57.5.0",
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "language",
+          "value": "python"
+        },
+        {
+          "name": "type",
+          "value": "python"
+        },
+        {
+          "name": "metadataType",
+          "value": "PythonPackageMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/setuptools-57.5.0.dist-info/METADATA"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:162bbbd72551fdd683aaa4a1d60ee249a2155e2c2c384e99c3a80f8f6fc8d729"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/setuptools-57.5.0.dist-info/RECORD"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:162bbbd72551fdd683aaa4a1d60ee249a2155e2c2c384e99c3a80f8f6fc8d729"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/setuptools-57.5.0.dist-info/top_level.txt"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:162bbbd72551fdd683aaa4a1d60ee249a2155e2c2c384e99c3a80f8f6fc8d729"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "publisher": "Carlo Landmeter \u003cclandmeter@alpinelinux.org\u003e",
+      "name": "sqlite-libs",
+      "version": "3.35.5-r0",
+      "description": "Sqlite3 library",
+      "cpe": "cpe:2.3:a:sqlite-libs:sqlite-libs:3.35.5-r0:*:*:*:*:*:*:*",
+      "purl": "pkg:alpine/sqlite-libs@3.35.5-r0?arch=x86_64\u0026upstream=sqlite\u0026distro=alpine-3.14.2",
+      "externalReferences": [
+        {
+          "url": "https://www.sqlite.org/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "type",
+          "value": "apk"
+        },
+        {
+          "name": "metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:b1f9199ff13d5ff130c573e52c3791b85b04ec90e95d51b109369c3a0084d6b3"
+        },
+        {
+          "name": "originPackage",
+          "value": "sqlite"
+        },
+        {
+          "name": "size",
+          "value": "518846"
+        },
+        {
+          "name": "installedSize",
+          "value": "987136"
+        },
+        {
+          "name": "pullDependencies",
+          "value": "so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "pullChecksum",
+          "value": "Q1bHdxJ2006dsc6HowAXKq1I4/Lbc="
+        },
+        {
+          "name": "gitCommitOfApkPort",
+          "value": "9d75bd4f9b5f07330ff00cafe41fc46db8313d45"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "publisher": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+      "name": "ssl_client",
+      "version": "1.33.1-r6",
+      "description": "EXternal ssl_client for busybox wget",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-only"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:ssl-client:ssl-client:1.33.1-r6:*:*:*:*:*:*:*",
+      "purl": "pkg:alpine/ssl_client@1.33.1-r6?arch=x86_64\u0026upstream=busybox\u0026distro=alpine-3.14.2",
+      "externalReferences": [
+        {
+          "url": "https://busybox.net/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "type",
+          "value": "apk"
+        },
+        {
+          "name": "metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:b1f9199ff13d5ff130c573e52c3791b85b04ec90e95d51b109369c3a0084d6b3"
+        },
+        {
+          "name": "originPackage",
+          "value": "busybox"
+        },
+        {
+          "name": "size",
+          "value": "4388"
+        },
+        {
+          "name": "installedSize",
+          "value": "28672"
+        },
+        {
+          "name": "pullDependencies",
+          "value": "so:libc.musl-x86_64.so.1 so:libtls.so.2"
+        },
+        {
+          "name": "pullChecksum",
+          "value": "Q1/SQVtc2JBIZBAN4fAVbG1AyqZT4="
+        },
+        {
+          "name": "gitCommitOfApkPort",
+          "value": "b08c19fd29b302ab411d43e52855cec047fd3803"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "author": "Tom Christie \u003ctom@tomchristie.com\u003e",
+      "name": "starlette",
+      "version": "0.14.2",
+      "cpe": "cpe:2.3:a:python-starlette:python-starlette:0.14.2:*:*:*:*:*:*:*",
+      "purl": "pkg:pypi/starlette@0.14.2",
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "language",
+          "value": "python"
+        },
+        {
+          "name": "type",
+          "value": "python"
+        },
+        {
+          "name": "metadataType",
+          "value": "PythonPackageMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/starlette-0.14.2.dist-info/METADATA"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:7b107128242bd5e44b84702ea33582ff82ef071213f233e49ac2492f49f09bb0"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/starlette-0.14.2.dist-info/RECORD"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:7b107128242bd5e44b84702ea33582ff82ef071213f233e49ac2492f49f09bb0"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/starlette-0.14.2.dist-info/top_level.txt"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:7b107128242bd5e44b84702ea33582ff82ef071213f233e49ac2492f49f09bb0"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "author": "Guido van Rossum, Jukka Lehtosalo, Łukasz Langa, Michael Lee \u003clevkivskyi@gmail.com\u003e",
+      "name": "typing-extensions",
+      "version": "3.10.0.2",
+      "cpe": "cpe:2.3:a:python-typing-extensions:python-typing-extensions:3.10.0.2:*:*:*:*:*:*:*",
+      "purl": "pkg:pypi/typing-extensions@3.10.0.2",
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "language",
+          "value": "python"
+        },
+        {
+          "name": "type",
+          "value": "python"
+        },
+        {
+          "name": "metadataType",
+          "value": "PythonPackageMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/typing_extensions-3.10.0.2.dist-info/METADATA"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:7b107128242bd5e44b84702ea33582ff82ef071213f233e49ac2492f49f09bb0"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/typing_extensions-3.10.0.2.dist-info/RECORD"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:7b107128242bd5e44b84702ea33582ff82ef071213f233e49ac2492f49f09bb0"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/typing_extensions-3.10.0.2.dist-info/top_level.txt"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:7b107128242bd5e44b84702ea33582ff82ef071213f233e49ac2492f49f09bb0"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "publisher": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+      "name": "tzdata",
+      "version": "2021e-r0",
+      "description": "Timezone data",
+      "cpe": "cpe:2.3:a:tzdata:tzdata:2021e-r0:*:*:*:*:*:*:*",
+      "purl": "pkg:alpine/tzdata@2021e-r0?arch=x86_64\u0026upstream=tzdata\u0026distro=alpine-3.14.2",
+      "externalReferences": [
+        {
+          "url": "https://www.iana.org/time-zones",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "type",
+          "value": "apk"
+        },
+        {
+          "name": "metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:b1f9199ff13d5ff130c573e52c3791b85b04ec90e95d51b109369c3a0084d6b3"
+        },
+        {
+          "name": "originPackage",
+          "value": "tzdata"
+        },
+        {
+          "name": "size",
+          "value": "462745"
+        },
+        {
+          "name": "installedSize",
+          "value": "3457024"
+        },
+        {
+          "name": "pullDependencies",
+          "value": "so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "pullChecksum",
+          "value": "Q13qmNobbBWDzl5T0wjcjoZGf7Dkc="
+        },
+        {
+          "name": "gitCommitOfApkPort",
+          "value": "c2f8bafd0bfb9b94d96d9c73dfb913f6af92cd9d"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "author": "Tom Christie \u003ctom@tomchristie.com\u003e",
+      "name": "uvicorn",
+      "version": "0.15.0",
+      "cpe": "cpe:2.3:a:python-uvicorn:python-uvicorn:0.15.0:*:*:*:*:*:*:*",
+      "purl": "pkg:pypi/uvicorn@0.15.0",
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "language",
+          "value": "python"
+        },
+        {
+          "name": "type",
+          "value": "python"
+        },
+        {
+          "name": "metadataType",
+          "value": "PythonPackageMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/uvicorn-0.15.0.dist-info/METADATA"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:35f78a8b7907b2b0bd03f35ff8a6bbd74328ce4d6fc86a56c464e5cf65817fd3"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/uvicorn-0.15.0.dist-info/RECORD"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:35f78a8b7907b2b0bd03f35ff8a6bbd74328ce4d6fc86a56c464e5cf65817fd3"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/uvicorn-0.15.0.dist-info/top_level.txt"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:35f78a8b7907b2b0bd03f35ff8a6bbd74328ce4d6fc86a56c464e5cf65817fd3"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "author": "Yury Selivanov \u003cyury@magic.io\u003e",
+      "name": "uvloop",
+      "version": "0.16.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:yury_selivanov:python-uvloop:0.16.0:*:*:*:*:*:*:*",
+      "purl": "pkg:pypi/uvloop@0.16.0",
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "language",
+          "value": "python"
+        },
+        {
+          "name": "type",
+          "value": "python"
+        },
+        {
+          "name": "metadataType",
+          "value": "PythonPackageMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/uvloop-0.16.0.dist-info/METADATA"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:35f78a8b7907b2b0bd03f35ff8a6bbd74328ce4d6fc86a56c464e5cf65817fd3"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/uvloop-0.16.0.dist-info/RECORD"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:35f78a8b7907b2b0bd03f35ff8a6bbd74328ce4d6fc86a56c464e5cf65817fd3"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/uvloop-0.16.0.dist-info/top_level.txt"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:35f78a8b7907b2b0bd03f35ff8a6bbd74328ce4d6fc86a56c464e5cf65817fd3"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "author": "Samuel Colvin \u003cs@muelcolvin.com\u003e",
+      "name": "watchgod",
+      "version": "0.7",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:python-watchgod:python-watchgod:0.7:*:*:*:*:*:*:*",
+      "purl": "pkg:pypi/watchgod@0.7",
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "language",
+          "value": "python"
+        },
+        {
+          "name": "type",
+          "value": "python"
+        },
+        {
+          "name": "metadataType",
+          "value": "PythonPackageMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/watchgod-0.7.dist-info/METADATA"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:35f78a8b7907b2b0bd03f35ff8a6bbd74328ce4d6fc86a56c464e5cf65817fd3"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/watchgod-0.7.dist-info/RECORD"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:35f78a8b7907b2b0bd03f35ff8a6bbd74328ce4d6fc86a56c464e5cf65817fd3"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/watchgod-0.7.dist-info/top_level.txt"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:35f78a8b7907b2b0bd03f35ff8a6bbd74328ce4d6fc86a56c464e5cf65817fd3"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "author": "Aymeric Augustin \u003caymeric.augustin@m4x.org\u003e",
+      "name": "websockets",
+      "version": "10.0",
+      "cpe": "cpe:2.3:a:python-websockets:python-websockets:10.0:*:*:*:*:*:*:*",
+      "purl": "pkg:pypi/websockets@10.0",
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "language",
+          "value": "python"
+        },
+        {
+          "name": "type",
+          "value": "python"
+        },
+        {
+          "name": "metadataType",
+          "value": "PythonPackageMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/websockets-10.0.dist-info/METADATA"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:35f78a8b7907b2b0bd03f35ff8a6bbd74328ce4d6fc86a56c464e5cf65817fd3"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/websockets-10.0.dist-info/RECORD"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:35f78a8b7907b2b0bd03f35ff8a6bbd74328ce4d6fc86a56c464e5cf65817fd3"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/websockets-10.0.dist-info/top_level.txt"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:35f78a8b7907b2b0bd03f35ff8a6bbd74328ce4d6fc86a56c464e5cf65817fd3"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "author": "Daniel Holth \u003cdholth@fastmail.fm\u003e",
+      "name": "wheel",
+      "version": "0.37.0",
+      "licenses": [
+        {
+          "license": {
+            "id": "MIT"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:daniel_holth:python-wheel:0.37.0:*:*:*:*:*:*:*",
+      "purl": "pkg:pypi/wheel@0.37.0",
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "python-package-cataloger"
+        },
+        {
+          "name": "language",
+          "value": "python"
+        },
+        {
+          "name": "type",
+          "value": "python"
+        },
+        {
+          "name": "metadataType",
+          "value": "PythonPackageMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/wheel-0.37.0.dist-info/METADATA"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:162bbbd72551fdd683aaa4a1d60ee249a2155e2c2c384e99c3a80f8f6fc8d729"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/wheel-0.37.0.dist-info/RECORD"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:162bbbd72551fdd683aaa4a1d60ee249a2155e2c2c384e99c3a80f8f6fc8d729"
+        },
+        {
+          "name": "path",
+          "value": "/usr/local/lib/python3.9/site-packages/wheel-0.37.0.dist-info/top_level.txt"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:162bbbd72551fdd683aaa4a1d60ee249a2155e2c2c384e99c3a80f8f6fc8d729"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "publisher": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+      "name": "xz-libs",
+      "version": "5.2.5-r0",
+      "description": "Library and CLI tools for XZ and LZMA compressed files (libraries)",
+      "licenses": [
+        {
+          "license": {
+            "id": "GPL-2.0-or-later"
+          }
+        },
+        {
+          "license": {
+            "id": "LGPL-2.1-or-later"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:xz-libs:xz-libs:5.2.5-r0:*:*:*:*:*:*:*",
+      "purl": "pkg:alpine/xz-libs@5.2.5-r0?arch=x86_64\u0026upstream=xz\u0026distro=alpine-3.14.2",
+      "externalReferences": [
+        {
+          "url": "https://tukaani.org/xz",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "type",
+          "value": "apk"
+        },
+        {
+          "name": "metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:b1f9199ff13d5ff130c573e52c3791b85b04ec90e95d51b109369c3a0084d6b3"
+        },
+        {
+          "name": "originPackage",
+          "value": "xz"
+        },
+        {
+          "name": "size",
+          "value": "73883"
+        },
+        {
+          "name": "installedSize",
+          "value": "151552"
+        },
+        {
+          "name": "pullDependencies",
+          "value": "so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "pullChecksum",
+          "value": "Q1jlml/7gdpvyBQh0bscOl3oj5JF8="
+        },
+        {
+          "name": "gitCommitOfApkPort",
+          "value": "9d8a8521f972a1ee34a26d9a654a01528c3bf0a4"
+        }
+      ]
+    },
+    {
+      "type": "library",
+      "publisher": "Natanael Copa \u003cncopa@alpinelinux.org\u003e",
+      "name": "zlib",
+      "version": "1.2.11-r3",
+      "description": "A compression/decompression Library",
+      "licenses": [
+        {
+          "license": {
+            "id": "Zlib"
+          }
+        }
+      ],
+      "cpe": "cpe:2.3:a:zlib:zlib:1.2.11-r3:*:*:*:*:*:*:*",
+      "purl": "pkg:alpine/zlib@1.2.11-r3?arch=x86_64\u0026upstream=zlib\u0026distro=alpine-3.14.2",
+      "externalReferences": [
+        {
+          "url": "https://zlib.net/",
+          "type": "distribution"
+        }
+      ],
+      "properties": [
+        {
+          "name": "foundBy",
+          "value": "apkdb-cataloger"
+        },
+        {
+          "name": "type",
+          "value": "apk"
+        },
+        {
+          "name": "metadataType",
+          "value": "ApkMetadata"
+        },
+        {
+          "name": "path",
+          "value": "/lib/apk/db/installed"
+        },
+        {
+          "name": "layerID",
+          "value": "sha256:b1f9199ff13d5ff130c573e52c3791b85b04ec90e95d51b109369c3a0084d6b3"
+        },
+        {
+          "name": "originPackage",
+          "value": "zlib"
+        },
+        {
+          "name": "size",
+          "value": "51398"
+        },
+        {
+          "name": "installedSize",
+          "value": "110592"
+        },
+        {
+          "name": "pullDependencies",
+          "value": "so:libc.musl-x86_64.so.1"
+        },
+        {
+          "name": "pullChecksum",
+          "value": "Q1Sc/5gG4ey/zvnyPPQ/Au7bXqc08="
+        },
+        {
+          "name": "gitCommitOfApkPort",
+          "value": "388a4fb3640f8ccbd18e105df3ad741dca4247e1"
+        }
+      ]
+    },
+    {
+      "type": "operating-system",
+      "name": "Alpine Linux",
+      "version": "",
+      "externalReferences": [
+        {
+          "url": "https://bugs.alpinelinux.org/",
+          "type": "issue-tracker"
+        },
+        {
+          "url": "https://alpinelinux.org/",
+          "type": "website"
+        }
+      ],
+      "properties": [
+        {
+          "name": "prettyName",
+          "value": "Alpine Linux v3.14"
+        },
+        {
+          "name": "id",
+          "value": "alpine"
+        },
+        {
+          "name": "versionID",
+          "value": "3.14.2"
+        }
+      ]
+    }
+  ]
+}

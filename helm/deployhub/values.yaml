@@ -1,0 +1,34 @@
+dh-ms-general:
+  image:
+    repository: quay.io/deployhub/dh-ms-general
+    tag: svccat-v9.0.0.3305-g46081d5
+
+dh-ms-nginx:
+  image:
+    repository: quay.io/deployhub/dh-ms-nginx
+    tag: svccat-v9.0.0.3290-g2827bd5
+
+dh-ms-ui:
+  image:
+    repository: quay.io/deployhub/dh-ms-ui
+    tag: svccat-v9.0.0.3301-gedf7327
+
+ms-dep-pkg-cud:
+  DockerRepo: quay.io/ortelius/ms-dep-pkg-cud
+  DockerTag: deploy-v10.0.0.65-gd9cfc6b
+
+ms-dep-pkg-r:
+  DockerRepo: quay.io/ortelius/ms-dep-pkg-r
+  DockerTag: deploy-v10.0.0.46-g0467458
+
+ms-textfile-crud:
+  DockerRepo: quay.io/ortelius/ms-textfile-crud
+  DockerTag: deploy-v10.0.0.48-gf8fe554
+
+ms-validate-user:
+  DockerRepo: quay.io/ortelius/ms-validate-user
+  DockerTag: deploy-v10.0.0.53-ge04efb0        
+  
+ms-compitem-crud:
+  DockerRepo: quay.io/ortelius/ms-compitem-crud
+  DockerTag: deploy-v10.0.0.87-g3beea2d
