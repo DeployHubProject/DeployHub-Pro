@@ -3,7 +3,7 @@ name: Release Charts
 on:
   push:
     branches:
-      - deploy
+      - main
     paths:
       - 'helm/deployhub/charts/**/Chart.yaml'
 
