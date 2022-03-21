@@ -1,0 +1,53 @@
+apiVersion: v1
+entries:
+  dh-jwt:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2022-03-21T21:25:31.417461721Z"
+    description: A Helm chart for Kubernetes
+    digest: c5905a7538ea7497a1f1a9b0ccb7b9ce726c5264071ffb3fe3f8a2fbb06878e3
+    name: dh-jwt
+    urls:
+    - https://github.com/DeployHubProject/DeployHub-Pro/releases/download/dh-jwt-0.1.0/dh-jwt-0.1.0.tgz
+    version: 0.1.0
+  dh-ms-general:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2022-03-21T21:25:31.541754278Z"
+    description: A Helm chart for Kubernetes
+    digest: a94559d03338bfcb2d355391d07f9f216d01120d70cd9955414ff194da5fb95e
+    name: dh-ms-general
+    urls:
+    - https://github.com/DeployHubProject/DeployHub-Pro/releases/download/dh-ms-general-0.1.0/dh-ms-general-0.1.0.tgz
+    version: 0.1.0
+  dh-ms-nginx:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2022-03-21T21:25:31.676124718Z"
+    description: A Helm chart for Kubernetes
+    digest: 9d488ecd18ace0bf9733d4d3a7535c31cf3710aa13fc51437cc5e8ba5df49a58
+    name: dh-ms-nginx
+    urls:
+    - https://github.com/DeployHubProject/DeployHub-Pro/releases/download/dh-ms-nginx-0.1.0/dh-ms-nginx-0.1.0.tgz
+    version: 0.1.0
+  dh-ms-ui:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2022-03-21T21:25:31.79241223Z"
+    description: A Helm chart for Kubernetes
+    digest: 6ce18e0f3b98dd5a1de97558beca9917e674109cb1a80ae39477ded8ef4dcc95
+    name: dh-ms-ui
+    urls:
+    - https://github.com/DeployHubProject/DeployHub-Pro/releases/download/dh-ms-ui-0.1.0/dh-ms-ui-0.1.0.tgz
+    version: 0.1.0
+  dh-postgres:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2022-03-21T21:25:31.923761915Z"
+    description: A Helm chart for Kubernetes
+    digest: f69b7ee2be766c390f5ff9c345b5a97d4ea693ce99e00b3ec67c9f850c08bd26
+    name: dh-postgres
+    urls:
+    - https://github.com/DeployHubProject/DeployHub-Pro/releases/download/dh-postgres-0.1.0/dh-postgres-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-03-21T21:25:31.923770315Z"
