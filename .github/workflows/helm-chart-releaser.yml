@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'helm/deployhub/charts/**/Chart.yaml'
 
 jobs:
   release:
