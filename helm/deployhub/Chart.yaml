@@ -1,0 +1,33 @@
+apiVersion: v2
+name: deployhub
+description: Parent chart for DeployHub
+type: application
+version: 10.0.0
+appVersion: 10.0.0
+dependencies:
+- name: dh-ms-nginx
+  version: 10.0.0
+- name: dh-ms-general
+  version: 10.0.0
+- name: dh-ms-ui
+  version: 10.0.0
+- name: dh-postgres
+  version: 10.0.0
+- name: dh-jwt
+  version: 10.0.0
+- name: ms-dep-pkg-cud
+  version: 10.0.0-build.62
+  repository: https://ortelius.github.io/ortelius-ms-dep-pkg-cud/
+- name: ms-dep-pkg-r
+  version: 10.0.0-build.44
+  repository: https://ortelius.github.io/ortelius-ms-dep-pkg-r/ 
+- name: ms-textfile-crud
+  version: 10.0.0-build.44
+  repository: https://ortelius.github.io/ortelius-ms-textfile-crud/ 
+- name: ms-validate-user
+  version: 10.0.0-build.47
+  repository: https://ortelius.github.io/ortelius-ms-validate-user/
+- name: ms-compitem-crud
+  version: 10.0.0-build.76
+  repository: https://ortelius.github.io/ortelius-ms-compitem-crud/  
+         
