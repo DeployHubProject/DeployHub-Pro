@@ -1,10 +1,8 @@
-<!--- app-name: WordPress -->
-
-# DeployHub Pro packaged by DeployHub, Inc
+# DeployHub Pro
 
 Microservice Configuration Management - Track, Version, Find, Share and Deploy Microservices
 
-[Overview of DepoyHub](https://www.deployhuyb.com)
+[Overview of DeployHub](https://www.deployhuyb.com)
 
 ## TL;DR
 
