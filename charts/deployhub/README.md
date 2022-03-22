@@ -7,6 +7,8 @@ Microservice Configuration Management - Track, Version, Find, Share and Deploy M
 ## TL;DR
 
 ```console
+$ openssl genpkey -out jwt.pri -algorithm RSA -pkeyopt rsa_keygen_bits:2048
+$ openssl pkey -in jwt.pri -pubout -out jwt.pub
 $ helm repo add deployhub https://deployhubproject.github.io/DeployHub-Pro/
 $ helm install my-release deployhub/deployhub --set dh-postgres.DBPassword=my_db_password --set dh-ms-nginx.SSLType=OFF --set dh-postgres.DBHost=deployhubdb.us-east-1.rds.amazonaws.com --set-file dh-jwt.JwtPrivateKey=jwt.pri --set-file dh-jwt.JwtPublicKey=jwt.pub
 ```
@@ -19,7 +21,7 @@ This chart deploys all of the required secrets, services, and deployments on a [
 
 - Kubernetes 1.19+
 - Helm 3.2.0+
-- Public/Private RSA Key for JWT Tokens
+- Public/Private RSA PKCS#8 Key Pair for JWT Tokens
 - External Postgres Database
 
 ## Installing the Chart
@@ -34,8 +36,8 @@ The command deploys DeployHub on the Kubernetes cluster using the following para
 - dh-postgres.DBPassword = Postgres Database Password
 - dh-postgres.DBHost = Postgres Database Hostname
 - dh-ms-nginx.SSLType = OFF (Disable the use of SSL certificates)
-- dh-jwt.JwtPrivateKey = Private RSA Key for creating the JWT Token
-- dh-jwt.JwtPublicKey = Public RSA Key for creating the JWT Token
+- dh-jwt.JwtPrivateKey = Private RSA PKCS#8 Key for creating the JWT Token
+- dh-jwt.JwtPublicKey = Public RSA PKCS#8 Key for creating the JWT Token
 
 > **Tip**: List all releases using `helm list`
 
