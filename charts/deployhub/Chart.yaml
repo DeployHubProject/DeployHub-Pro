@@ -1,8 +1,10 @@
 apiVersion: v2
 name: deployhub
 description: Parent chart for DeployHub
+home: https://www.deployhub.com
+icon: https://www.deployhub.com/wp-content/uploads/2018/04/justdog-small.png
 type: application
-version: 10.0.1
+version: 10.0.2
 appVersion: 10.0.0
 dependencies:
 - name: dh-ms-nginx
