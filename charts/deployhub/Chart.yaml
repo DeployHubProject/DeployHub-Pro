@@ -8,8 +8,8 @@ version: 10.0.2
 appVersion: 10.0.0
 dependencies:
 - name: dh-ms-nginx
-  version: 10.0.1
-  repository: https://deployhubproject.github.io/DeployHub-Pro-Codebase/ 
+  version: 10.0.2
+  repository: https://deployhubproject.github.io/DeployHub-Pro-Codebase/
 - name: dh-ms-general
   version: 10.0.1
   repository: https://deployhubproject.github.io/DeployHub-Pro-Codebase/  
@@ -37,4 +37,3 @@ dependencies:
 - name: ms-compitem-crud
   version: 10.0.0-build.78
   repository: https://ortelius.github.io/ortelius-ms-compitem-crud/  
-
