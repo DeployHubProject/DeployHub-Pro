@@ -27,7 +27,7 @@ dependencies:
   version: 10.0.3
   repository: https://deployhubproject.github.io/charts/ 
 - name: ms-dep-pkg-cud
-  version: 10.0.0-build.65
+  version: 10.0.0-build.66
   repository: https://ortelius.github.io/ortelius-ms-dep-pkg-cud/
 - name: ms-dep-pkg-r
   version: 10.0.0-build.52
