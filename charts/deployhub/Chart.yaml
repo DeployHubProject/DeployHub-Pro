@@ -1,10 +1,14 @@
 apiVersion: v2
 name: deployhub
-description: Parent chart for DeployHub
+description: DeployHub Pro
 home: https://www.deployhub.com
-icon: https://www.deployhub.com/wp-content/uploads/2018/04/justdog-small.png
+icon: https://deployhubproject.github.io/DeployHub-Pro/deployhub.svg
+keywords: 
+  - Service Catalog
+  - Microservices
+  - SBOM
 type: application
-version: 10.0.3
+version: 10.0.4
 appVersion: 10.0.0
 dependencies:
 - name: dh-ms-nginx
