@@ -29,7 +29,7 @@ This chart deploys all of the required secrets, services, and deployments on a [
 To install the chart with the release name `my-release`:
 
 ```console
-helm install my-release deployhub/deployhub --set dh-postgres.DBPassword=my_db_password --set dh-postgres.DBHost=deployhubdb.us-east-1.rds.amazonaws.com --set dh-ms-nginx.SSLType=OFF --set-file dh-jwt.JwtPrivateKey=jwt.pri --set-file dh-jwt.JwtPublicKey=jwt.pub
+$ helm install my-release deployhub/deployhub --set dh-postgres.DBPassword=my_db_password --set dh-postgres.DBHost=deployhubdb.us-east-1.rds.amazonaws.com --set dh-ms-nginx.SSLType=OFF --set-file dh-jwt.JwtPrivateKey=jwt.pri --set-file dh-jwt.JwtPublicKey=jwt.pub
 ```
 
 The command deploys DeployHub on the Kubernetes cluster using the following parameters:
@@ -46,7 +46,7 @@ The command deploys DeployHub on the Kubernetes cluster using the following para
 To uninstall/delete the `my-release` deployment:
 
 ```console
-helm delete my-release
+$ helm delete my-release
 ```
 
 The command removes all the Kubernetes components associated with the chart and deletes the release.
@@ -57,8 +57,16 @@ The command removes all the Kubernetes components associated with the chart and 
 
 | Name                     | Description                                                                                  | Value           |
 | ------------------------ | -------------------------------------------------------------------------------------------- | --------------- |
-| `kubeVersion`            | Override Kubernetes version                                                                  | `""`            |
-
+| `dh-postgres.DBUserName` | Postgres Database User Name                                                                  | `postgres`      |
+| `dh-postgres.DBPassword` | Postgres Database Password                                                                   | `postgres`      |
+| `dh-postgres.DBName      | Postgres Database Name                                                                   | `postgres`      |
+| `dh-postgres.DBHost`     | Postgres Database Host Name                                                                  | `localhost`     |
+| `dh-postgres.DBPort`     | Postgres Database Port                                                                       | `5432`          |
+| `dh-ms-nginx.SSLType`    | Enable SSL                                                                                   | `ON or OFF`     |
+| `dh-ms-nginx.SSLChainedCert`    | SSL Chained Certificate - used when dh-ms-nginx.SSLType=ON                            | `SSL Chained Certificate - decoded` |
+| `dh-ms-nginx.SSLPrivateKey`    | SSL Private Key for SSL Chained Cert - used when dh-ms-nginx.SSLType=ON                | `SSL Private Key - decoded` |
+| `dh-jwt.JwtPrivateKey`    | Private RSA PKCS#8 Key used to create JWT Tokens                                            | `Private RSA PKCS#8 Key - decoded` |
+| `dh-jwt.JwtPublicKey`    | Public RSA PKCS#8 Key used to create JWT Tokens                                            | `Public RSA PKCS#8 Key - decoded` |
 
 > NOTE: Once this chart is deployed, it is not possible to change the application's access credentials, such as usernames or passwords, using Helm. To change these application credentials after deployment, delete any persistent volumes (PVs) used by the chart and re-deploy it, or use the application's built-in administrative tools if available.
 
@@ -67,5 +75,3 @@ Alternatively, a YAML file that specifies the values for the above parameters ca
 ```console
 helm install my-release -f values.yaml deployhub/deployhub
 ```
-
-> **Tip**: You can use the default [values.yaml](values.yaml)
