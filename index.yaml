@@ -3,6 +3,53 @@ entries:
   deployhub:
   - apiVersion: v2
     appVersion: 10.0.0
+    created: "2022-03-30T03:08:50.229197376Z"
+    dependencies:
+    - name: dh-ms-nginx
+      repository: https://deployhubproject.github.io/charts/
+      version: 10.0.7
+    - name: dh-ms-general
+      repository: https://deployhubproject.github.io/charts/
+      version: 10.0.6
+    - name: dh-ms-ui
+      repository: https://deployhubproject.github.io/charts/
+      version: 10.0.4
+    - name: dh-postgres
+      repository: https://deployhubproject.github.io/charts/
+      version: 10.0.3
+    - name: dh-jwt
+      repository: https://deployhubproject.github.io/charts/
+      version: 10.0.3
+    - name: ms-dep-pkg-cud
+      repository: https://ortelius.github.io/ortelius-ms-dep-pkg-cud/
+      version: 10.0.0-build.66
+    - name: ms-dep-pkg-r
+      repository: https://ortelius.github.io/ortelius-ms-dep-pkg-r/
+      version: 10.0.0-build.52
+    - name: ms-textfile-crud
+      repository: https://ortelius.github.io/ortelius-ms-textfile-crud/
+      version: 10.0.0-build.48
+    - name: ms-validate-user
+      repository: https://ortelius.github.io/ortelius-ms-validate-user/
+      version: 10.0.0-build.48
+    - name: ms-compitem-crud
+      repository: https://ortelius.github.io/ortelius-ms-compitem-crud/
+      version: 10.0.0-build.78
+    description: DeployHub Pro
+    digest: d1ba3469a4f760a206797fc0abb563c6d57f474ce90250d2bbd43b6176fd43ae
+    home: https://www.deployhub.com
+    icon: https://deployhubproject.github.io/DeployHub-Pro/deployhub.svg
+    keywords:
+    - Service Catalog
+    - Microservices
+    - SBOM
+    name: deployhub
+    type: application
+    urls:
+    - https://github.com/DeployHubProject/DeployHub-Pro/releases/download/deployhub-10.0.16/deployhub-10.0.16.tgz
+    version: 10.0.16
+  - apiVersion: v2
+    appVersion: 10.0.0
     created: "2022-03-30T02:34:58.99693431Z"
     dependencies:
     - name: dh-ms-nginx
@@ -608,4 +655,4 @@ entries:
     urls:
     - https://github.com/DeployHubProject/DeployHub-Pro/releases/download/deployhub-10.0.3/deployhub-10.0.3.tgz
     version: 10.0.3
-generated: "2022-03-30T02:34:58.997821685Z"
+generated: "2022-03-30T03:08:50.229317378Z"
