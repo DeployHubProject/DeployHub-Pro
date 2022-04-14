@@ -8,7 +8,7 @@ keywords:
   - Microservices
   - SBOM
 type: application
-version: 10.0.20
+version: 10.0.21
 appVersion: 10.0.0
 dependencies:
 - name: dh-ms-nginx
