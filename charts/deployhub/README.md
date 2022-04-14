@@ -59,14 +59,17 @@ The command removes all the Kubernetes components associated with the chart and 
 | ------------------------ | -------------------------------------------------------------------------------------------- | --------------- |
 | `dh-postgres.DBUserName` | Postgres Database User Name                                                                  | `postgres`      |
 | `dh-postgres.DBPassword` | Postgres Database Password                                                                   | `postgres`      |
-| `dh-postgres.DBName      | Postgres Database Name                                                                   | `postgres`      |
+| `dh-postgres.DBName`      | Postgres Database Name                                                                      | `postgres`      |
 | `dh-postgres.DBHost`     | Postgres Database Host Name                                                                  | `localhost`     |
 | `dh-postgres.DBPort`     | Postgres Database Port                                                                       | `5432`          |
 | `dh-ms-nginx.SSLType`    | Enable SSL                                                                                   | `ON or OFF`     |
-| `dh-ms-nginx.SSLChainedCert`    | SSL Chained Certificate - used when dh-ms-nginx.SSLType=ON                            | `SSL Chained Certificate - decoded` |
-| `dh-ms-nginx.SSLPrivateKey`    | SSL Private Key for SSL Chained Cert - used when dh-ms-nginx.SSLType=ON                | `SSL Private Key - decoded` |
+| `dh-ms-nginx.SSLChainedCert`    | SSL Chained Certificate - required when `dh-ms-nginx.SSLType=ON`                            | `SSL Chained Certificate - decoded` |
+| `dh-ms-nginx.SSLPrivateKey`    | SSL Private Key for SSL Chained Cert - required when `dh-ms-nginx.SSLType=ON`                | `SSL Private Key - decoded` |
+| `dh-ms-nginx.ingress.enabled`    | Enable AWS Load Balancer (ALB)                                                       | `true` or `false (default)`     |
+| `dh-ms-nginx.ingress.abl_subnets`    | String of comma delimited subnets for the ALB - required when  `dh-ms-nginx.ingress.enabled=true`   | |
+| `dh-ms-nginx.ingress.abl_certificate_arn`    | ARN for the certificate from AWS Certificate Manager - required when  `dh-ms-nginx.ingress.enabled=true`   | |                                               | `true` or `false (default)`     |
 | `dh-jwt.JwtPrivateKey`    | Private RSA PKCS#8 Key used to create JWT Tokens                                            | `Private RSA PKCS#8 Key - decoded` |
-| `dh-jwt.JwtPublicKey`    | Public RSA PKCS#8 Key used to create JWT Tokens                                            | `Public RSA PKCS#8 Key - decoded` |
+| `dh-jwt.JwtPublicKey`    | Public RSA PKCS#8 Key used to create JWT Tokens                                              | `Public RSA PKCS#8 Key - decoded` |
 
 > NOTE: Once this chart is deployed, it is not possible to change the application's access credentials, such as usernames or passwords, using Helm. To change these application credentials after deployment, delete any persistent volumes (PVs) used by the chart and re-deploy it, or use the application's built-in administrative tools if available.
 
