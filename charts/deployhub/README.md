@@ -2,7 +2,7 @@
 
 Microservice Configuration Management - Track, Version, Find, Share and Deploy Microservices
 
-[Overview of DeployHub](https://www.deployhuyb.com)
+[Overview of DeployHub](https://www.deployhub.com)
 
 ## TL;DR
 
@@ -10,7 +10,7 @@ Microservice Configuration Management - Track, Version, Find, Share and Deploy M
 openssl genpkey -out jwt.pri -algorithm RSA -pkeyopt rsa_keygen_bits:2048
 openssl pkey -in jwt.pri -pubout -out jwt.pub
 helm repo add deployhub https://deployhubproject.github.io/DeployHub-Pro/
-helm install my-release deployhub/deployhub --set dh-postgres.DBPassword=my_db_password --set dh-ms-nginx.SSLType=OFF --set dh-postgres.DBHost=deployhubdb.us-east-1.rds.amazonaws.com --set-file dh-jwt.JwtPrivateKey=jwt.pri --set-file dh-jwt.JwtPublicKey=jwt.pub
+helm install my-release deployhub/deployhub --set dh-postgres.dbpass=my_db_password --set dh-ms-nginx.ingress.type=ssloff --set dh-postgres.dbhost=deployhubdb.us-east-1.rds.amazonaws.com --set-file dh-jwt.jwt.privatekey=jwt.pri --set-file dh-jwt.jwt.publickey=jwt.pub
 ```
 
 ## Introduction
@@ -29,15 +29,15 @@ This chart deploys all of the required secrets, services, and deployments on a [
 To install the chart with the release name `my-release`:
 
 ```console
-helm install my-release deployhub/deployhub --set dh-postgres.DBPassword=my_db_password --set dh-postgres.DBHost=deployhubdb.us-east-1.rds.amazonaws.com --set dh-ms-nginx.SSLType=OFF --set-file dh-jwt.JwtPrivateKey=jwt.pri --set-file dh-jwt.JwtPublicKey=jwt.pub
+helm install my-release deployhub/deployhub --set dh-postgres.dbpass=my_db_password --set dh-postgres.dbhost=deployhubdb.us-east-1.rds.amazonaws.com --set dh-ms-nginx.ingress.type=ssloff --set-file dh-jwt.jwt.privatekey=jwt.pri --set-file dh-jwt.jwt.publickey=jwt.pub
 ```
 
 The command deploys DeployHub on the Kubernetes cluster using the following parameters:
-- dh-postgres.DBPassword = Postgres Database Password
-- dh-postgres.DBHost = Postgres Database Hostname
-- dh-ms-nginx.SSLType = OFF (Disable the use of SSL certificates)
-- dh-jwt.JwtPrivateKey = Private RSA PKCS#8 Key for creating the JWT Token
-- dh-jwt.JwtPublicKey = Public RSA PKCS#8 Key for creating the JWT Token
+- dh-postgres.dbpass = Postgres Database Password
+- dh-postgres.dbhost = Postgres Database Hostname
+- dh-ms-nginx.ingress.type = ssloff (Disable the use of SSL certificates)
+- dh-jwt.jwt.privatekey = Private RSA PKCS#8 Key for creating the JWT Token
+- dh-jwt.jwt.publickey = Public RSA PKCS#8 Key for creating the JWT Token
 
 > **Tip**: List all releases using `helm list`
 
@@ -62,7 +62,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `dh-postgres.dbname`     | Postgres Database Name                                                                       | `postgres`      |
 | `dh-postgres.dbhost`     | Postgres Database Host Name                                                                  | `localhost`     |
 | `dh-postgres.dbport`     | Postgres Database Port                                                                       | `5432`          |
-| `dh-ms-nginx.ingress.type` | ssloff = non ssl enabled, alb = add alb ingress, volumemnt = certs come from existing ssl volume, sslcert = add certs a opaque secret| sslcert, alb, volumemnt, ssloff  |
+| `dh-ms-nginx.ingress.type` | ssloff = non ssl enabled, alb = add alb ingress, volumemnt = certs come from existing ssl volume, sslcert = add certs a opaque secret | `sslcert, alb, volumemnt, ssloff`  |
 | `dh-ms-nginx.ingress.sslcert.chainedcert`    | SSL Chained Certificate - required when `dh-ms-nginx.ingress.type=sslcert`                     | `SSL Chained Certificate - decoded` |
 | `dh-ms-nginx.ingress.sslcert.privatekey`    | SSL Private Key for SSL Chained Cert - required when `dh-ms-nginx.ingress.type=sslcert`         | `SSL Private Key - decoded`         |
 | `dh-ms-nginx.ingress.abl_subnets`    | String of comma delimited subnets for the ALB - required when  `dh-ms-nginx.ingress.type=alb`  |   |
