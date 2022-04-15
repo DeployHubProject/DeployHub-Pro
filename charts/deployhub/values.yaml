@@ -21,7 +21,7 @@ dh-ms-nginx:
                 -----BEGIN CERTIFICATE-----
                 -----END CERTIFICATE-----
 
-            privatekkey: |
+            privatekey: |
                 -----BEGIN PRIVATE KEY-----
                 -----END PRIVATE KEY-----
 
