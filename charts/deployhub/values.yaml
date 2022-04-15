@@ -17,8 +17,13 @@ dh-ms-nginx:
         alb_certificate_arn: 
         alb_subnets: 
         sslcert:
-            chainedcert: 
-            privatekkey:
+            chainedcert: | 
+                ***REMOVED***
+                ***REMOVED***
+
+            privatekkey: |
+                ***REMOVED***
+                ***REMOVED***
 
 # Database Connection Definition
 dh-postgres:
