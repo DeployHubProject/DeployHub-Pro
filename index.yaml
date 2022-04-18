@@ -7,6 +7,58 @@ entries:
       catalog.cattle.io/release-name: deployhub
     apiVersion: v2
     appVersion: 10.0.0
+    created: "2022-04-18T20:24:27.235054336Z"
+    dependencies:
+    - name: dh-ms-nginx
+      repository: https://deployhubproject.github.io/charts/
+      version: 10.0.10
+    - name: dh-ms-general
+      repository: https://deployhubproject.github.io/charts/
+      version: 10.0.8
+    - name: dh-ms-ui
+      repository: https://deployhubproject.github.io/charts/
+      version: 10.0.6
+    - name: dh-postgres
+      repository: https://deployhubproject.github.io/charts/
+      version: 10.0.4
+    - name: dh-jwt
+      repository: https://deployhubproject.github.io/charts/
+      version: 10.0.4
+    - name: ms-dep-pkg-cud
+      repository: https://ortelius.github.io/ortelius-ms-dep-pkg-cud/
+      version: 10.0.0-build.69
+    - name: ms-dep-pkg-r
+      repository: https://ortelius.github.io/ortelius-ms-dep-pkg-r/
+      version: 10.0.0-build.52
+    - name: ms-textfile-crud
+      repository: https://ortelius.github.io/ortelius-ms-textfile-crud/
+      version: 10.0.0-build.48
+    - name: ms-validate-user
+      repository: https://ortelius.github.io/ortelius-ms-validate-user/
+      version: 10.0.0-build.48
+    - name: ms-compitem-crud
+      repository: https://ortelius.github.io/ortelius-ms-compitem-crud/
+      version: 10.0.0-build.78
+    description: DeployHub Pro
+    digest: 0bf6787a2f324ec232257bfba04fb808e94f887d08fe75d70d5050abfb4e7790
+    home: https://www.deployhub.com
+    icon: https://deployhubproject.github.io/DeployHub-Pro/deployhub.svg
+    keywords:
+    - Service Catalog
+    - Microservices
+    - SBOM
+    kubeVersion: 1.19 - 1.23
+    name: deployhub
+    type: application
+    urls:
+    - https://github.com/DeployHubProject/DeployHub-Pro/releases/download/deployhub-10.0.28/deployhub-10.0.28.tgz
+    version: 10.0.28
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/display-name: DeployHub Unified Service Catalog
+      catalog.cattle.io/release-name: deployhub
+    apiVersion: v2
+    appVersion: 10.0.0
     created: "2022-04-15T22:09:52.246903715Z"
     dependencies:
     - name: dh-ms-nginx
@@ -1093,4 +1145,4 @@ entries:
     urls:
     - https://github.com/DeployHubProject/DeployHub-Pro/releases/download/deployhub-10.0.3/deployhub-10.0.3.tgz
     version: 10.0.3
-generated: "2022-04-15T22:09:52.247172215Z"
+generated: "2022-04-18T20:24:27.235337539Z"
