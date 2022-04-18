@@ -1,16 +1,16 @@
-DEPLOYHUB®  SOFTWARE LICENSE AGREEMENT
+# DEPLOYHUB®  SOFTWARE LICENSE AGREEMENT
   
 Copyright © 2022 DeployHub, Inc.  All Rights Reserved.
 
-PLEASE READ THIS SOFTWARE LICENSE AGREEMENT (THIS “AGREEMENT”) CAREFULLY BEFORE USING THE DEPLOYHUB® SOFTWARE (THE “SOFTWARE”) AND/OR ANY RELATED DOCUMENTATION (THE “DOCUMENTATION” ).  BY INSTALLING OR OTHERWISE USING THE SOFTWARE, YOU ARE ACCEPTING AND AGREEING TO THE TERMS OF THIS AGREEMENT.  IF YOU DO NOT AGREE TO BE BOUND BY THE TERMS OF THIS AGREEMENT, CLICK THE “DISAGREE” BUTTON BELOW AND/OR DO NOT INSTALL OR OTHERWISE USE THE SOFTWARE.
+**PLEASE READ THIS SOFTWARE LICENSE AGREEMENT (THIS “AGREEMENT”) CAREFULLY BEFORE USING THE DEPLOYHUB® SOFTWARE (THE “SOFTWARE”) AND/OR ANY RELATED DOCUMENTATION (THE “DOCUMENTATION” ).  BY INSTALLING OR OTHERWISE USING THE SOFTWARE, YOU ARE ACCEPTING AND AGREEING TO THE TERMS OF THIS AGREEMENT.  IF YOU DO NOT AGREE TO BE BOUND BY THE TERMS OF THIS AGREEMENT, CLICK THE “DISAGREE” BUTTON BELOW AND/OR DO NOT INSTALL OR OTHERWISE USE THE SOFTWARE.**
 
 This Agreement is between you and DeployHub.  If you are agreeing to this Agreement not as an individual but on behalf of your company, then “you” means your company and any of its Affiliates and you are binding your company and its Affiliates to this Agreement.  “Affiliates” means an entity which, directly or indirectly, owns or controls, is owned or is controlled by or is under common ownership or control with a party, where “control” means the power to direct the management or affairs of an entity, and “ownership” mean the beneficial ownership  of 50% (or, if the applicable jurisdiction does not allow majority ownership, the maximum amount permitted under such law) or more of the voting equity securities or other equivalent voting interests of the entity.
 
-1. License Grant  
+1. *License Grant*  
   
    DeployHub hereby grants to you, and you accept, a nonexclusive license to use the Software (in machine-readable, object code form only) and the Documentation only as authorized in this Agreement and up to the level of use specified in the DeployHub sales documents accompanying the transaction authorizing this Agreement
 
-2. Limitations on Use  
+2. *Limitations on Use*  
 
     The Software may be used only up to the level at which you are authorized to execute or run the Software.  That level may be measured by the number of computers on which the Software runs, the number of Applications supported by the Software or other level of use specified by DeployHub. “Application” is as defined in the DeployHub Documentation for the applicable Software.  
 
@@ -22,13 +22,13 @@ This Agreement is between you and DeployHub.  If you are agreeing to this Agreem
 
     DeployHub shall have the right upon reasonable advance notice to audit and inspect your facilities and records during business hours to verify compliance with the limitations and other terms of this Agreement.  
 
-3. Ownership  
+3. *Ownership*  
 
     All rights, title and interest in and to the Software and Documentation and any modifications, translations, adaptations, upgrades and enhancements thereto are and shall at all times remain the sole and exclusive property of DeployHub or its licensors.  
 
     The Software and Documentation are protected by the U.S. Copyright Act and other intellectual property laws and international treaties.  You agree that you do not own or hereby acquire any claim or right of ownership or license to the Software or Documentation.   You acknowledge and agree that the Software and the Documentation are proprietary products of DeployHub or its licensors protected under the U.S. Copyright Act and other intellectual property laws and international treaties.
  
-4. Term and Termination  
+4. *Term and Termination*  
 
     This Agreement is effective upon your receipt of the Software and shall continue until terminated.  
 
@@ -40,7 +40,7 @@ This Agreement is between you and DeployHub.  If you are agreeing to this Agreem
 
     Upon such termination by DeployHub, you agree to return to DeployHub the Software, the Documentation and all copies and portions thereof.
 
-5. Limited Warranty  
+5. *Limited Warranty*  
 
     DeployHub warrants, for your benefit alone, for a period of 90 days from the date of commencement of this Agreement (the “Warranty Period”) that the Software shall operate substantially in accordance with the functional specifications in the Documentation.  
 
@@ -50,7 +50,7 @@ This Agreement is between you and DeployHub.  If you are agreeing to this Agreem
 
     Moreover, the above warranty shall not apply to (and DeployHub shall have no obligation with respect to) any failure of the Software arising from or related to: (a) the use of the Software in connection with any equipment or software not created or approved in advance by DeployHub; or (b) noncompliance with the Documentation, misuse, neglect, improper operation or mismanagement of the Software.
 
-6. Limitation of Liability  
+6. *Limitation of Liability*  
 
     DEPLOYHUB’S CUMULATIVE LIABILITY TO YOU FOR ANY LOSS OR DAMAGES RESULTING FROM ANY CLAIMS, DEMANDS, OR ACTIONS ARISING OUT OF OR RELATING TO THIS AGREEMENT SHALL NOT EXCEED THE LICENSE FEE PAID BY YOU TO DEPLOYHUB FOR THE USE OF THE SOFTWARE UNDER THIS AGREEMENT.  
 
@@ -58,15 +58,15 @@ This Agreement is between you and DeployHub.  If you are agreeing to this Agreem
 
     THE LIMITATIONS CONTAINED IN THIS PARAGRAPH APPLY WHETHER THE LIABILITY IS BASED ON CONTRACT, NEGLIGENCE, STRICT LIABILITY OR OTHERWISE, EVEN IF DEPLOYHUB HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.  SOME STATES DO NOT ALLOW THE LIMITATION OR EXCLUSION OF LIABILITY FOR INCIDENTAL OR CONSEQUENTIAL DAMAGES, SO THE ABOVE LIMITATION OR EXCLUSION MAY NOT APPLY TO YOU.
 
-7. Trademark  
+7. *Trademark*  
 
     DEPLOYHUB® is a registered trademark of DeployHub.  No right, license, or interest to such trademark is granted to you under this Agreement, and you agree that no such right, license, or interest shall be asserted by you with respect to such trademark.
 
-8. Entire Agreement  
+8. *Entire Agreement*  
 
     This Agreement and any associated DeployHub sales documentation constitutes the entire agreement between the parties with respect to the use of the Software and the Documentation, and supersedes all prior or contemporaneous understandings, written or oral, regarding such subject matter.  This Agreement may not be modified, changed or discharged in whole or in part, except in an agreement in writing signed by you and DeployHub.
 
-9. General Terms  
+9. *General Terms*  
 
     This Agreement shall be construed and governed in accordance with the laws of the State of New Mexico.  
 
