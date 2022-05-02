@@ -8,11 +8,11 @@ keywords:
   - Microservices
   - SBOM
 type: application
-version: 10.0.28
+version: 10.0.29
 appVersion: 10.0.0
 dependencies:
 - name: dh-ms-nginx
-  version: 10.0.10
+  version: 10.0.11
   repository: https://deployhubproject.github.io/charts/ 
 - name: dh-ms-general
   version: 10.0.8
@@ -41,7 +41,7 @@ dependencies:
 - name: ms-compitem-crud
   version: 10.0.0-build.78
   repository: https://ortelius.github.io/ortelius-ms-compitem-crud/  
-kubeVersion: "1.19 - 1.23"
+kubeVersion: "1.19.0-0 - 1.23.0-0"
 annotations:
   catalog.cattle.io/certified: partner # Enables the "partner" badge in the UI for easier identification
   catalog.cattle.io/release-name: deployhub # Your chart's name in kebab-case, this is used for deployment
