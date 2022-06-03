@@ -8,7 +8,7 @@ keywords:
   - Microservices
   - SBOM
 type: application
-version: 10.0.30
+version: 10.0.31
 appVersion: 10.0.0
 dependencies:
 - name: dh-ms-nginx
@@ -30,7 +30,7 @@ dependencies:
   version: 10.0.0-build.69
   repository: https://ortelius.github.io/ortelius-ms-dep-pkg-cud/
 - name: ms-dep-pkg-r
-  version: 10.0.0-build.52
+  version: 10.0.0-build.70
   repository: https://ortelius.github.io/ortelius-ms-dep-pkg-r/ 
 - name: ms-textfile-crud
   version: 10.0.0-build.48
