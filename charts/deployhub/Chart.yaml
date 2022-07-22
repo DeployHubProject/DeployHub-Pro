@@ -12,13 +12,13 @@ version: 10.0.40
 appVersion: 10.0.0
 dependencies:
 - name: dh-ms-nginx
-  version: 10.0.12
+  version: 10.0.13
   repository: https://deployhubproject.github.io/charts/ 
 - name: dh-ms-general
-  version: 10.0.10
+  version: 10.0.11
   repository: https://deployhubproject.github.io/charts/ 
 - name: dh-ms-ui
-  version: 10.0.7
+  version: 10.0.8
   repository: https://deployhubproject.github.io/charts/ 
 - name: dh-postgres
   version: 10.0.4
