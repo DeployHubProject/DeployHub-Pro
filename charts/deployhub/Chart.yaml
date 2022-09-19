@@ -8,7 +8,7 @@ keywords:
   - Microservices
   - SBOM
 type: application
-version: 10.0.44
+version: 10.0.45
 appVersion: 10.0.0
 dependencies:
 - name: dh-ms-nginx
@@ -42,7 +42,7 @@ dependencies:
   version: 10.0.0-build.79
   repository: https://ortelius.github.io/ortelius-ms-compitem-crud/  
 - name: ms-scorecard
-  version: 10.0.0-build.10
+  version: 10.0.0-build.13
   repository: https://ortelius.github.io/ortelius-ms-scorecard/  
 kubeVersion: "1.19.0-0 - 1.25.0-0"
 annotations:
