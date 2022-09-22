@@ -65,8 +65,8 @@ The command removes all the Kubernetes components associated with the chart and 
 | `dh-ms-nginx.ingress.type` | ssloff = non ssl enabled, alb = add alb ingress, volumemnt = certs come from existing ssl volume, sslcert = add certs a opaque secret | `sslcert, alb, volumemnt, ssloff`  |
 | `dh-ms-nginx.ingress.sslcert.chainedcert`    | SSL Chained Certificate - required when `dh-ms-nginx.ingress.type=sslcert`                     | `SSL Chained Certificate - decoded` |
 | `dh-ms-nginx.ingress.sslcert.privatekey`    | SSL Private Key for SSL Chained Cert - required when `dh-ms-nginx.ingress.type=sslcert`         | `SSL Private Key - decoded`         |
-| `dh-ms-nginx.ingress.abl_subnets`    | String of comma delimited subnets for the ALB - required when  `dh-ms-nginx.ingress.type=alb`  |   |
-| `dh-ms-nginx.ingress.abl_certificate_arn`    | ARN for the certificate from AWS Certificate Manager - required when  `dh-ms-nginx.ingress.type=alb` |  |
+| `dh-ms-nginx.ingress.alb_subnets`    | String of comma delimited subnets for the ALB - required when  `dh-ms-nginx.ingress.type=alb`  |   |
+| `dh-ms-nginx.ingress.alb_certificate_arn`    | ARN for the certificate from AWS Certificate Manager - required when  `dh-ms-nginx.ingress.type=alb` |  |
 | `dh-jwt.jwt.privatekey` | Private RSA PKCS#8 Key used to create JWT Tokens                                            | `Private RSA PKCS#8 Key - decoded` |
 | `dh-jwt.jwt.publickey`  | Public RSA PKCS#8 Key used to create JWT Tokens                                             | `Public RSA PKCS#8 Key - decoded`  |
 
