@@ -8,17 +8,17 @@ keywords:
   - Microservices
   - SBOM
 type: application
-version: 10.0.55
+version: 10.0.56
 appVersion: 10.0.0
 dependencies:
 - name: dh-ms-nginx
   version: 10.0.16
   repository: https://deployhubproject.github.io/charts/ 
 - name: dh-ms-general
-  version: 10.0.12
+  version: 10.0.13
   repository: https://deployhubproject.github.io/charts/ 
 - name: dh-ms-ui
-  version: 10.0.9
+  version: 10.0.10
   repository: https://deployhubproject.github.io/charts/ 
 - name: dh-postgres
   version: 10.0.4
@@ -42,7 +42,7 @@ dependencies:
   version: 10.0.0-build.79
   repository: https://ortelius.github.io/ortelius-ms-compitem-crud/  
 - name: ms-scorecard
-  version: 10.0.0-build.17
+  version: 10.0.0-build.18
   repository: https://ortelius.github.io/ortelius-ms-scorecard/  
 kubeVersion: "1.19.0-0 - 1.25.0-0"
 annotations:
