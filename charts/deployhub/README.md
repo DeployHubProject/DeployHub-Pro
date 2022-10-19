@@ -68,6 +68,7 @@ The command removes all the Kubernetes components associated with the chart and 
 | `dh-ms-nginx.ingress.alb_subnets`    | String of comma delimited subnets for the ALB - required when  `dh-ms-nginx.ingress.type=alb`  |   |
 | `dh-ms-nginx.ingress.alb_certificate_arn`    | ARN for the certificate from AWS Certificate Manager - required when  `dh-ms-nginx.ingress.type=alb` |  |
 | `dh-ms-nginx.ingress.dnsname`    | DNS Name that matches the certificate from AWS Certificate Manager - required when  `dh-ms-nginx.ingress.type=alb` |  |
+| `dh-ms-nginx.ingress.scheme`    | ALB scheme - required when  `dh-ms-nginx.ingress.type=alb` |  `internal` or `internet-facing` default: `internal`|
 | `dh-jwt.jwt.privatekey` | Private RSA PKCS#8 Key used to create JWT Tokens                                            | `Private RSA PKCS#8 Key - decoded` |
 | `dh-jwt.jwt.publickey`  | Public RSA PKCS#8 Key used to create JWT Tokens                                             | `Public RSA PKCS#8 Key - decoded`  |
 
