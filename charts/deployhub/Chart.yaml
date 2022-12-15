@@ -27,23 +27,23 @@ dependencies:
   version: 10.0.4
   repository: https://deployhubproject.github.io/charts/ 
 - name: ms-dep-pkg-cud
-  version: 10.0.0-build.69
-  repository: https://ortelius.github.io/ortelius-ms-dep-pkg-cud/
+  version: 10.0.2
+  repository: https://ortelius.github.io/ms-dep-pkg-cud/
 - name: ms-dep-pkg-r
-  version: 10.0.0-build.87
-  repository: https://ortelius.github.io/ortelius-ms-dep-pkg-r/ 
+  version: 10.0.4
+  repository: https://ortelius.github.io/ms-dep-pkg-r/
 - name: ms-textfile-crud
-  version: 10.0.0-build.51
-  repository: https://ortelius.github.io/ortelius-ms-textfile-crud/ 
-- name: ms-validate-user
-  version: 10.0.0-build.54
-  repository: https://ortelius.github.io/ortelius-ms-validate-user/
+  version: 10.0.9
+  repository: https://ortelius.github.io/ms-textfile-crud/
 - name: ms-compitem-crud
-  version: 10.0.0-build.79
-  repository: https://ortelius.github.io/ortelius-ms-compitem-crud/  
+  version: 10.0.3
+  repository: https://ortelius.github.io/ms-compitem-crud/
+- name: ms-validate-user
+  version: 10.0.9
+  repository: https://ortelius.github.io/ms-validate-user/
 - name: ms-scorecard
-  version: 10.0.0-build.21
-  repository: https://ortelius.github.io/ortelius-ms-scorecard/  
+  version: 10.0.44
+  repository: https://ortelius.github.io/ms-scorecard/
 kubeVersion: "1.19.0-0 - 1.25.0-0"
 annotations:
   catalog.cattle.io/certified: partner # Enables the "partner" badge in the UI for easier identification
