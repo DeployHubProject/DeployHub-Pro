@@ -8,11 +8,11 @@ keywords:
   - Microservices
   - SBOM
 type: application
-version: 10.0.70
+version: 10.0.71
 appVersion: 10.0.0
 dependencies:
 - name: dh-ms-nginx
-  version: 10.0.26
+  version: 10.0.27
   repository: https://deployhubproject.github.io/charts/ 
 - name: dh-ms-general
   version: 10.0.19
