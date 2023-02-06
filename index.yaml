@@ -7,6 +7,55 @@ entries:
       catalog.cattle.io/release-name: deployhub
     apiVersion: v2
     appVersion: 10.0.0
+    created: "2023-02-06T21:15:07.247691696Z"
+    dependencies:
+    - name: dh-ms-nginx
+      repository: https://deployhubproject.github.io/charts/
+      version: 10.0.25
+    - name: dh-ms-general
+      repository: https://deployhubproject.github.io/charts/
+      version: 10.0.19
+    - name: dh-ms-ui
+      repository: https://deployhubproject.github.io/charts/
+      version: 10.0.15
+    - name: ms-dep-pkg-cud
+      repository: https://ortelius.github.io/ms-dep-pkg-cud/
+      version: 10.0.2
+    - name: ms-dep-pkg-r
+      repository: https://ortelius.github.io/ms-dep-pkg-r/
+      version: 10.0.4
+    - name: ms-textfile-crud
+      repository: https://ortelius.github.io/ms-textfile-crud/
+      version: 10.0.9
+    - name: ms-compitem-crud
+      repository: https://ortelius.github.io/ms-compitem-crud/
+      version: 10.0.3
+    - name: ms-validate-user
+      repository: https://ortelius.github.io/ms-validate-user/
+      version: 10.0.9
+    - name: ms-scorecard
+      repository: https://ortelius.github.io/ms-scorecard/
+      version: 10.0.48
+    description: DeployHub Pro
+    digest: 9ab43638b3914a083e717a85e3eed37b67910399f567d896ea331490d58e1e56
+    home: https://www.deployhub.com
+    icon: https://deployhubproject.github.io/DeployHub-Pro/deployhub.svg
+    keywords:
+    - Service Catalog
+    - Microservices
+    - SBOM
+    kubeVersion: 1.19.0-0 - 1.25.0-0
+    name: deployhub
+    type: application
+    urls:
+    - https://github.com/DeployHubProject/DeployHub-Pro/releases/download/deployhub-10.0.69/deployhub-10.0.69.tgz
+    version: 10.0.69
+  - annotations:
+      catalog.cattle.io/certified: partner
+      catalog.cattle.io/display-name: DeployHub Unified Service Catalog
+      catalog.cattle.io/release-name: deployhub
+    apiVersion: v2
+    appVersion: 10.0.0
     created: "2023-02-06T20:36:31.223390635Z"
     dependencies:
     - name: dh-ms-nginx
@@ -3163,4 +3212,4 @@ entries:
     urls:
     - https://github.com/DeployHubProject/DeployHub-Pro/releases/download/deployhub-10.0.3/deployhub-10.0.3.tgz
     version: 10.0.3
-generated: "2023-02-06T20:36:31.224060241Z"
+generated: "2023-02-06T21:15:07.248228795Z"
