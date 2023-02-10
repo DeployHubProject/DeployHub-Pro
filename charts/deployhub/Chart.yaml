@@ -8,7 +8,7 @@ keywords:
   - Microservices
   - SBOM
 type: application
-version: 10.0.77
+version: 10.0.78
 appVersion: 10.0.0
 dependencies:
 - name: dh-ms-nginx
@@ -36,7 +36,7 @@ dependencies:
   version: 10.0.17
   repository: https://ortelius.github.io/ms-validate-user/
 - name: ms-scorecard
-  version: 10.0.58
+  version: 10.0.59
   repository: https://ortelius.github.io/ms-scorecard/
 kubeVersion: "1.19.0-0 - 1.25.0-0"
 annotations:
