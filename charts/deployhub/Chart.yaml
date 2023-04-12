@@ -3,43 +3,38 @@ name: deployhub
 description: DeployHub Pro
 home: https://www.deployhub.com
 icon: https://deployhubproject.github.io/DeployHub-Pro/deployhub.svg
-keywords: 
-  - Service Catalog
-  - Microservices
-  - SBOM
+keywords:
+- Service Catalog
+- Microservices
+- SBOM
 type: application
-version: 10.0.78
+version: 10.0.79
 appVersion: 10.0.0
 dependencies:
-- name: dh-ms-nginx
-  version: 10.0.28
-  repository: https://deployhubproject.github.io/charts/ 
-- name: dh-ms-general
-  version: 10.0.19
-  repository: https://deployhubproject.github.io/charts/ 
-- name: dh-ms-ui
-  version: 10.0.15
-  repository: https://deployhubproject.github.io/charts/ 
 - name: ms-dep-pkg-cud
-  version: 10.0.5
+  version: 10.0.68
   repository: https://ortelius.github.io/ms-dep-pkg-cud/
 - name: ms-dep-pkg-r
-  version: 10.0.12
+  version: 10.0.144
   repository: https://ortelius.github.io/ms-dep-pkg-r/
 - name: ms-textfile-crud
-  version: 10.0.13
+  version: 10.0.47
   repository: https://ortelius.github.io/ms-textfile-crud/
 - name: ms-compitem-crud
-  version: 10.0.7
+  version: 10.0.33
   repository: https://ortelius.github.io/ms-compitem-crud/
 - name: ms-validate-user
-  version: 10.0.17
+  version: 10.0.46
   repository: https://ortelius.github.io/ms-validate-user/
 - name: ms-scorecard
-  version: 10.0.59
+  version: v10.0.100
   repository: https://ortelius.github.io/ms-scorecard/
-kubeVersion: "1.19.0-0 - 1.25.0-0"
-annotations:
-  catalog.cattle.io/certified: partner # Enables the "partner" badge in the UI for easier identification
-  catalog.cattle.io/release-name: deployhub # Your chart's name in kebab-case, this is used for deployment
-  catalog.cattle.io/display-name: "DeployHub Unified Service Catalog" # The chart's name you want displayed in the UI
+- name: dh-ms-general
+  version: 10.0.19
+  repository: https://deployhubproject.github.io/charts/
+- name: dh-ms-nginx
+  version: 10.0.28
+  repository: https://deployhubproject.github.io/charts/
+- name: dh-ms-ui
+  version: 10.0.15
+  repository: https://deployhubproject.github.io/charts/

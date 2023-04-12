@@ -57,22 +57,26 @@ async function getChartEntries() {
                         latest = entry;
                 });
                 latest = latest[1];
-                dep = {};
-                dep['name'] = latest['name'];
-                dep['version'] = latest['version'];
 
-                if (key == "dh-ms-ui" || key == "dh-ms-nginx" || key == "dh-ms-general") 
+                if (latest['name'] != 'dh-jwt' && latest['name'] != 'dh-postgres') 
                 {
-                    key = "charts";
-                    dep['repository'] = 'https://deployhubproject.github.io/' + key + '/'
+                    dep = {};
+                    dep['name'] = latest['name'];
+                    dep['version'] = latest['version'];
+
+                    if (key == "dh-ms-ui" || key == "dh-ms-nginx" || key == "dh-ms-general") 
+                    {
+                        key = "charts";
+                        dep['repository'] = 'https://deployhubproject.github.io/' + key + '/'
+                    }
+                    else
+                        dep['repository'] = 'https://ortelius.github.io/' + key + '/'
+
+                    if (key == "ms-postgres")
+                    dep['condition'] = 'global.postgresql.enabled'
+
+                    latest_chart.push(dep);
                 }
-                else
-                    dep['repository'] = 'https://ortelius.github.io/' + key + '/'
-
-                if (key == "ms-postgres")
-                  dep['condition'] = 'global.postgresql.enabled'
-
-                latest_chart.push(dep);
 
             //    chartEntries[key] = entries[key]
             //    console.log(entries[key]);
