@@ -1,4 +1,8 @@
 {
+  "engines": {
+    "node": ">=14",
+    "npm": ">=8"
+  },
   "dependencies": {
     "axios": "^0.24.0",
     "js-yaml": "^4.1.0"

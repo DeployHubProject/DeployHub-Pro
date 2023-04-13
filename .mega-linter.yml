@@ -1,0 +1,19 @@
+# Configuration file for MegaLinter
+# See all available variables at https://megalinter.io/configuration/ and in linters documentation
+
+APPLY_FIXES: all # all, none, or list of linter keys
+
+SHOW_ELAPSED_TIME: true
+FILEIO_REPORTER: false
+PYTHON_BLACK_CONFIG_FILE: .python-black
+YAML_PRETTIER_FILTER_REGEX_EXCLUDE: templates/
+YAML_YAMLLINT_FILTER_REGEX_EXCLUDE: templates/
+DISABLE_LINTERS:
+  - REPOSITORY_DUSTILOCK
+  - REPOSITORY_GIT_DIFF
+  - REPOSITORY_TRIVY
+  - REPOSITORY_DEVSKIM
+  - REPOSITORY_CHECKOV
+DISABLE:
+  - COPYPASTE
+  - SPELL
