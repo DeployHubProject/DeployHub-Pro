@@ -6,27 +6,82 @@ on:
       - main
 
 jobs:
+  setenv:
+    runs-on: ubuntu-latest
+
+    outputs:
+      short_sha: ${{ steps.env.outputs.short_sha }}
+      chart_version: ${{ steps.env.outputs.chart_version }}
+      image_version: ${{ steps.env.outputs.image_version }}
+      image_tag: ${{ steps.env.outputs.image_tag }}
+      image_repo_tag: ${{ steps.env.outputs.image_repo_tag }}
+      image_repository: ${{ steps.env.outputs.image_repository }}
+      registry: ${{ steps.env.outputs.registry }}
+      branch: ${{ steps.env.outputs.branch }}
+      compname: ${{ steps.env.outputs.compname }}
+      dhurl: ${{ steps.env.outputs.dhurl }}
+      gh_handle: ${{ steps.env.outputs.gh_handle }}
+
+    steps:
+      - name: Harden Runner
+        uses: step-security/harden-runner@1f99358870fe1c846a3ccba386cc2b2246836776 # v2.2.1
+        with:
+          egress-policy: audit # TODO: change to 'egress-policy: block' after couple of runs
+
+      - name: Checkout
+        id: checkout
+        uses: actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c # v3.3.0
+        with:
+          fetch-depth: 1
+
+      - name: Export env
+        id: env
+        env:
+          DHURL: https://console.deployhub.com
+          REGISTRY: quay.io
+          BRANCH: ${{ github.head_ref || github.ref_name }}
+        run: |
+          BRANCH=$(echo "${{ env.BRANCH }}" | cut -d'/' -f1)
+          BASE_VERSION=$(curl -s "https://ortelius.github.io/${{ github.event.repository.name }}/index.yaml" | grep version: | awk '{print $2}' | cut -f1-2 -d. | sort -u -r --version-sort | head -1)
+          SHORT_SHA=$(echo ${{ github.sha }} | cut -c 1-6)
+          {
+           echo "dhurl=${{ env.DHURL }}"
+           echo "branch=${BRANCH}"
+           echo "chart_version=${BASE_VERSION}.${{ github.run_number }}"
+           echo "compname=deployhub"
+           echo "image_repo_tag=${{ env.REGISTRY }}/${{ github.repository }}:${BRANCH}-v${BASE_VERSION}.${{ github.run_number }}-g${SHORT_SHA}"
+           echo "image_repository=${{ env.REGISTRY }}/${{ github.repository }}"
+           echo "image_tag=${BRANCH}-v${BASE_VERSION}.${{ github.run_number }}-g${SHORT_SHA}"
+           echo "image_version=${BASE_VERSION}.${{ github.run_number }}-g${SHORT_SHA}"
+           echo "registry=${{ env.REGISTRY }}"
+           echo "short_sha=${SHORT_SHA}"
+           echo "gh_handle=$GITHUB_ACTOR"
+          } >> "$GITHUB_OUTPUT"
+
   release:
     runs-on: ubuntu-latest
+    needs: setenv
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          fetch-depth: 10
+          fetch-depth: 0
 
       - name: Configure Git
         run: |
           git config user.name "$GITHUB_ACTOR"
           git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
-
-      - name: Install Helm
-        uses: azure/setup-helm@v1
+ 
+      - name: Helm Chart Releaser
+        uses: ortelius/ms-cr-action@c0dd636892b3806508825577d8564d3475c1dbf9 # v1.0
         with:
-          version: v3.4.0
-
-      - name: Run chart-releaser
-        uses: helm/chart-releaser-action@v1.2.1
-        with:
-          charts_dir: charts
-        env:
-          CR_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          gpg_keyring_base64: ${{ secrets.GPG_KEYRING_BASE64 }}
+          gpg_passphrase: ${{ secrets.GPG_PASSPHRASE }}
+          gpg_key: ${{ secrets.GPG_KEY }}
+          gh_token: ${{ secrets.HELM_INDEXER_TOKEN }}
+          chart: charts/${{ needs.setenv.outputs.compname }}
+          chart_version: ${{ needs.setenv.outputs.chart_version }}
+          image_repository: ${{ needs.setenv.outputs.image_repository }}
+          image_tag: ${{ needs.setenv.outputs.image_tag }}
+          image_digest: ${{ needs.release.outputs.digest }}
