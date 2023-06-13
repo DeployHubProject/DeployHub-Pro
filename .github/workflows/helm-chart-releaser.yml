@@ -42,7 +42,7 @@ jobs:
           BRANCH: ${{ github.head_ref || github.ref_name }}
         run: |
           BRANCH=$(echo "${{ env.BRANCH }}" | cut -d'/' -f1)
-          BASE_VERSION=$(curl -s "https://ortelius.github.io/${{ github.event.repository.name }}/index.yaml" | grep version: | awk '{print $2}' | cut -f1-2 -d. | sort -u -r --version-sort | head -1)
+          BASE_VERSION=$(curl -s "https://deployhubproject.github.io/${{ github.event.repository.name }}/index.yaml" | grep version: | awk '{print $2}' | cut -f1-2 -d. | sort -u -r --version-sort | head -1)
           SHORT_SHA=$(echo ${{ github.sha }} | cut -c 1-6)
           {
            echo "dhurl=${{ env.DHURL }}"
@@ -79,9 +79,7 @@ jobs:
           gpg_keyring_base64: ${{ secrets.GPG_KEYRING_BASE64 }}
           gpg_passphrase: ${{ secrets.GPG_PASSPHRASE }}
           gpg_key: ${{ secrets.GPG_KEY }}
-          gh_token: ${{ secrets.HELM_INDEXER_TOKEN }}
+          gh_token: ${{ secrets.DH_HELM_INDEXER_TOKEN }}
+          gh_handle: ${{ needs.setenv.outputs.gh_handle }}
           chart: charts/${{ needs.setenv.outputs.compname }}
           chart_version: ${{ needs.setenv.outputs.chart_version }}
-          image_repository: ${{ needs.setenv.outputs.image_repository }}
-          image_tag: ${{ needs.setenv.outputs.image_tag }}
-          image_digest: ${{ needs.release.outputs.digest }}
