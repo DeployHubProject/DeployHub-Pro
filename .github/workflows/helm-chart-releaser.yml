@@ -73,4 +73,3 @@ jobs:
           gh_token: ${{ secrets.DH_HELM_INDEXER_TOKEN }}
           gh_handle: ${{ needs.setenv.outputs.gh_handle }}
           chart: charts/${{ needs.setenv.outputs.compname }}
-          chart_version: ${{ needs.setenv.outputs.chart_version }}
