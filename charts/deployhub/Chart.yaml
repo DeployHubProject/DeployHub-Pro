@@ -8,7 +8,7 @@ keywords:
 - Microservices
 - SBOM
 type: application
-version: 10.0.110
+version: 10.0.111
 appVersion: 10.0.0
 dependencies:
 - name: ms-dep-pkg-cud
@@ -30,11 +30,11 @@ dependencies:
   version: 10.0.160
   repository: https://ortelius.github.io/ms-scorecard/
 - name: dh-ms-general
-  version: 10.0.105
+  version: 10.0.106
   repository: https://deployhubproject.github.io/charts/
 - name: dh-ms-nginx
-  version: 10.0.105
+  version: 10.0.106
   repository: https://deployhubproject.github.io/charts/
 - name: dh-ms-ui
-  version: 10.0.105
+  version: 10.0.106
   repository: https://deployhubproject.github.io/charts/
