@@ -3,6 +3,50 @@ entries:
   deployhub:
   - apiVersion: v2
     appVersion: 10.0.0
+    created: "2023-07-12T15:58:20.038162569Z"
+    dependencies:
+    - name: ms-dep-pkg-cud
+      repository: https://ortelius.github.io/ms-dep-pkg-cud/
+      version: 10.0.135
+    - name: ms-dep-pkg-r
+      repository: https://ortelius.github.io/ms-dep-pkg-r/
+      version: 10.0.214
+    - name: ms-textfile-crud
+      repository: https://ortelius.github.io/ms-textfile-crud/
+      version: 10.0.127
+    - name: ms-compitem-crud
+      repository: https://ortelius.github.io/ms-compitem-crud/
+      version: 10.0.104
+    - name: ms-validate-user
+      repository: https://ortelius.github.io/ms-validate-user/
+      version: 10.0.176
+    - name: ms-scorecard
+      repository: https://ortelius.github.io/ms-scorecard/
+      version: 10.0.176
+    - name: dh-ms-general
+      repository: https://deployhubproject.github.io/charts/
+      version: 10.0.118
+    - name: dh-ms-nginx
+      repository: https://deployhubproject.github.io/charts/
+      version: 10.0.118
+    - name: dh-ms-ui
+      repository: https://deployhubproject.github.io/charts/
+      version: 10.0.118
+    description: DeployHub Pro
+    digest: 4d353c0edaf38cca7fa6bafae0a42a56dc7ce3c37c3620696152d88cf94d6cde
+    home: https://www.deployhub.com
+    icon: https://deployhubproject.github.io/DeployHub-Pro/deployhub.svg
+    keywords:
+    - Service Catalog
+    - Microservices
+    - SBOM
+    name: deployhub
+    type: application
+    urls:
+    - https://github.com/DeployHubProject/DeployHub-Pro/releases/download/deployhub-10.0.123/deployhub-10.0.123.tgz
+    version: 10.0.123
+  - apiVersion: v2
+    appVersion: 10.0.0
     created: "2023-07-11T23:20:02.135880582Z"
     dependencies:
     - name: ms-dep-pkg-cud
@@ -5457,4 +5501,4 @@ entries:
     urls:
     - https://github.com/DeployHubProject/DeployHub-Pro/releases/download/deployhub-10.0.3/deployhub-10.0.3.tgz
     version: 10.0.3
-generated: "2023-07-11T23:20:02.133783583Z"
+generated: "2023-07-12T15:58:20.035178178Z"
