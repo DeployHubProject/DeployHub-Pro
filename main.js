@@ -10,6 +10,7 @@ const chartRepos = [
   'ortelius/ms-compitem-crud',
   'ortelius/ms-validate-user',
   'ortelius/ms-scorecard',
+  'ortelius/ms-sbom-export',
   'DeployHubProject/charts'
 ]
 
@@ -93,6 +94,17 @@ function createYamlOutput () {
     appVersion: '10.0.0',
     dependencies: chartEntries
   }, { noArrayIndent: true })
+
+  fs.readFile("./charts/deployhub/README.md", 'utf8', function (err,data) {
+      if (err) {
+        return console.log(err);
+      }
+      var result = data.replace(/DEPLOYHUB_VERSION=\d+\.\d+\.\d+/g, 'DEPLOYHUB_VERSION=' + chartVersion);
+    
+      fs.writeFile("./charts/deployhub/README.md", result, 'utf8', function (err) {
+          if (err) return console.log(err);
+      });
+    });
 
   return output
 }
