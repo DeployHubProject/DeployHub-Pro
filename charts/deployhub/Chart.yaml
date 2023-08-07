@@ -8,7 +8,7 @@ keywords:
 - Microservices
 - SBOM
 type: application
-version: 10.0.141
+version: 10.0.142
 appVersion: 10.0.0
 dependencies:
 - name: ms-dep-pkg-cud
@@ -33,11 +33,11 @@ dependencies:
   version: 10.0.7
   repository: https://ortelius.github.io/ms-sbom-export/
 - name: dh-ms-general
-  version: 10.0.134
+  version: 10.0.135
   repository: https://deployhubproject.github.io/charts/
 - name: dh-ms-nginx
-  version: 10.0.134
+  version: 10.0.135
   repository: https://deployhubproject.github.io/charts/
 - name: dh-ms-ui
-  version: 10.0.134
+  version: 10.0.135
   repository: https://deployhubproject.github.io/charts/
