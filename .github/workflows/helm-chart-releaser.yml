@@ -65,7 +65,7 @@ jobs:
 
     steps:
       - name: Helm Chart Releaser
-        uses: ortelius/ms-cr-action@0aed84909ef7f2a08a1ea1e980f499a42fa1fa09 # v1.2.1
+        uses: DeployHubProject/ms-cr-action@563bb5cd2c41ee25ef2507f6523a1ff580dcc48a # v1.2.1
         with:
           gpg_keyring_base64: ${{ secrets.GPG_KEYRING_BASE64 }}
           gpg_passphrase: ${{ secrets.GPG_PASSPHRASE }}
