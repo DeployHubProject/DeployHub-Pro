@@ -4,40 +4,44 @@ description: DeployHub Pro
 home: https://www.deployhub.com
 icon: https://deployhubproject.github.io/DeployHub-Pro/deployhub.svg
 keywords:
-  - Service Catalog
-  - Microservices
-  - SBOM
+- Service Catalog
+- Microservices
+- SBOM
 type: application
-version: 10.0.156
+version: 10.0.157
 appVersion: 10.0.0
 dependencies:
-  - name: ms-dep-pkg-cud
-    version: 10.0.286
-    repository: https://ortelius.github.io/ms-dep-pkg-cud/
-  - name: ms-dep-pkg-r
-    version: 10.0.364
-    repository: https://ortelius.github.io/ms-dep-pkg-r/
-  - name: ms-textfile-crud
-    version: 10.0.266
-    repository: https://ortelius.github.io/ms-textfile-crud/
-  - name: ms-compitem-crud
-    version: 10.0.234
-    repository: https://ortelius.github.io/ms-compitem-crud/
-  - name: ms-validate-user
-    version: 10.0.298
-    repository: https://ortelius.github.io/ms-validate-user/
-  - name: ms-scorecard
-    version: 10.0.319
-    repository: https://ortelius.github.io/ms-scorecard/
-  - name: ms-sbom-export
-    version: 10.0.49
-    repository: https://ortelius.github.io/ms-sbom-export/
-  - name: dh-ms-general
-    version: 10.0.147
-    repository: https://deployhubproject.github.io/charts/
-  - name: dh-ms-nginx
-    version: 10.0.147
-    repository: https://deployhubproject.github.io/charts/
-  - name: dh-ms-ui
-    version: 10.0.147
-    repository: https://deployhubproject.github.io/charts/
+- name: ms-dep-pkg-cud
+  version: 10.0.313
+  repository: https://ortelius.github.io/ms-dep-pkg-cud/
+- name: ms-dep-pkg-r
+  version: 10.0.377
+  repository: https://ortelius.github.io/ms-dep-pkg-r/
+- name: ms-textfile-crud
+  version: 10.0.282
+  repository: https://ortelius.github.io/ms-textfile-crud/
+- name: ms-compitem-crud
+  version: 10.0.250
+  repository: https://ortelius.github.io/ms-compitem-crud/
+- name: ms-validate-user
+  version: 10.0.314
+  repository: https://ortelius.github.io/ms-validate-user/
+- name: ms-scorecard
+  version: 10.0.332
+  repository: https://ortelius.github.io/ms-scorecard/
+- name: ms-sbom-export
+  version: 10.0.52
+  repository: https://ortelius.github.io/ms-sbom-export/
+- name: ms-postgres
+  version: 10.0.14
+  repository: https://ortelius.github.io/ms-postgres/
+  condition: global.postgresql.enabled
+- name: dh-ms-general
+  version: 10.0.147
+  repository: https://deployhubproject.github.io/charts/
+- name: dh-ms-nginx
+  version: 10.0.147
+  repository: https://deployhubproject.github.io/charts/
+- name: dh-ms-ui
+  version: 10.0.147
+  repository: https://deployhubproject.github.io/charts/
