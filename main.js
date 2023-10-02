@@ -11,6 +11,7 @@ const chartRepos = [
   'ortelius/ms-validate-user',
   'ortelius/ms-scorecard',
   'ortelius/ms-sbom-export',
+  'ortelius/ms-postgres',
   'DeployHubProject/charts'
 ]
 
@@ -95,16 +96,16 @@ function createYamlOutput () {
     dependencies: chartEntries
   }, { noArrayIndent: true })
 
-  fs.readFile("./charts/deployhub/README.md", 'utf8', function (err,data) {
-      if (err) {
-        return console.log(err);
-      }
-      var result = data.replace(/DEPLOYHUB_VERSION=\d+\.\d+\.\d+/g, 'DEPLOYHUB_VERSION=' + chartVersion);
-    
-      fs.writeFile("./charts/deployhub/README.md", result, 'utf8', function (err) {
-          if (err) return console.log(err);
-      });
-    });
+  fs.readFile('./charts/deployhub/README.md', 'utf8', function (err, data) {
+    if (err) {
+      return console.log(err)
+    }
+    const result = data.replace(/DEPLOYHUB_VERSION=\d+\.\d+\.\d+/g, 'DEPLOYHUB_VERSION=' + chartVersion)
+
+    fs.writeFile('./charts/deployhub/README.md', result, 'utf8', function (err) {
+      if (err) return console.log(err)
+    })
+  })
 
   return output
 }
