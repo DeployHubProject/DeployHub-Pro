@@ -4,7 +4,7 @@
     "npm": ">=8"
   },
   "dependencies": {
-    "axios": "^0.24.0",
+    "axios": "^1.6.0",
     "js-yaml": "^4.1.0"
   }
 }
