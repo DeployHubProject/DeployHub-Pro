@@ -1,4 +1,6 @@
 {
+  "name": "chartgen",
+  "version": "10.0.0",
   "engines": {
     "node": ">=14",
     "npm": ">=8"

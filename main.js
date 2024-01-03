@@ -68,7 +68,7 @@ async function getChartEntries () {
             dep.repository = 'https://deployhubproject.github.io/' + key + '/'
           } else { dep.repository = 'https://ortelius.github.io/' + key + '/' }
 
-          if (key == 'ms-postgres') { dep.condition = 'global.postgresql.enabled' }
+          if (key === 'ms-postgres') { dep.condition = 'global.postgresql.enabled' }
 
           latestChart.push(dep)
         }
