@@ -55,7 +55,7 @@ This chart deploys all of the required secrets, services, and deployments on a [
 
     ```kubectl cluster-info --context kind-deployhub```
 
-4. Install Ortelius
+4. Install DeployHub
 
     a. Using the internal Postgres database:
 
@@ -66,7 +66,7 @@ This chart deploys all of the required secrets, services, and deployments on a [
     helm upgrade --install my-release deployhub/deployhub --set dh-ms-general.dbpass=my_db_password --set global.postgresql.enabled=true  --set global.nginxController.enabled=true  --version "${DEPLOYHUB_VERSION}" --namespace deployhub --create-namespace
     ```
 
-    > Note: This will install Ortelius persisting the Postgres data on the host system in /tmp/postgres
+    > Note: This will install DeployHub persisting the Postgres data on the host system in /tmp/postgres
 
     b. Using the external Postgres database:
 
@@ -77,7 +77,7 @@ This chart deploys all of the required secrets, services, and deployments on a [
     helm upgrade --install my-release deployhub/deployhub --set dh-ms-general.dbpass=my_db_password --set dh-ms-general.dbuser=postgres --set dh-ms-general.dbhost=postgres.hosted.com --set-string dh-ms-general.dbport=5432 --set global.nginxController.enabled=true  --version "${DEPLOYHUB_VERSION}" --namespace deployhub --create-namespace
     ```
 
-5. Access Ortelius UI
+5. Access DeployHub UI
 
     ```http://localhost/dmadminweb/Home```
 
@@ -93,7 +93,7 @@ This chart deploys all of the required secrets, services, and deployments on a [
     mkdir /tmp/postgres
     ```
 
-3. Install Ortelius
+3. Install DeployHub
 
     a. Using the internal Postgres database:
 
@@ -104,7 +104,7 @@ This chart deploys all of the required secrets, services, and deployments on a [
     helm upgrade --install my-release deployhub/deployhub --set dh-ms-general.dbpass=my_db_password --set global.postgresql.enabled=true --set dh-ms-nginx.ingress.nodePort=30000 --version "${DEPLOYHUB_VERSION}" --namespace deployhub --create-namespace
     ```
 
-    > Note: This will install Ortelius persisting the Postgres data on the host system in /tmp/postgres
+    > Note: This will install DeployHub persisting the Postgres data on the host system in /tmp/postgres
 
     b. Using the external Postgres database:
 
@@ -115,9 +115,9 @@ This chart deploys all of the required secrets, services, and deployments on a [
     helm upgrade --install my-release deployhub/deployhub --set dh-ms-general.dbpass=my_db_password --set dh-ms-general.dbuser=postgres --set dh-ms-general.dbhost=postgres.hosted.com --set-string dh-ms-general.dbport=5432 --set dh-ms-nginx.ingress.nodePort=30000  --version "${DEPLOYHUB_VERSION}" --namespace deployhub --create-namespace
     ```
 
-4. Access Ortelius UI
+4. Access DeployHub UI
 
-    In Killercoda UI for your session, click on the 3 bars by your "Time Left", then "Traffic/Ports".  Enter in 30000 in the custom ports and then access the custom port.  This will start a new browser tab with Ortelius home page.  Use admin/admin to login.
+    In Killercoda UI for your session, click on the 3 bars by your "Time Left", then "Traffic/Ports".  Enter in 30000 in the custom ports and then access the custom port.  This will start a new browser tab with DeployHub home page.  Use admin/admin to login.
 
 ## Installing on Google GKE
 
@@ -156,7 +156,7 @@ This chart deploys all of the required secrets, services, and deployments on a [
    gcloud container clusters get-credentials ${CLUSTER_NAME} --zone=us-central1-c
    ```
 
-5. Install Ortelius
+5. Install DeployHub
 
     a. Using the external Postgres database:
 
@@ -168,7 +168,7 @@ This chart deploys all of the required secrets, services, and deployments on a [
     helm upgrade --install my-release deployhub/deployhub --set dh-ms-general.dbpass=my_db_password --set dh-ms-general.dbuser=postgres --set dh-ms-general.dbhost=postgres.hosted.com --set-string dh-ms-general.dbport=5432 --set dh-ms-nginx.ingress.type=glb --set dh-ms-nginx.ingress.dnsname=${DEPLOYHUB_DNSNAME} --version "${DEPLOYHUB_VERSION}" --namespace deployhub --create-namespace
     ```
 
-6. Access Ortelius UI
+6. Access DeployHub UI
 
     ```https://${DEPLOYHUB_DNSNAME}/dmadminweb/Home```
 
@@ -228,7 +228,7 @@ This chart deploys all of the required secrets, services, and deployments on a [
    EOF
    ```
 
-5. Install Ortelius
+5. Install DeployHub
 
     a. Using the external Postgres database:
 
@@ -240,7 +240,7 @@ This chart deploys all of the required secrets, services, and deployments on a [
     helm upgrade --install my-release deployhub/deployhub --set dh-ms-general.dbpass=my_db_password --set dh-ms-general.dbuser=postgres --set dh-ms-general.dbhost=postgres.hosted.com --set-string dh-ms-general.dbport=5432 --set dh-ms-nginx.ingress.type=alb --set dh-ms-nginx.ingress.dnsname=${DEPLOYHUB_DNSNAME} --set-string 'dh-ms-nginx.ingress.alb_subnets=subnet-08c2def0d12544e2fd4\,subnet-0ff7730f35433930b32' --set-string 'dh-ms-nginx.ingress.alb_certificate_arn=arn\:aws\:acm\:us-east-1\:850343264173\:certificate\/8c2cb138-0172-477c-afb7-1d444eba2ec5' --version "${DEPLOYHUB_VERSION}" --namespace deployhub --create-namespace
     ```
 
-6. Access Ortelius UI
+6. Access DeployHub UI
 
     ```https://${DEPLOYHUB_DNSNAME}/dmadminweb/Home```
 
@@ -272,7 +272,7 @@ Alternatively, a YAML file that specifies the values for the above parameters ca
 helm install my-release -f values.yaml deployhub/deployhub
 ```
 
-## Accessing the Ortelius UI After the Chart Install using Port Forwarding
+## Accessing the DeployHub UI After the Chart Install using Port Forwarding
 
 > Note: default userid/pass is admin/admin
 
