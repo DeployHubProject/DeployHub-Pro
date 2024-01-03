@@ -8,29 +8,29 @@ keywords:
 - Microservices
 - SBOM
 type: application
-version: 10.0.160
+version: 10.0.161
 appVersion: 10.0.0
 dependencies:
 - name: ms-dep-pkg-cud
-  version: 10.0.313
+  version: 10.0.431
   repository: https://ortelius.github.io/ms-dep-pkg-cud/
 - name: ms-dep-pkg-r
-  version: 10.0.377
+  version: 10.0.518
   repository: https://ortelius.github.io/ms-dep-pkg-r/
 - name: ms-textfile-crud
-  version: 10.0.282
+  version: 10.0.423
   repository: https://ortelius.github.io/ms-textfile-crud/
 - name: ms-compitem-crud
-  version: 10.0.250
+  version: 10.0.389
   repository: https://ortelius.github.io/ms-compitem-crud/
 - name: ms-validate-user
-  version: 10.0.314
+  version: 10.0.463
   repository: https://ortelius.github.io/ms-validate-user/
 - name: ms-scorecard
-  version: 10.0.332
+  version: 10.0.450
   repository: https://ortelius.github.io/ms-scorecard/
 - name: ms-sbom-export
-  version: 10.0.52
+  version: 10.0.55
   repository: https://ortelius.github.io/ms-sbom-export/
 - name: ms-postgres
   version: 10.0.14
