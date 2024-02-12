@@ -3,7 +3,7 @@ entries:
   deployhub:
   - apiVersion: v2
     appVersion: 10.0.0
-    created: "2024-02-12T16:59:00.565759007Z"
+    created: "2024-02-12T16:59:14.650427723Z"
     dependencies:
     - name: ms-dep-pkg-cud
       repository: https://ortelius.github.io/ms-dep-pkg-cud/
@@ -40,7 +40,7 @@ entries:
       repository: https://deployhubproject.github.io/charts/
       version: 10.0.173
     description: DeployHub Pro
-    digest: fca39031262b7716df1706c162be7496e95b4e248f0e9d6b75f601a5bb9944e5
+    digest: df14c25db2aec1506bf9f342ec493d047a05c2329ef3455562a0e1d751c71e7f
     home: https://www.deployhub.com
     icon: https://deployhubproject.github.io/DeployHub-Pro/deployhub.svg
     keywords:
@@ -50,8 +50,8 @@ entries:
     name: deployhub
     type: application
     urls:
-    - https://github.com/DeployHubProject/DeployHub-Pro/releases/download/deployhub-10.0.183/deployhub-10.0.183.tgz
-    version: 10.0.183
+    - https://github.com/DeployHubProject/DeployHub-Pro/releases/download/deployhub-10.0.184/deployhub-10.0.184.tgz
+    version: 10.0.184
   - apiVersion: v2
     appVersion: 10.0.0
     created: "2024-02-08T17:25:53.183919614Z"
@@ -8295,4 +8295,4 @@ entries:
     urls:
     - https://github.com/DeployHubProject/DeployHub-Pro/releases/download/deployhub-10.0.3/deployhub-10.0.3.tgz
     version: 10.0.3
-generated: "2024-02-12T16:59:00.563921805Z"
+generated: "2024-02-12T16:59:14.648525058Z"
