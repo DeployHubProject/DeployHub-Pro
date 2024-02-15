@@ -8,26 +8,26 @@ keywords:
 - Microservices
 - SBOM
 type: application
-version: 10.0.188
+version: 10.0.189
 appVersion: 10.0.0
 dependencies:
 - name: ms-dep-pkg-cud
-  version: 10.0.525
+  version: 10.0.530
   repository: https://ortelius.github.io/ms-dep-pkg-cud/
 - name: ms-dep-pkg-r
-  version: 10.0.592
+  version: 10.0.594
   repository: https://ortelius.github.io/ms-dep-pkg-r/
 - name: ms-textfile-crud
-  version: 10.0.500
+  version: 10.0.502
   repository: https://ortelius.github.io/ms-textfile-crud/
 - name: ms-compitem-crud
-  version: 10.0.464
+  version: 10.0.466
   repository: https://ortelius.github.io/ms-compitem-crud/
 - name: ms-validate-user
-  version: 10.0.540
+  version: 10.0.542
   repository: https://ortelius.github.io/ms-validate-user/
 - name: ms-scorecard
-  version: 10.0.494
+  version: 10.0.496
   repository: https://ortelius.github.io/ms-scorecard/
 - name: ms-sbom-export
   version: 10.0.55
@@ -37,11 +37,11 @@ dependencies:
   repository: https://ortelius.github.io/ms-postgres/
   condition: global.postgresql.enabled
 - name: dh-ms-general
-  version: 10.0.177
+  version: 10.0.178
   repository: https://deployhubproject.github.io/charts/
 - name: dh-ms-nginx
-  version: 10.0.177
+  version: 10.0.178
   repository: https://deployhubproject.github.io/charts/
 - name: dh-ms-ui
-  version: 10.0.177
+  version: 10.0.178
   repository: https://deployhubproject.github.io/charts/
