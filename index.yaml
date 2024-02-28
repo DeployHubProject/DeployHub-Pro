@@ -3,6 +3,57 @@ entries:
   deployhub:
   - apiVersion: v2
     appVersion: 10.0.0
+    created: "2024-02-28T00:50:39.099764242Z"
+    dependencies:
+    - name: ms-dep-pkg-cud
+      repository: https://ortelius.github.io/ms-dep-pkg-cud/
+      version: 10.0.572
+    - name: ms-dep-pkg-r
+      repository: https://ortelius.github.io/ms-dep-pkg-r/
+      version: 10.0.637
+    - name: ms-textfile-crud
+      repository: https://ortelius.github.io/ms-textfile-crud/
+      version: 10.0.540
+    - name: ms-compitem-crud
+      repository: https://ortelius.github.io/ms-compitem-crud/
+      version: 10.0.504
+    - name: ms-validate-user
+      repository: https://ortelius.github.io/ms-validate-user/
+      version: 10.0.564
+    - name: ms-scorecard
+      repository: https://ortelius.github.io/ms-scorecard/
+      version: 10.0.523
+    - name: ms-sbom-export
+      repository: https://ortelius.github.io/ms-sbom-export/
+      version: 10.0.78
+    - condition: global.postgresql.enabled
+      name: ms-postgres
+      repository: https://ortelius.github.io/ms-postgres/
+      version: 10.0.19
+    - name: dh-ms-general
+      repository: https://deployhubproject.github.io/charts/
+      version: 10.0.184
+    - name: dh-ms-nginx
+      repository: https://deployhubproject.github.io/charts/
+      version: 10.0.184
+    - name: dh-ms-ui
+      repository: https://deployhubproject.github.io/charts/
+      version: 10.0.184
+    description: DeployHub Pro
+    digest: 22d21d3fe880f3b50d5a7c72ec78a1592b9b16291a2c61b4965ec036c7c04565
+    home: https://www.deployhub.com
+    icon: https://deployhubproject.github.io/DeployHub-Pro/deployhub.svg
+    keywords:
+    - Service Catalog
+    - Microservices
+    - SBOM
+    name: deployhub
+    type: application
+    urls:
+    - https://github.com/DeployHubProject/DeployHub-Pro/releases/download/deployhub-10.0.194/deployhub-10.0.194.tgz
+    version: 10.0.194
+  - apiVersion: v2
+    appVersion: 10.0.0
     created: "2024-02-16T22:33:54.619254506Z"
     dependencies:
     - name: ms-dep-pkg-cud
@@ -8754,4 +8805,4 @@ entries:
     urls:
     - https://github.com/DeployHubProject/DeployHub-Pro/releases/download/deployhub-10.0.3/deployhub-10.0.3.tgz
     version: 10.0.3
-generated: "2024-02-16T22:33:54.617312279Z"
+generated: "2024-02-28T00:50:39.097713797Z"
