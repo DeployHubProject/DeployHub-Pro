@@ -4,15 +4,18 @@ const fs = require('fs')
 require('process')
 
 const chartRepos = [
+  'DeployHubProject/charts',
+  'ortelius/ms-compitem-crud',
   'ortelius/ms-dep-pkg-cud',
   'ortelius/ms-dep-pkg-r',
-  'ortelius/ms-textfile-crud',
-  'ortelius/ms-compitem-crud',
-  'ortelius/ms-validate-user',
-  'ortelius/ms-scorecard',
-  'ortelius/ms-sbom-export',
   'ortelius/ms-postgres',
-  'DeployHubProject/charts'
+  'ortelius/ms-sbom-export',
+  'ortelius/ms-scorecard',
+  'ortelius/ms-textfile-crud',
+  'ortelius/ms-validate-user',
+  'ortelius/scec-arangodb',
+  'ortelius/scec-deppkg',
+  'ortelius/scec-vulnerability'
 ]
 
 // Helper functions
