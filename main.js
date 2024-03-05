@@ -12,10 +12,7 @@ const chartRepos = [
   'ortelius/ms-sbom-export',
   'ortelius/ms-scorecard',
   'ortelius/ms-textfile-crud',
-  'ortelius/ms-validate-user',
-  'ortelius/scec-arangodb',
-  'ortelius/scec-deppkg',
-  'ortelius/scec-vulnerability'
+  'ortelius/ms-validate-user'
 ]
 
 // Helper functions
