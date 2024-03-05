@@ -8,34 +8,9 @@ keywords:
 - Microservices
 - SBOM
 type: application
-version: 10.0.195
+version: 10.0.197
 appVersion: 10.0.0
 dependencies:
-- name: ms-dep-pkg-cud
-  version: 10.0.585
-  repository: https://ortelius.github.io/ms-dep-pkg-cud/
-- name: ms-dep-pkg-r
-  version: 10.0.647
-  repository: https://ortelius.github.io/ms-dep-pkg-r/
-- name: ms-textfile-crud
-  version: 10.0.549
-  repository: https://ortelius.github.io/ms-textfile-crud/
-- name: ms-compitem-crud
-  version: 10.0.515
-  repository: https://ortelius.github.io/ms-compitem-crud/
-- name: ms-validate-user
-  version: 10.0.564
-  repository: https://ortelius.github.io/ms-validate-user/
-- name: ms-scorecard
-  version: 10.0.530
-  repository: https://ortelius.github.io/ms-scorecard/
-- name: ms-sbom-export
-  version: 10.0.84
-  repository: https://ortelius.github.io/ms-sbom-export/
-- name: ms-postgres
-  version: 10.0.19
-  repository: https://ortelius.github.io/ms-postgres/
-  condition: global.postgresql.enabled
 - name: dh-ms-general
   version: 10.0.185
   repository: https://deployhubproject.github.io/charts/
@@ -45,3 +20,37 @@ dependencies:
 - name: dh-ms-ui
   version: 10.0.185
   repository: https://deployhubproject.github.io/charts/
+- name: ms-compitem-crud
+  version: 10.0.515
+  repository: https://ortelius.github.io/ms-compitem-crud/
+- name: ms-dep-pkg-cud
+  version: 10.0.585
+  repository: https://ortelius.github.io/ms-dep-pkg-cud/
+- name: ms-dep-pkg-r
+  version: 10.0.647
+  repository: https://ortelius.github.io/ms-dep-pkg-r/
+- name: ms-postgres
+  version: 10.0.19
+  repository: https://ortelius.github.io/ms-postgres/
+  condition: global.postgresql.enabled
+- name: ms-sbom-export
+  version: 10.0.84
+  repository: https://ortelius.github.io/ms-sbom-export/
+- name: ms-scorecard
+  version: 10.0.530
+  repository: https://ortelius.github.io/ms-scorecard/
+- name: ms-textfile-crud
+  version: 10.0.549
+  repository: https://ortelius.github.io/ms-textfile-crud/
+- name: ms-validate-user
+  version: 10.0.564
+  repository: https://ortelius.github.io/ms-validate-user/
+- name: scec-arangodb
+  version: 11.0.4
+  repository: https://ortelius.github.io/scec-arangodb/
+- name: scec-deppkg
+  version: 11.0.439
+  repository: https://ortelius.github.io/scec-deppkg/
+- name: scec-vulnerability
+  version: 11.0.457
+  repository: https://ortelius.github.io/scec-vulnerability/
