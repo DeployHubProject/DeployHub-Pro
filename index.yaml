@@ -3,7 +3,7 @@ entries:
   deployhub:
   - apiVersion: v2
     appVersion: 10.0.0
-    created: "2024-03-20T15:51:48.281191843Z"
+    created: "2024-03-20T15:56:39.120366096Z"
     dependencies:
     - name: dh-ms-general
       repository: https://deployhubproject.github.io/charts/
@@ -49,7 +49,7 @@ entries:
       repository: https://ortelius.github.io/scec-vulnerability/
       version: 11.0.484
     description: DeployHub Pro
-    digest: 85cda026833a44c37846d856dd8f049fd516bd239bd6c263d13ca1229f3c2417
+    digest: 73a1834061d0c39f0c3a0c62b55e0592958b4d8bfe896edf92c6157a4d28c37d
     home: https://www.deployhub.com
     icon: https://deployhubproject.github.io/DeployHub-Pro/deployhub.svg
     keywords:
@@ -59,8 +59,8 @@ entries:
     name: deployhub
     type: application
     urls:
-    - https://github.com/DeployHubProject/DeployHub-Pro/releases/download/deployhub-10.0.212/deployhub-10.0.212.tgz
-    version: 10.0.212
+    - https://github.com/DeployHubProject/DeployHub-Pro/releases/download/deployhub-10.0.213/deployhub-10.0.213.tgz
+    version: 10.0.213
   - apiVersion: v2
     appVersion: 10.0.0
     created: "2024-03-20T15:36:31.160281118Z"
@@ -9627,4 +9627,4 @@ entries:
     urls:
     - https://github.com/DeployHubProject/DeployHub-Pro/releases/download/deployhub-10.0.3/deployhub-10.0.3.tgz
     version: 10.0.3
-generated: "2024-03-20T15:51:48.279076719Z"
+generated: "2024-03-20T15:56:39.118156799Z"
