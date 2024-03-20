@@ -25,13 +25,13 @@ jobs:
 
     steps:
       - name: Harden Runner
-        uses: step-security/harden-runner@1f99358870fe1c846a3ccba386cc2b2246836776 # v2.2.1
+        uses: step-security/harden-runner@63c24ba6bd7ba022e95695ff85de572c04a18142 # v2.7.0
         with:
           egress-policy: audit # TODO: change to 'egress-policy: block' after couple of runs
 
       - name: Checkout
         id: checkout
-        uses: actions/checkout@ac593985615ec2ede58e132d2e21d2b1cbd6127c # v3.3.0
+        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4.1.1
         with:
           fetch-depth: 1
 
@@ -65,7 +65,7 @@ jobs:
 
     steps:
       - name: Helm Chart Releaser
-        uses: DeployHubProject/ms-cr-action@563bb5cd2c41ee25ef2507f6523a1ff580dcc48a # v1.2.1
+        uses: DeployHubProject/ms-cr-action@5b7cc3a4148ab9b780083323998d471e4e4d743e # v1.2.52
         with:
           gpg_keyring_base64: ${{ secrets.GPG_KEYRING_BASE64 }}
           gpg_passphrase: ${{ secrets.GPG_PASSPHRASE }}
