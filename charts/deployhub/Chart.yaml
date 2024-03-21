@@ -8,7 +8,7 @@ keywords:
 - Microservices
 - SBOM
 type: application
-version: 10.0.218
+version: 10.0.219
 appVersion: 10.0.0
 dependencies:
 - name: dh-ms-general
@@ -52,5 +52,5 @@ dependencies:
   version: 11.0.471
   repository: https://ortelius.github.io/scec-deppkg/
 - name: scec-vulnerability
-  version: 11.0.484
+  version: 11.0.486
   repository: https://ortelius.github.io/scec-vulnerability/
