@@ -8,17 +8,17 @@ keywords:
 - Microservices
 - SBOM
 type: application
-version: 10.0.217
+version: 10.0.218
 appVersion: 10.0.0
 dependencies:
 - name: dh-ms-general
-  version: 11.0.202
+  version: 11.0.204
   repository: https://deployhubproject.github.io/charts/
 - name: dh-ms-nginx
-  version: 11.0.202
+  version: 11.0.204
   repository: https://deployhubproject.github.io/charts/
 - name: dh-ms-ui
-  version: 11.0.202
+  version: 11.0.204
   repository: https://deployhubproject.github.io/charts/
 - name: ms-compitem-crud
   version: 10.0.543
@@ -49,7 +49,7 @@ dependencies:
   version: 11.0.3
   repository: https://ortelius.github.io/scec-arangodb/
 - name: scec-deppkg
-  version: 11.0.469
+  version: 11.0.471
   repository: https://ortelius.github.io/scec-deppkg/
 - name: scec-vulnerability
   version: 11.0.484
