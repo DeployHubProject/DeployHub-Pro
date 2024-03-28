@@ -8,7 +8,7 @@ keywords:
 - Microservices
 - SBOM
 type: application
-version: 10.0.226
+version: 10.0.227
 appVersion: 10.0.0
 dependencies:
 - name: dh-ms-general
@@ -24,7 +24,7 @@ dependencies:
   version: 10.0.549
   repository: https://ortelius.github.io/ms-compitem-crud/
 - name: ms-dep-pkg-cud
-  version: 10.0.627
+  version: 10.0.628
   repository: https://ortelius.github.io/ms-dep-pkg-cud/
 - name: ms-dep-pkg-r
   version: 10.0.684
@@ -43,7 +43,7 @@ dependencies:
   version: 10.0.581
   repository: https://ortelius.github.io/ms-textfile-crud/
 - name: ms-validate-user
-  version: 10.0.610
+  version: 10.0.612
   repository: https://ortelius.github.io/ms-validate-user/
 - name: scec-arangodb
   version: 11.0.3
