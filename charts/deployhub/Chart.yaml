@@ -8,29 +8,29 @@ keywords:
 - Microservices
 - SBOM
 type: application
-version: 10.0.225
+version: 10.0.226
 appVersion: 10.0.0
 dependencies:
 - name: dh-ms-general
-  version: 11.0.212
+  version: 11.0.213
   repository: https://deployhubproject.github.io/charts/
 - name: dh-ms-nginx
-  version: 11.0.212
+  version: 11.0.213
   repository: https://deployhubproject.github.io/charts/
 - name: dh-ms-ui
-  version: 11.0.212
+  version: 11.0.213
   repository: https://deployhubproject.github.io/charts/
 - name: ms-compitem-crud
   version: 10.0.549
   repository: https://ortelius.github.io/ms-compitem-crud/
 - name: ms-dep-pkg-cud
-  version: 10.0.626
+  version: 10.0.627
   repository: https://ortelius.github.io/ms-dep-pkg-cud/
 - name: ms-dep-pkg-r
   version: 10.0.684
   repository: https://ortelius.github.io/ms-dep-pkg-r/
 - name: ms-postgres
-  version: 10.0.31
+  version: 10.0.40
   repository: https://ortelius.github.io/ms-postgres/
   condition: global.postgresql.enabled
 - name: ms-sbom-export
@@ -49,7 +49,7 @@ dependencies:
   version: 11.0.3
   repository: https://ortelius.github.io/scec-arangodb/
 - name: scec-deppkg
-  version: 11.0.480
+  version: 11.0.482
   repository: https://ortelius.github.io/scec-deppkg/
 - name: scec-vulnerability
   version: 11.0.486
