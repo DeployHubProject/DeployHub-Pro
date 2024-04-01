@@ -12,38 +12,38 @@ version: 10.0.227
 appVersion: 10.0.0
 dependencies:
 - name: dh-ms-general
-  version: 11.0.213
+  version: 11.0.217
   repository: https://deployhubproject.github.io/charts/
 - name: dh-ms-nginx
-  version: 11.0.213
+  version: 11.0.217
   repository: https://deployhubproject.github.io/charts/
 - name: dh-ms-ui
-  version: 11.0.213
+  version: 11.0.217
   repository: https://deployhubproject.github.io/charts/
 - name: ms-compitem-crud
-  version: 10.0.549
+  version: 10.0.552
   repository: https://ortelius.github.io/ms-compitem-crud/
 - name: ms-dep-pkg-cud
-  version: 10.0.628
+  version: 10.0.634
   repository: https://ortelius.github.io/ms-dep-pkg-cud/
 - name: ms-dep-pkg-r
-  version: 10.0.684
+  version: 10.0.690
   repository: https://ortelius.github.io/ms-dep-pkg-r/
 - name: ms-postgres
   version: 10.0.40
   repository: https://ortelius.github.io/ms-postgres/
   condition: global.postgresql.enabled
 - name: ms-sbom-export
-  version: 10.0.104
+  version: 10.0.106
   repository: https://ortelius.github.io/ms-sbom-export/
 - name: ms-scorecard
-  version: 10.0.554
+  version: 10.0.560
   repository: https://ortelius.github.io/ms-scorecard/
 - name: ms-textfile-crud
-  version: 10.0.581
+  version: 10.0.585
   repository: https://ortelius.github.io/ms-textfile-crud/
 - name: ms-validate-user
-  version: 10.0.612
+  version: 10.0.616
   repository: https://ortelius.github.io/ms-validate-user/
 - name: scec-arangodb
   version: 11.0.3
