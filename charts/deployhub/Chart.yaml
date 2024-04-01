@@ -8,7 +8,7 @@ keywords:
 - Microservices
 - SBOM
 type: application
-version: 10.0.229
+version: 10.0.230
 appVersion: 10.0.0
 dependencies:
 - name: dh-ms-general
@@ -27,7 +27,7 @@ dependencies:
   version: 10.0.635
   repository: https://ortelius.github.io/ms-dep-pkg-cud/
 - name: ms-dep-pkg-r
-  version: 10.0.690
+  version: 10.0.692
   repository: https://ortelius.github.io/ms-dep-pkg-r/
 - name: ms-postgres
   version: 10.0.40
@@ -43,13 +43,13 @@ dependencies:
   version: 10.0.585
   repository: https://ortelius.github.io/ms-textfile-crud/
 - name: ms-validate-user
-  version: 10.0.616
+  version: 10.0.618
   repository: https://ortelius.github.io/ms-validate-user/
 - name: scec-arangodb
   version: 11.0.3
   repository: https://ortelius.github.io/scec-arangodb/
 - name: scec-deppkg
-  version: 11.0.489
+  version: 11.0.490
   repository: https://ortelius.github.io/scec-deppkg/
 - name: scec-vulnerability
   version: 11.0.486
