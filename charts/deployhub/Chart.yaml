@@ -24,7 +24,7 @@ dependencies:
   version: 10.0.552
   repository: https://ortelius.github.io/ms-compitem-crud/
 - name: ms-dep-pkg-cud
-  version: 10.0.634
+  version: 10.0.635
   repository: https://ortelius.github.io/ms-dep-pkg-cud/
 - name: ms-dep-pkg-r
   version: 10.0.690
