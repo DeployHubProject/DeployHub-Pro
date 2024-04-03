@@ -8,7 +8,7 @@ keywords:
 - Microservices
 - SBOM
 type: application
-version: 10.0.232
+version: 10.0.233
 appVersion: 10.0.0
 dependencies:
 - name: dh-ms-general
@@ -21,13 +21,13 @@ dependencies:
   version: 11.0.219
   repository: https://deployhubproject.github.io/charts/
 - name: ms-compitem-crud
-  version: 10.0.552
+  version: 10.0.555
   repository: https://ortelius.github.io/ms-compitem-crud/
 - name: ms-dep-pkg-cud
-  version: 10.0.640
+  version: 10.0.643
   repository: https://ortelius.github.io/ms-dep-pkg-cud/
 - name: ms-dep-pkg-r
-  version: 10.0.694
+  version: 10.0.696
   repository: https://ortelius.github.io/ms-dep-pkg-r/
 - name: ms-postgres
   version: 10.0.40
@@ -40,10 +40,10 @@ dependencies:
   version: 10.0.562
   repository: https://ortelius.github.io/ms-scorecard/
 - name: ms-textfile-crud
-  version: 10.0.589
+  version: 10.0.591
   repository: https://ortelius.github.io/ms-textfile-crud/
 - name: ms-validate-user
-  version: 10.0.620
+  version: 10.0.622
   repository: https://ortelius.github.io/ms-validate-user/
 - name: scec-arangodb
   version: 11.0.3
@@ -52,5 +52,5 @@ dependencies:
   version: 11.0.492
   repository: https://ortelius.github.io/scec-deppkg/
 - name: scec-vulnerability
-  version: 11.0.486
+  version: 11.0.492
   repository: https://ortelius.github.io/scec-vulnerability/
