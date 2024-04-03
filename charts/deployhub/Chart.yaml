@@ -8,7 +8,7 @@ keywords:
 - Microservices
 - SBOM
 type: application
-version: 10.0.234
+version: 10.0.235
 appVersion: 10.0.0
 dependencies:
 - name: dh-ms-general
@@ -49,7 +49,7 @@ dependencies:
   version: 11.0.3
   repository: https://ortelius.github.io/scec-arangodb/
 - name: scec-deppkg
-  version: 11.0.492
+  version: 11.0.495
   repository: https://ortelius.github.io/scec-deppkg/
 - name: scec-vulnerability
   version: 11.0.492
