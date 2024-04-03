@@ -8,7 +8,7 @@ keywords:
 - Microservices
 - SBOM
 type: application
-version: 10.0.233
+version: 10.0.234
 appVersion: 10.0.0
 dependencies:
 - name: dh-ms-general
@@ -24,7 +24,7 @@ dependencies:
   version: 10.0.555
   repository: https://ortelius.github.io/ms-compitem-crud/
 - name: ms-dep-pkg-cud
-  version: 10.0.643
+  version: 10.0.644
   repository: https://ortelius.github.io/ms-dep-pkg-cud/
 - name: ms-dep-pkg-r
   version: 10.0.696
