@@ -8,7 +8,7 @@ keywords:
 - Microservices
 - SBOM
 type: application
-version: 10.0.243
+version: 10.0.244
 appVersion: 10.0.0
 dependencies:
 - name: dh-ms-general
@@ -24,7 +24,7 @@ dependencies:
   version: 10.0.555
   repository: https://ortelius.github.io/ms-compitem-crud/
 - name: ms-dep-pkg-cud
-  version: 10.0.647
+  version: 10.0.648
   repository: https://ortelius.github.io/ms-dep-pkg-cud/
 - name: ms-dep-pkg-r
   version: 10.0.696
@@ -49,7 +49,7 @@ dependencies:
   version: 11.0.3
   repository: https://ortelius.github.io/scec-arangodb/
 - name: scec-deppkg
-  version: 11.0.500
+  version: 11.0.504
   repository: https://ortelius.github.io/scec-deppkg/
 - name: scec-vulnerability
   version: 11.0.495
