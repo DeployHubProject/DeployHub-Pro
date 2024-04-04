@@ -8,7 +8,7 @@ keywords:
 - Microservices
 - SBOM
 type: application
-version: 10.0.241
+version: 10.0.242
 appVersion: 10.0.0
 dependencies:
 - name: dh-ms-general
@@ -30,7 +30,7 @@ dependencies:
   version: 10.0.696
   repository: https://ortelius.github.io/ms-dep-pkg-r/
 - name: ms-postgres
-  version: 10.0.41
+  version: 10.0.42
   repository: https://ortelius.github.io/ms-postgres/
   condition: global.postgresql.enabled
 - name: ms-sbom-export
@@ -49,7 +49,7 @@ dependencies:
   version: 11.0.3
   repository: https://ortelius.github.io/scec-arangodb/
 - name: scec-deppkg
-  version: 11.0.499
+  version: 11.0.500
   repository: https://ortelius.github.io/scec-deppkg/
 - name: scec-vulnerability
   version: 11.0.495
