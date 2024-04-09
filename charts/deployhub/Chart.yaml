@@ -8,7 +8,7 @@ keywords:
 - Microservices
 - SBOM
 type: application
-version: 10.0.247
+version: 10.0.248
 appVersion: 10.0.0
 dependencies:
 - name: dh-ms-general
