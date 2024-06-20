@@ -8,7 +8,7 @@ keywords:
 - Microservices
 - SBOM
 type: application
-version: 10.0.289
+version: 10.0.290
 appVersion: 10.0.0
 dependencies:
 - name: dh-ms-general
@@ -43,7 +43,7 @@ dependencies:
   version: 10.0.742
   repository: https://ortelius.github.io/ms-textfile-crud/
 - name: ms-validate-user
-  version: 10.0.795
+  version: 10.0.813
   repository: https://ortelius.github.io/ms-validate-user/
 - name: scec-arangodb
   version: 11.0.3
