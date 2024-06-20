@@ -8,17 +8,17 @@ keywords:
 - Microservices
 - SBOM
 type: application
-version: 10.0.287
+version: 10.0.288
 appVersion: 10.0.0
 dependencies:
 - name: dh-ms-general
-  version: 11.0.305
+  version: 11.0.307
   repository: https://deployhubproject.github.io/charts/
 - name: dh-ms-nginx
-  version: 11.0.305
+  version: 11.0.307
   repository: https://deployhubproject.github.io/charts/
 - name: dh-ms-ui
-  version: 11.0.305
+  version: 11.0.307
   repository: https://deployhubproject.github.io/charts/
 - name: ms-compitem-crud
   version: 10.0.703
