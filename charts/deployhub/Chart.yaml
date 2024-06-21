@@ -8,7 +8,7 @@ keywords:
 - Microservices
 - SBOM
 type: application
-version: 10.0.291
+version: 10.0.292
 appVersion: 10.0.0
 dependencies:
 - name: dh-ms-general
@@ -27,7 +27,7 @@ dependencies:
   version: 10.0.834
   repository: https://ortelius.github.io/ms-dep-pkg-cud/
 - name: ms-dep-pkg-r
-  version: 10.0.864
+  version: 10.0.879
   repository: https://ortelius.github.io/ms-dep-pkg-r/
 - name: ms-postgres
   version: 10.0.105
