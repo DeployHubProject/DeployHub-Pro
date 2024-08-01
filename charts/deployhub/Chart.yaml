@@ -8,7 +8,7 @@ keywords:
 - Microservices
 - SBOM
 type: application
-version: 10.0.315
+version: 10.0.316
 appVersion: 10.0.0
 dependencies:
 - name: dh-ms-general
@@ -37,7 +37,7 @@ dependencies:
   version: 10.0.331
   repository: https://ortelius.github.io/ms-sbom-export/
 - name: ms-scorecard
-  version: 10.0.747
+  version: 10.0.751
   repository: https://ortelius.github.io/ms-scorecard/
 - name: ms-textfile-crud
   version: 10.0.814
@@ -49,8 +49,8 @@ dependencies:
   version: 11.0.3
   repository: https://ortelius.github.io/scec-arangodb/
 - name: scec-deppkg
-  version: 11.0.711
+  version: 11.0.712
   repository: https://ortelius.github.io/scec-deppkg/
 - name: scec-vulnerability
-  version: 11.0.668
+  version: 11.0.669
   repository: https://ortelius.github.io/scec-vulnerability/
