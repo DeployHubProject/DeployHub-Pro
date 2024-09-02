@@ -8,7 +8,6 @@ dh-ms-nginx:
     sslcert:
       chainedcert:
       privatekey:
-    dnsname: console.deployhub.com
 
 # Database Connection Definition
 dh-postgres:
