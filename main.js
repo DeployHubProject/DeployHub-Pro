@@ -66,7 +66,7 @@ async function getChartEntries () {
           dep.name = latest.name
           dep.version = latest.version
 
-          if (key === 'dh-ms-ui' || key === 'dh-ms-nginx' || key === 'dh-ms-general') {
+          if (key === 'ms-ui' || key === 'ms-nginx' || key === 'ms-general') {
             key = 'charts'
             dep.repository = 'https://deployhubproject.github.io/' + key + '/'
           } else { dep.repository = 'https://ortelius.github.io/' + key + '/' }
