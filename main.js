@@ -61,7 +61,7 @@ async function getChartEntries () {
         })
         latest = latest[1]
 
-        if (latest.name !== 'dh-jwt' && latest.name !== 'dh-postgres') {
+        if (latest.name !== 'dh-jwt' && latest.name !== 'dh-postgres' && latest.name !== 'dh-ms-ui' && latest.name !== 'dh-ms-nginx' && latest.name !== 'dh-ms-general') {
           const dep = {}
           dep.name = latest.name
           dep.version = latest.version

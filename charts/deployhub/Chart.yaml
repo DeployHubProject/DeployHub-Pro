@@ -8,18 +8,9 @@ keywords:
 - Microservices
 - SBOM
 type: application
-version: 10.0.334
+version: 10.0.335
 appVersion: 10.0.0
 dependencies:
-- name: dh-ms-general
-  version: 11.0.403
-  repository: https://ortelius.github.io/dh-ms-general/
-- name: dh-ms-nginx
-  version: 11.0.403
-  repository: https://ortelius.github.io/dh-ms-nginx/
-- name: dh-ms-ui
-  version: 11.0.403
-  repository: https://ortelius.github.io/dh-ms-ui/
 - name: ms-general
   version: 11.0.407
   repository: https://deployhubproject.github.io/charts/
