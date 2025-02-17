@@ -25,7 +25,7 @@ jobs:
 
     steps:
       - name: Harden Runner
-        uses: step-security/harden-runner@91182cccc01eb5e619899d80e4e971d6181294a7 # v2.10.1
+        uses: step-security/harden-runner@4d991eb9b905ef189e4c376166672c3f2f230481 # v2.11.0
         with:
           egress-policy: audit # TODO: change to 'egress-policy: block' after couple of runs
 
@@ -65,7 +65,7 @@ jobs:
 
     steps:
       - name: Helm Chart Releaser
-        uses: DeployHubProject/ms-cr-action@a04802087498bcc7203d1d6e7cdbfcd4c2b4640a # v1.2.105
+        uses: DeployHubProject/ms-cr-action@1f5d91c612d0a036dc82b190ae87f3452ad97677 # v1.2.121
         with:
           gpg_keyring_base64: ${{ secrets.GPG_KEYRING_BASE64 }}
           gpg_passphrase: ${{ secrets.GPG_PASSPHRASE }}
