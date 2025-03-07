@@ -8,49 +8,49 @@ keywords:
 - Microservices
 - SBOM
 type: application
-version: 10.0.355
+version: 10.0.356
 appVersion: 10.0.0
 dependencies:
 - name: ms-general
-  version: 11.0.581
+  version: 11.0.591
   repository: https://deployhubproject.github.io/charts/
 - name: ms-nginx
-  version: 11.0.581
+  version: 11.0.591
   repository: https://deployhubproject.github.io/charts/
 - name: ms-ui
-  version: 11.0.581
+  version: 11.0.591
   repository: https://deployhubproject.github.io/charts/
 - name: ms-compitem-crud
-  version: 10.0.1095
+  version: 10.0.1097
   repository: https://ortelius.github.io/ms-compitem-crud/
 - name: ms-dep-pkg-cud
-  version: 10.0.1277
+  version: 10.0.1278
   repository: https://ortelius.github.io/ms-dep-pkg-cud/
 - name: ms-dep-pkg-r
-  version: 10.0.1267
+  version: 10.0.1272
   repository: https://ortelius.github.io/ms-dep-pkg-r/
 - name: ms-postgres
-  version: 10.0.248
+  version: 10.0.259
   repository: https://ortelius.github.io/ms-postgres/
   condition: global.postgresql.enabled
 - name: ms-sbom-export
-  version: 10.0.578
+  version: 10.0.597
   repository: https://ortelius.github.io/ms-sbom-export/
 - name: ms-scorecard
-  version: 10.0.866
+  version: 10.0.969
   repository: https://ortelius.github.io/ms-scorecard/
 - name: ms-textfile-crud
-  version: 10.0.1137
+  version: 10.0.1141
   repository: https://ortelius.github.io/ms-textfile-crud/
 - name: ms-validate-user
-  version: 10.0.1222
+  version: 10.0.1223
   repository: https://ortelius.github.io/ms-validate-user/
 - name: scec-arangodb
   version: 11.0.3
   repository: https://ortelius.github.io/scec-arangodb/
 - name: scec-deppkg
-  version: 11.0.952
+  version: 11.0.960
   repository: https://ortelius.github.io/scec-deppkg/
 - name: scec-vulnerability
-  version: 11.0.958
+  version: 11.0.997
   repository: https://ortelius.github.io/scec-vulnerability/
