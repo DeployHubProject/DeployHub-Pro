@@ -8,7 +8,7 @@ keywords:
 - Microservices
 - SBOM
 type: application
-version: 10.0.378
+version: 10.0.379
 appVersion: 10.0.0
 dependencies:
 - name: ms-general
@@ -46,7 +46,7 @@ dependencies:
   version: 10.0.1467
   repository: https://ortelius.github.io/ms-validate-user/
 - name: scec-arangodb
-  version: 11.0.3
+  version: 11.0.4
   repository: https://ortelius.github.io/scec-arangodb/
 - name: scec-deppkg
   version: 11.0.1134
