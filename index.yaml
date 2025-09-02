@@ -3,6 +3,66 @@ entries:
   deployhub:
   - apiVersion: v2
     appVersion: 10.0.0
+    created: "2025-09-02T20:45:00.015681426Z"
+    dependencies:
+    - name: ms-general
+      repository: https://deployhubproject.github.io/charts/
+      version: 11.0.710
+    - name: ms-nginx
+      repository: https://deployhubproject.github.io/charts/
+      version: 11.0.710
+    - name: ms-ui
+      repository: https://deployhubproject.github.io/charts/
+      version: 11.0.710
+    - name: ms-compitem-crud
+      repository: https://ortelius.github.io/ms-compitem-crud/
+      version: 10.0.1347
+    - name: ms-dep-pkg-cud
+      repository: https://ortelius.github.io/ms-dep-pkg-cud/
+      version: 10.0.1539
+    - name: ms-dep-pkg-r
+      repository: https://ortelius.github.io/ms-dep-pkg-r/
+      version: 10.0.1518
+    - condition: global.postgresql.enabled
+      name: ms-postgres
+      repository: https://ortelius.github.io/ms-postgres/
+      version: 10.0.341
+    - name: ms-sbom-export
+      repository: https://ortelius.github.io/ms-sbom-export/
+      version: 10.0.773
+    - name: ms-scorecard
+      repository: https://ortelius.github.io/ms-scorecard/
+      version: 10.0.1095
+    - name: ms-textfile-crud
+      repository: https://ortelius.github.io/ms-textfile-crud/
+      version: 10.0.1388
+    - name: ms-validate-user
+      repository: https://ortelius.github.io/ms-validate-user/
+      version: 10.0.1467
+    - name: scec-arangodb
+      repository: https://ortelius.github.io/scec-arangodb/
+      version: 11.0.4
+    - name: scec-deppkg
+      repository: https://ortelius.github.io/scec-deppkg/
+      version: 11.0.1134
+    - name: scec-vulnerability
+      repository: https://ortelius.github.io/scec-vulnerability/
+      version: 11.0.1203
+    description: DeployHub Pro
+    digest: 9a9580362afa0760e15a73e1b2f633afbfb72d0cfa90ece80cc2da21348d8054
+    home: https://www.deployhub.com
+    icon: https://deployhubproject.github.io/DeployHub-Pro/deployhub.svg
+    keywords:
+    - Service Catalog
+    - Microservices
+    - SBOM
+    name: deployhub
+    type: application
+    urls:
+    - https://github.com/DeployHubProject/DeployHub-Pro/releases/download/deployhub-10.0.381/deployhub-10.0.381.tgz
+    version: 10.0.381
+  - apiVersion: v2
+    appVersion: 10.0.0
     created: "2025-09-02T18:13:40.371227581Z"
     dependencies:
     - name: ms-general
@@ -19527,4 +19587,4 @@ entries:
     urls:
     - https://github.com/DeployHubProject/DeployHub-Pro/releases/download/deployhub-10.0.3/deployhub-10.0.3.tgz
     version: 10.0.3
-generated: "2025-09-02T18:13:40.369014734Z"
+generated: "2025-09-02T20:45:00.012620228Z"
