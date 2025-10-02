@@ -65,7 +65,7 @@ jobs:
 
     steps:
       - name: Helm Chart Releaser
-        uses: DeployHubProject/ms-cr-action@15b9aa6e01dd211d242155ae690ad55182cd78a9 # v1.2.148
+        uses: DeployHubProject/ms-cr-action@5fbff06c7ada7bd1f8bfe6ced54719a2d06c84a5 # v1.2.149
         with:
           gpg_keyring_base64: ${{ secrets.GPG_KEYRING_BASE64 }}
           gpg_passphrase: ${{ secrets.GPG_PASSPHRASE }}
