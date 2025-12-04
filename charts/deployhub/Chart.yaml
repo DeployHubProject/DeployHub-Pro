@@ -8,7 +8,7 @@ keywords:
 - Microservices
 - SBOM
 type: application
-version: 10.0.402
+version: 10.0.403
 appVersion: 10.0.0
 dependencies:
 - name: ms-general
