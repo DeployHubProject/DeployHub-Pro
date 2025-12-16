@@ -8,17 +8,17 @@ keywords:
 - Microservices
 - SBOM
 type: application
-version: 10.0.410
+version: 10.0.411
 appVersion: 10.0.0
 dependencies:
 - name: ms-general
-  version: 11.0.801
+  version: 11.0.804
   repository: https://deployhubproject.github.io/charts/
 - name: ms-nginx
-  version: 11.0.801
+  version: 11.0.804
   repository: https://deployhubproject.github.io/charts/
 - name: ms-ui
-  version: 11.0.801
+  version: 11.0.804
   repository: https://deployhubproject.github.io/charts/
 - name: ms-compitem-crud
   version: 10.0.1521
@@ -30,7 +30,7 @@ dependencies:
   version: 10.0.1545
   repository: https://ortelius.github.io/ms-dep-pkg-r/
 - name: ms-postgres
-  version: 10.0.455
+  version: 10.0.457
   repository: https://ortelius.github.io/ms-postgres/
   condition: global.postgresql.enabled
 - name: ms-sbom-export
